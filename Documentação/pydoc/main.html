@@ -1,0 +1,1934 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module main</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>main</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/annyel/%C3%81rea%20de%20Trabalho/POO%202/NyBank_final/main.py">/home/annyel/Área de Trabalho/POO 2/NyBank_final/main.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="PyQt5.QtWidgets.html">PyQt5.QtWidgets</a><br>
+<a href="datetime.html">datetime</a><br>
+</td><td width="25%" valign=top><a href="mysql.connector.html">mysql.connector</a><br>
+<a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="socket.html">socket</a><br>
+<a href="sys.html">sys</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="PyQt5.QtWidgets.html#QMainWindow">PyQt5.QtWidgets.QMainWindow</a>(<a href="PyQt5.QtWidgets.html#QWidget">PyQt5.QtWidgets.QWidget</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="main.html#Main">Main</a>(<a href="PyQt5.QtWidgets.html#QMainWindow">PyQt5.QtWidgets.QMainWindow</a>, <a href="main.html#UiMain">UiMain</a>)
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="PyQt5.QtWidgets.html#QWidget">PyQt5.QtWidgets.QWidget</a>(<a href="PyQt5.QtCore.html#QObject">PyQt5.QtCore.QObject</a>, <a href="PyQt5.QtGui.html#QPaintDevice">PyQt5.QtGui.QPaintDevice</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="main.html#UiMain">UiMain</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="main.html#Main">Main</a>(<a href="PyQt5.QtWidgets.html#QMainWindow">PyQt5.QtWidgets.QMainWindow</a>, <a href="main.html#UiMain">UiMain</a>)
+</font></dt></dl>
+</dd>
+</dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Main">class <strong>Main</strong></a>(<a href="PyQt5.QtWidgets.html#QMainWindow">PyQt5.QtWidgets.QMainWindow</a>, <a href="main.html#UiMain">UiMain</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="main.html#Main">Main</a></dd>
+<dd><a href="PyQt5.QtWidgets.html#QMainWindow">PyQt5.QtWidgets.QMainWindow</a></dd>
+<dd><a href="main.html#UiMain">UiMain</a></dd>
+<dd><a href="PyQt5.QtWidgets.html#QWidget">PyQt5.QtWidgets.QWidget</a></dd>
+<dd><a href="PyQt5.QtCore.html#QObject">PyQt5.QtCore.QObject</a></dd>
+<dd><a href="PyQt5.sip.html#wrapper">sip.wrapper</a></dd>
+<dd><a href="PyQt5.QtGui.html#QPaintDevice">PyQt5.QtGui.QPaintDevice</a></dd>
+<dd><a href="PyQt5.sip.html#simplewrapper">sip.simplewrapper</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Main-BotaoAtualizar"><strong>BotaoAtualizar</strong></a>(self)</dt><dd><tt>Este&nbsp;é&nbsp;um&nbsp;método&nbsp;chamado&nbsp;BotaoAtualizar&nbsp;que&nbsp;é&nbsp;acionado&nbsp;quando&nbsp;o&nbsp;botão&nbsp;"Atualizar"&nbsp;é&nbsp;clicado&nbsp;na&nbsp;tela&nbsp;principal&nbsp;do&nbsp;sistema.&nbsp;<br>
+Ele&nbsp;cria&nbsp;uma&nbsp;solicitação&nbsp;contendo&nbsp;o&nbsp;número&nbsp;da&nbsp;conta&nbsp;do&nbsp;usuário&nbsp;e&nbsp;o&nbsp;tipo&nbsp;de&nbsp;solicitação,&nbsp;que&nbsp;é&nbsp;"verificarSaldo",&nbsp;e&nbsp;envia&nbsp;essa&nbsp;solicitação&nbsp;para&nbsp;o&nbsp;servidor.<br>
+&nbsp;<br>
+Em&nbsp;seguida,&nbsp;ele&nbsp;recebe&nbsp;uma&nbsp;resposta&nbsp;do&nbsp;servidor&nbsp;contendo&nbsp;o&nbsp;saldo&nbsp;atualizado&nbsp;da&nbsp;conta.&nbsp;<br>
+O&nbsp;saldo&nbsp;é&nbsp;formatado&nbsp;como&nbsp;um&nbsp;número&nbsp;de&nbsp;ponto&nbsp;flutuante&nbsp;com&nbsp;duas&nbsp;casas&nbsp;decimais&nbsp;e&nbsp;exibido&nbsp;na&nbsp;tela&nbsp;principal&nbsp;do&nbsp;sistema,&nbsp;<br>
+na&nbsp;label&nbsp;denominada&nbsp;"labelSaldo".<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+None<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+None</tt></dd></dl>
+
+<dl><dt><a name="Main-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="Main-abrePosLogin"><strong>abrePosLogin</strong></a>(self, l)</dt><dd><tt>Botão&nbsp;que&nbsp;direciona&nbsp;para&nbsp;a&nbsp;tela&nbsp;de&nbsp;usuário&nbsp;do&nbsp;sistema&nbsp;(pós&nbsp;login).<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+None<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+None</tt></dd></dl>
+
+<dl><dt><a name="Main-abreTelaCadastro"><strong>abreTelaCadastro</strong></a>(self)</dt><dd><tt>Botão&nbsp;que&nbsp;direciona&nbsp;para&nbsp;a&nbsp;tela&nbsp;de&nbsp;cadastro&nbsp;do&nbsp;sistema.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+None<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+None</tt></dd></dl>
+
+<dl><dt><a name="Main-abreTelaExtrato"><strong>abreTelaExtrato</strong></a>(self)</dt><dd><tt>Função&nbsp;responsável&nbsp;por&nbsp;abrir&nbsp;a&nbsp;tela&nbsp;de&nbsp;extrato&nbsp;do&nbsp;usuário&nbsp;após&nbsp;ser&nbsp;clicado&nbsp;o&nbsp;botão&nbsp;extrato.<br>
+É&nbsp;responsável&nbsp;por&nbsp;obter&nbsp;o&nbsp;histórico&nbsp;de&nbsp;transações&nbsp;bancárias&nbsp;do&nbsp;cliente&nbsp;e&nbsp;exibi-las&nbsp;na&nbsp;tela&nbsp;de&nbsp;histórico.<br>
+Para&nbsp;isso,&nbsp;é&nbsp;feita&nbsp;uma&nbsp;solicitação&nbsp;ao&nbsp;servidor&nbsp;bancário&nbsp;com&nbsp;o&nbsp;número&nbsp;da&nbsp;conta&nbsp;do&nbsp;cliente&nbsp;e&nbsp;o&nbsp;tipo&nbsp;de&nbsp;solicitação,&nbsp;que&nbsp;é&nbsp;"historico".&nbsp;<br>
+Em&nbsp;seguida,&nbsp;o&nbsp;resultado&nbsp;é&nbsp;passado&nbsp;para&nbsp;a&nbsp;função&nbsp;concatenar&nbsp;que&nbsp;formata&nbsp;as&nbsp;informações&nbsp;em&nbsp;uma&nbsp;string&nbsp;para&nbsp;ser&nbsp;exibida&nbsp;na&nbsp;tela.<br>
+Por&nbsp;fim,&nbsp;a&nbsp;string&nbsp;formatada&nbsp;é&nbsp;atribuída&nbsp;ao&nbsp;widget&nbsp;de&nbsp;texto&nbsp;TextHistorico&nbsp;da&nbsp;tela&nbsp;de&nbsp;histórico&nbsp;e&nbsp;a&nbsp;tela&nbsp;de&nbsp;histórico&nbsp;é&nbsp;exibida.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+None<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+None</tt></dd></dl>
+
+<dl><dt><a name="Main-abreTelaInicial"><strong>abreTelaInicial</strong></a>(self)</dt><dd><tt>Botão&nbsp;que&nbsp;direciona&nbsp;para&nbsp;a&nbsp;tela&nbsp;inicial&nbsp;do&nbsp;sistema.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+None<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+None</tt></dd></dl>
+
+<dl><dt><a name="Main-abreTelaSaque"><strong>abreTelaSaque</strong></a>(self)</dt><dd><tt>Botão/Função&nbsp;que&nbsp;direciona&nbsp;para&nbsp;a&nbsp;tela&nbsp;de&nbsp;saque&nbsp;do&nbsp;sistema.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+None<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+None</tt></dd></dl>
+
+<dl><dt><a name="Main-abreTelaTransferencia"><strong>abreTelaTransferencia</strong></a>(self)</dt><dd><tt>Botão/Função&nbsp;que&nbsp;direciona&nbsp;para&nbsp;a&nbsp;tela&nbsp;de&nbsp;transferência&nbsp;do&nbsp;sistema.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+None<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+None</tt></dd></dl>
+
+<dl><dt><a name="Main-abreTeladeposito"><strong>abreTeladeposito</strong></a>(self)</dt><dd><tt>Botão/Função&nbsp;que&nbsp;direciona&nbsp;para&nbsp;a&nbsp;tela&nbsp;de&nbsp;depósito&nbsp;do&nbsp;sistema.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+None<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+None</tt></dd></dl>
+
+<dl><dt><a name="Main-botDeposito"><strong>botDeposito</strong></a>(self)</dt><dd><tt>Este&nbsp;é&nbsp;um&nbsp;método&nbsp;chamado&nbsp;botDeposito&nbsp;que&nbsp;é&nbsp;acionado&nbsp;quando&nbsp;o&nbsp;botão&nbsp;"Depositar"&nbsp;é&nbsp;clicado&nbsp;na&nbsp;tela&nbsp;de&nbsp;depósito.&nbsp;<br>
+Ele&nbsp;verifica&nbsp;se&nbsp;o&nbsp;campo&nbsp;de&nbsp;valor&nbsp;não&nbsp;está&nbsp;vazio&nbsp;e&nbsp;se&nbsp;contém&nbsp;apenas&nbsp;dígitos.&nbsp;<br>
+Se&nbsp;for&nbsp;o&nbsp;caso,&nbsp;uma&nbsp;solicitação&nbsp;de&nbsp;depósito&nbsp;é&nbsp;enviada&nbsp;ao&nbsp;servidor&nbsp;com&nbsp;o&nbsp;número&nbsp;da&nbsp;conta&nbsp;e&nbsp;o&nbsp;valor&nbsp;do&nbsp;depósito.&nbsp;<br>
+O&nbsp;campo&nbsp;de&nbsp;notificação&nbsp;da&nbsp;tela&nbsp;de&nbsp;depósito&nbsp;é&nbsp;atualizado&nbsp;com&nbsp;a&nbsp;mensagem&nbsp;retornada&nbsp;pelo&nbsp;servidor&nbsp;e,&nbsp;em&nbsp;seguida,&nbsp;o&nbsp;campo&nbsp;de&nbsp;valor&nbsp;é&nbsp;limpo.&nbsp;<br>
+Se&nbsp;o&nbsp;campo&nbsp;de&nbsp;valor&nbsp;estiver&nbsp;vazio&nbsp;ou&nbsp;não&nbsp;contiver&nbsp;apenas&nbsp;dígitos,&nbsp;uma&nbsp;mensagem&nbsp;apropriada&nbsp;é&nbsp;exibida&nbsp;no&nbsp;campo&nbsp;de&nbsp;notificação.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+None<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+None</tt></dd></dl>
+
+<dl><dt><a name="Main-botLogin"><strong>botLogin</strong></a>(self)</dt><dd><tt>Este&nbsp;é&nbsp;um&nbsp;método&nbsp;chamado&nbsp;botLogin&nbsp;que&nbsp;é&nbsp;acionado&nbsp;quando&nbsp;o&nbsp;botão&nbsp;"Login"&nbsp;é&nbsp;clicado&nbsp;na&nbsp;tela&nbsp;de&nbsp;login.&nbsp;<br>
+Ele&nbsp;recupera&nbsp;os&nbsp;valores&nbsp;dos&nbsp;campos&nbsp;de&nbsp;entrada&nbsp;para&nbsp;usuário&nbsp;e&nbsp;senha&nbsp;da&nbsp;tela&nbsp;de&nbsp;login&nbsp;e&nbsp;verifica&nbsp;se&nbsp;ambos&nbsp;estão&nbsp;preenchidos.&nbsp;<br>
+Se&nbsp;algum&nbsp;campo&nbsp;estiver&nbsp;vazio,&nbsp;uma&nbsp;notificação&nbsp;será&nbsp;exibida&nbsp;na&nbsp;tela.<br>
+&nbsp;<br>
+Se&nbsp;ambos&nbsp;os&nbsp;campos&nbsp;estiverem&nbsp;preenchidos,&nbsp;o&nbsp;código&nbsp;codifica&nbsp;a&nbsp;senha&nbsp;em&nbsp;utf-8&nbsp;e&nbsp;a&nbsp;criptografa&nbsp;usando&nbsp;o&nbsp;algoritmo&nbsp;MD5.&nbsp;<br>
+Em&nbsp;seguida,&nbsp;é&nbsp;criada&nbsp;uma&nbsp;solicitação&nbsp;contendo&nbsp;as&nbsp;informações&nbsp;de&nbsp;login&nbsp;do&nbsp;usuário&nbsp;e&nbsp;enviada&nbsp;para&nbsp;o&nbsp;servidor.&nbsp;<br>
+A&nbsp;resposta&nbsp;do&nbsp;servidor&nbsp;é&nbsp;recebida&nbsp;e&nbsp;processada.&nbsp;<br>
+Se&nbsp;o&nbsp;primeiro&nbsp;elemento&nbsp;da&nbsp;resposta&nbsp;for&nbsp;'True',&nbsp;o&nbsp;login&nbsp;é&nbsp;bem-sucedido&nbsp;e&nbsp;o&nbsp;usuário&nbsp;é&nbsp;direcionado&nbsp;para&nbsp;a&nbsp;tela&nbsp;principal&nbsp;do&nbsp;sistema.<br>
+&nbsp;<br>
+Caso&nbsp;contrário,&nbsp;uma&nbsp;notificação&nbsp;informando&nbsp;que&nbsp;o&nbsp;login&nbsp;falhou&nbsp;é&nbsp;exibida&nbsp;na&nbsp;tela&nbsp;de&nbsp;login.&nbsp;<br>
+Independentemente&nbsp;de&nbsp;ter&nbsp;sucesso&nbsp;ou&nbsp;falhar,&nbsp;os&nbsp;campos&nbsp;da&nbsp;tela&nbsp;de&nbsp;login&nbsp;são&nbsp;limpos&nbsp;para&nbsp;que&nbsp;um&nbsp;novo&nbsp;login&nbsp;possa&nbsp;ser&nbsp;feito.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+None<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+None</tt></dd></dl>
+
+<dl><dt><a name="Main-botSaque"><strong>botSaque</strong></a>(self)</dt><dd><tt>O&nbsp;método&nbsp;botsaque&nbsp;é&nbsp;chamado&nbsp;quando&nbsp;o&nbsp;usuário&nbsp;clica&nbsp;no&nbsp;botão&nbsp;"Sacar"&nbsp;na&nbsp;tela&nbsp;de&nbsp;operações.&nbsp;<br>
+Ele&nbsp;pega&nbsp;o&nbsp;valor&nbsp;e&nbsp;a&nbsp;senha&nbsp;inseridos&nbsp;pelo&nbsp;usuário,&nbsp;verifica&nbsp;se&nbsp;o&nbsp;valor&nbsp;é&nbsp;um&nbsp;número&nbsp;válido&nbsp;e&nbsp;codifica&nbsp;a&nbsp;senha&nbsp;usando&nbsp;o&nbsp;algoritmo&nbsp;MD5.&nbsp;<br>
+Em&nbsp;seguida,&nbsp;constrói&nbsp;uma&nbsp;mensagem&nbsp;com&nbsp;o&nbsp;número&nbsp;da&nbsp;conta,&nbsp;o&nbsp;valor&nbsp;e&nbsp;a&nbsp;senha&nbsp;codificada&nbsp;e&nbsp;envia&nbsp;uma&nbsp;solicitação&nbsp;ao&nbsp;servidor.&nbsp;<br>
+Se&nbsp;a&nbsp;operação&nbsp;for&nbsp;bem-sucedida,&nbsp;uma&nbsp;mensagem&nbsp;de&nbsp;notificação&nbsp;é&nbsp;exibida&nbsp;na&nbsp;tela&nbsp;de&nbsp;operações,&nbsp;caso&nbsp;contrário,&nbsp;<br>
+uma&nbsp;mensagem&nbsp;de&nbsp;senha&nbsp;inválida&nbsp;é&nbsp;exibida.&nbsp;Por&nbsp;fim,&nbsp;os&nbsp;campos&nbsp;de&nbsp;valor&nbsp;e&nbsp;senha&nbsp;são&nbsp;limpos.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+None<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+None</tt></dd></dl>
+
+<dl><dt><a name="Main-botTransfere"><strong>botTransfere</strong></a>(self)</dt><dd><tt>Este&nbsp;é&nbsp;um&nbsp;método&nbsp;chamado&nbsp;botTransfere&nbsp;que&nbsp;é&nbsp;acionado&nbsp;quando&nbsp;o&nbsp;botão&nbsp;"Transferir"&nbsp;é&nbsp;pressionado&nbsp;na&nbsp;tela.&nbsp;<br>
+Ele&nbsp;pega&nbsp;o&nbsp;valor&nbsp;que&nbsp;foi&nbsp;inserido&nbsp;no&nbsp;campo&nbsp;de&nbsp;valor&nbsp;(lineSaldo),&nbsp;<br>
+a&nbsp;senha&nbsp;(lineSenha)&nbsp;e&nbsp;o&nbsp;número&nbsp;da&nbsp;conta&nbsp;de&nbsp;destino&nbsp;(lineNumero)&nbsp;da&nbsp;tela&nbsp;de&nbsp;transferência&nbsp;e&nbsp;verifica&nbsp;se&nbsp;todos&nbsp;eles&nbsp;foram&nbsp;preenchidos.&nbsp;<br>
+Se&nbsp;estiverem&nbsp;preenchidos,&nbsp;ele&nbsp;verifica&nbsp;se&nbsp;os&nbsp;campos&nbsp;de&nbsp;valor&nbsp;e&nbsp;número&nbsp;da&nbsp;conta&nbsp;contêm&nbsp;apenas&nbsp;números.&nbsp;<br>
+Se&nbsp;ambos&nbsp;forem&nbsp;numéricos,&nbsp;a&nbsp;senha&nbsp;é&nbsp;codificada&nbsp;em&nbsp;UTF-8&nbsp;e&nbsp;convertida&nbsp;em&nbsp;um&nbsp;hash&nbsp;md5.&nbsp;Em&nbsp;seguida,&nbsp;<br>
+é&nbsp;criada&nbsp;uma&nbsp;solicitação&nbsp;de&nbsp;transferência&nbsp;com&nbsp;o&nbsp;número&nbsp;da&nbsp;conta&nbsp;de&nbsp;origem&nbsp;(self.<strong>numero</strong>),&nbsp;a&nbsp;senha&nbsp;hash,&nbsp;<br>
+o&nbsp;número&nbsp;da&nbsp;conta&nbsp;de&nbsp;destino&nbsp;e&nbsp;o&nbsp;valor&nbsp;a&nbsp;ser&nbsp;transferido.&nbsp;<br>
+Essa&nbsp;solicitação&nbsp;é&nbsp;enviada&nbsp;para&nbsp;o&nbsp;servidor&nbsp;por&nbsp;meio&nbsp;do&nbsp;método&nbsp;<a href="#Main-request_server">request_server</a>()&nbsp;e&nbsp;a&nbsp;resposta&nbsp;é&nbsp;armazenada&nbsp;na&nbsp;variável&nbsp;flag.&nbsp;<br>
+Em&nbsp;seguida,&nbsp;a&nbsp;notificação&nbsp;de&nbsp;transferência&nbsp;é&nbsp;exibida&nbsp;na&nbsp;tela&nbsp;de&nbsp;transferência&nbsp;com&nbsp;a&nbsp;mensagem&nbsp;da&nbsp;resposta&nbsp;do&nbsp;servidor.&nbsp;<br>
+Caso&nbsp;contrário,&nbsp;a&nbsp;notificação&nbsp;informa&nbsp;que&nbsp;apenas&nbsp;números&nbsp;devem&nbsp;ser&nbsp;inseridos&nbsp;nos&nbsp;campos&nbsp;de&nbsp;valor&nbsp;e&nbsp;número&nbsp;da&nbsp;conta,&nbsp;<br>
+ou&nbsp;que&nbsp;todos&nbsp;os&nbsp;campos&nbsp;devem&nbsp;ser&nbsp;preenchidos.&nbsp;<br>
+Em&nbsp;todos&nbsp;os&nbsp;casos,&nbsp;os&nbsp;campos&nbsp;de&nbsp;valor,&nbsp;senha&nbsp;e&nbsp;número&nbsp;da&nbsp;conta&nbsp;são&nbsp;redefinidos.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+None<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+None</tt></dd></dl>
+
+<dl><dt><a name="Main-botaocad"><strong>botaocad</strong></a>(self)</dt><dd><tt>Este&nbsp;é&nbsp;um&nbsp;método&nbsp;chamado&nbsp;botaocad&nbsp;que&nbsp;é&nbsp;acionado&nbsp;quando&nbsp;o&nbsp;botão&nbsp;"Cadastrar"&nbsp;é&nbsp;clicado&nbsp;na&nbsp;tela&nbsp;de&nbsp;cadastro.&nbsp;<br>
+Ele&nbsp;recupera&nbsp;os&nbsp;valores&nbsp;dos&nbsp;campos&nbsp;de&nbsp;entrada&nbsp;para&nbsp;nome,&nbsp;cpf,&nbsp;<br>
+usuário&nbsp;e&nbsp;senha&nbsp;da&nbsp;tela&nbsp;de&nbsp;cadastro&nbsp;e&nbsp;verifica&nbsp;se&nbsp;todos&nbsp;os&nbsp;campos&nbsp;estão&nbsp;preenchidos.&nbsp;<br>
+Se&nbsp;algum&nbsp;campo&nbsp;estiver&nbsp;vazio,&nbsp;uma&nbsp;notificação&nbsp;será&nbsp;exibida&nbsp;na&nbsp;tela.<br>
+&nbsp;<br>
+Se&nbsp;todos&nbsp;os&nbsp;campos&nbsp;estiverem&nbsp;preenchidos,&nbsp;o&nbsp;código&nbsp;verifica&nbsp;se&nbsp;o&nbsp;CPF&nbsp;tem&nbsp;11&nbsp;dígitos&nbsp;e&nbsp;se&nbsp;é&nbsp;composto&nbsp;apenas&nbsp;por&nbsp;números.&nbsp;<br>
+Em&nbsp;seguida,&nbsp;a&nbsp;senha&nbsp;é&nbsp;codificada&nbsp;em&nbsp;utf-8&nbsp;e&nbsp;criptografada&nbsp;usando&nbsp;o&nbsp;algoritmo&nbsp;MD5.&nbsp;<br>
+Uma&nbsp;solicitação&nbsp;é&nbsp;enviada&nbsp;ao&nbsp;servidor&nbsp;contendo&nbsp;as&nbsp;informações&nbsp;do&nbsp;novo&nbsp;usuário&nbsp;a&nbsp;ser&nbsp;adicionado.&nbsp;<br>
+A&nbsp;resposta&nbsp;do&nbsp;servidor&nbsp;é&nbsp;concatenada&nbsp;em&nbsp;uma&nbsp;string&nbsp;e&nbsp;exibida&nbsp;na&nbsp;tela&nbsp;de&nbsp;cadastro.<br>
+&nbsp;<br>
+Independentemente&nbsp;de&nbsp;ter&nbsp;sucesso&nbsp;ou&nbsp;falhar,&nbsp;todos&nbsp;os&nbsp;campos&nbsp;da&nbsp;tela&nbsp;de&nbsp;cadastro&nbsp;são&nbsp;limpos&nbsp;para&nbsp;que&nbsp;um&nbsp;novo&nbsp;usuário&nbsp;possa&nbsp;ser&nbsp;adicionado.&nbsp;<br>
+Se&nbsp;o&nbsp;CPF&nbsp;não&nbsp;atender&nbsp;aos&nbsp;parâmetros&nbsp;necessários,&nbsp;uma&nbsp;notificação&nbsp;informando&nbsp;isso&nbsp;é&nbsp;exibida&nbsp;na&nbsp;tela<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+None<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+None</tt></dd></dl>
+
+<dl><dt><a name="Main-concatenar"><strong>concatenar</strong></a>(self, string)</dt><dd><tt>Este&nbsp;é&nbsp;um&nbsp;método&nbsp;chamado&nbsp;concatenar&nbsp;que&nbsp;recebe&nbsp;uma&nbsp;string&nbsp;como&nbsp;entrada&nbsp;e&nbsp;concatena&nbsp;todos&nbsp;os&nbsp;caracteres&nbsp;da&nbsp;string,&nbsp;<br>
+exceto&nbsp;o&nbsp;primeiro&nbsp;caractere&nbsp;(índice&nbsp;0),&nbsp;com&nbsp;um&nbsp;caractere&nbsp;de&nbsp;espaço&nbsp;entre&nbsp;cada&nbsp;caractere.<br>
+A&nbsp;string&nbsp;concatenada&nbsp;resultante&nbsp;é&nbsp;então&nbsp;retornada.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+string:&nbsp;Str<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+noti</tt></dd></dl>
+
+<dl><dt><a name="Main-exit"><strong>exit</strong></a>(self)</dt><dd><tt>Botão&nbsp;para&nbsp;sair&nbsp;do&nbsp;sistema.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+None<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+None</tt></dd></dl>
+
+<dl><dt><a name="Main-request_server"><strong>request_server</strong></a>(self, request)</dt><dd><tt>Essa&nbsp;função&nbsp;envia&nbsp;uma&nbsp;requisição&nbsp;de&nbsp;mensagem&nbsp;para&nbsp;o&nbsp;servidor&nbsp;com&nbsp;a&nbsp;request&nbsp;como&nbsp;parâmetro.&nbsp;<br>
+Em&nbsp;seguida,&nbsp;aguarda&nbsp;uma&nbsp;resposta&nbsp;de&nbsp;até&nbsp;2048&nbsp;bytes&nbsp;do&nbsp;servidor&nbsp;e&nbsp;a&nbsp;converte&nbsp;em&nbsp;uma&nbsp;string.&nbsp;<br>
+Então,&nbsp;remove&nbsp;todos&nbsp;os&nbsp;caracteres&nbsp;desnecessários&nbsp;da&nbsp;resposta&nbsp;e&nbsp;retorna&nbsp;como&nbsp;uma&nbsp;lista&nbsp;de&nbsp;palavras.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+request&nbsp;:str<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+flag</tt></dd></dl>
+
+<dl><dt><a name="Main-sairTelaInicial"><strong>sairTelaInicial</strong></a>(self)</dt><dd><tt>Botão&nbsp;de&nbsp;saída&nbsp;da&nbsp;tela&nbsp;inicial&nbsp;e&nbsp;encerramento&nbsp;do&nbsp;sistema.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+None<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+None</tt></dd></dl>
+
+<dl><dt><a name="Main-voltarTelaInicial"><strong>voltarTelaInicial</strong></a>(self)</dt><dd><tt>Botão/Função&nbsp;que&nbsp;volta&nbsp;para&nbsp;a&nbsp;tela&nbsp;inicial&nbsp;do&nbsp;sistema.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+None<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+None</tt></dd></dl>
+
+<dl><dt><a name="Main-voltarTelaPosLogin"><strong>voltarTelaPosLogin</strong></a>(self)</dt><dd><tt>Botão/Função&nbsp;que&nbsp;direciona&nbsp;a&nbsp;volta&nbsp;para&nbsp;a&nbsp;tela&nbsp;de&nbsp;usuário&nbsp;do&nbsp;sistema(pós&nbsp;login).<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+None<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+None</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="PyQt5.QtWidgets.html#QMainWindow">PyQt5.QtWidgets.QMainWindow</a>:<br>
+<dl><dt><a name="Main-addDockWidget"><strong>addDockWidget</strong></a>(...)</dt><dd><tt><a href="#Main-addDockWidget">addDockWidget</a>(self,&nbsp;Qt.DockWidgetArea,&nbsp;QDockWidget)<br>
+<a href="#Main-addDockWidget">addDockWidget</a>(self,&nbsp;Qt.DockWidgetArea,&nbsp;QDockWidget,&nbsp;Qt.Orientation)</tt></dd></dl>
+
+<dl><dt><a name="Main-addToolBar"><strong>addToolBar</strong></a>(...)</dt><dd><tt><a href="#Main-addToolBar">addToolBar</a>(self,&nbsp;Qt.ToolBarArea,&nbsp;QToolBar)<br>
+<a href="#Main-addToolBar">addToolBar</a>(self,&nbsp;QToolBar)<br>
+<a href="#Main-addToolBar">addToolBar</a>(self,&nbsp;str)&nbsp;-&gt;&nbsp;QToolBar</tt></dd></dl>
+
+<dl><dt><a name="Main-addToolBarBreak"><strong>addToolBarBreak</strong></a>(...)</dt><dd><tt><a href="#Main-addToolBarBreak">addToolBarBreak</a>(self,&nbsp;area:&nbsp;Qt.ToolBarArea&nbsp;=&nbsp;Qt.TopToolBarArea)</tt></dd></dl>
+
+<dl><dt><a name="Main-centralWidget"><strong>centralWidget</strong></a>(...)</dt><dd><tt><a href="#Main-centralWidget">centralWidget</a>(self)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="Main-contextMenuEvent"><strong>contextMenuEvent</strong></a>(...)</dt><dd><tt><a href="#Main-contextMenuEvent">contextMenuEvent</a>(self,&nbsp;QContextMenuEvent)</tt></dd></dl>
+
+<dl><dt><a name="Main-corner"><strong>corner</strong></a>(...)</dt><dd><tt><a href="#Main-corner">corner</a>(self,&nbsp;Qt.Corner)&nbsp;-&gt;&nbsp;Qt.DockWidgetArea</tt></dd></dl>
+
+<dl><dt><a name="Main-createPopupMenu"><strong>createPopupMenu</strong></a>(...)</dt><dd><tt><a href="#Main-createPopupMenu">createPopupMenu</a>(self)&nbsp;-&gt;&nbsp;QMenu</tt></dd></dl>
+
+<dl><dt><a name="Main-dockOptions"><strong>dockOptions</strong></a>(...)</dt><dd><tt><a href="#Main-dockOptions">dockOptions</a>(self)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QMainWindow">QMainWindow</a>.DockOptions</tt></dd></dl>
+
+<dl><dt><a name="Main-dockWidgetArea"><strong>dockWidgetArea</strong></a>(...)</dt><dd><tt><a href="#Main-dockWidgetArea">dockWidgetArea</a>(self,&nbsp;QDockWidget)&nbsp;-&gt;&nbsp;Qt.DockWidgetArea</tt></dd></dl>
+
+<dl><dt><a name="Main-documentMode"><strong>documentMode</strong></a>(...)</dt><dd><tt><a href="#Main-documentMode">documentMode</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-event"><strong>event</strong></a>(...)</dt><dd><tt><a href="#Main-event">event</a>(self,&nbsp;QEvent)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-iconSize"><strong>iconSize</strong></a>(...)</dt><dd><tt><a href="#Main-iconSize">iconSize</a>(self)&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<strong>iconSizeChanged</strong> = &lt;unbound PYQT_SIGNAL iconSizeChanged(QSize)&gt;
+<dl><dt><a name="Main-insertToolBar"><strong>insertToolBar</strong></a>(...)</dt><dd><tt><a href="#Main-insertToolBar">insertToolBar</a>(self,&nbsp;QToolBar,&nbsp;QToolBar)</tt></dd></dl>
+
+<dl><dt><a name="Main-insertToolBarBreak"><strong>insertToolBarBreak</strong></a>(...)</dt><dd><tt><a href="#Main-insertToolBarBreak">insertToolBarBreak</a>(self,&nbsp;QToolBar)</tt></dd></dl>
+
+<dl><dt><a name="Main-isAnimated"><strong>isAnimated</strong></a>(...)</dt><dd><tt><a href="#Main-isAnimated">isAnimated</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-isDockNestingEnabled"><strong>isDockNestingEnabled</strong></a>(...)</dt><dd><tt><a href="#Main-isDockNestingEnabled">isDockNestingEnabled</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-isSeparator"><strong>isSeparator</strong></a>(...)</dt><dd><tt><a href="#Main-isSeparator">isSeparator</a>(self,&nbsp;QPoint)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-menuBar"><strong>menuBar</strong></a>(...)</dt><dd><tt><a href="#Main-menuBar">menuBar</a>(self)&nbsp;-&gt;&nbsp;QMenuBar</tt></dd></dl>
+
+<dl><dt><a name="Main-menuWidget"><strong>menuWidget</strong></a>(...)</dt><dd><tt><a href="#Main-menuWidget">menuWidget</a>(self)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="Main-removeDockWidget"><strong>removeDockWidget</strong></a>(...)</dt><dd><tt><a href="#Main-removeDockWidget">removeDockWidget</a>(self,&nbsp;QDockWidget)</tt></dd></dl>
+
+<dl><dt><a name="Main-removeToolBar"><strong>removeToolBar</strong></a>(...)</dt><dd><tt><a href="#Main-removeToolBar">removeToolBar</a>(self,&nbsp;QToolBar)</tt></dd></dl>
+
+<dl><dt><a name="Main-removeToolBarBreak"><strong>removeToolBarBreak</strong></a>(...)</dt><dd><tt><a href="#Main-removeToolBarBreak">removeToolBarBreak</a>(self,&nbsp;QToolBar)</tt></dd></dl>
+
+<dl><dt><a name="Main-resizeDocks"><strong>resizeDocks</strong></a>(...)</dt><dd><tt><a href="#Main-resizeDocks">resizeDocks</a>(self,&nbsp;Iterable[QDockWidget],&nbsp;Iterable[int],&nbsp;Qt.Orientation)</tt></dd></dl>
+
+<dl><dt><a name="Main-restoreDockWidget"><strong>restoreDockWidget</strong></a>(...)</dt><dd><tt><a href="#Main-restoreDockWidget">restoreDockWidget</a>(self,&nbsp;QDockWidget)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-restoreState"><strong>restoreState</strong></a>(...)</dt><dd><tt><a href="#Main-restoreState">restoreState</a>(self,&nbsp;Union[QByteArray,&nbsp;bytes,&nbsp;bytearray],&nbsp;version:&nbsp;int&nbsp;=&nbsp;0)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-saveState"><strong>saveState</strong></a>(...)</dt><dd><tt><a href="#Main-saveState">saveState</a>(self,&nbsp;version:&nbsp;int&nbsp;=&nbsp;0)&nbsp;-&gt;&nbsp;QByteArray</tt></dd></dl>
+
+<dl><dt><a name="Main-setAnimated"><strong>setAnimated</strong></a>(...)</dt><dd><tt><a href="#Main-setAnimated">setAnimated</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="Main-setCentralWidget"><strong>setCentralWidget</strong></a>(...)</dt><dd><tt><a href="#Main-setCentralWidget">setCentralWidget</a>(self,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>)</tt></dd></dl>
+
+<dl><dt><a name="Main-setCorner"><strong>setCorner</strong></a>(...)</dt><dd><tt><a href="#Main-setCorner">setCorner</a>(self,&nbsp;Qt.Corner,&nbsp;Qt.DockWidgetArea)</tt></dd></dl>
+
+<dl><dt><a name="Main-setDockNestingEnabled"><strong>setDockNestingEnabled</strong></a>(...)</dt><dd><tt><a href="#Main-setDockNestingEnabled">setDockNestingEnabled</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="Main-setDockOptions"><strong>setDockOptions</strong></a>(...)</dt><dd><tt><a href="#Main-setDockOptions">setDockOptions</a>(self,&nbsp;Union[<a href="PyQt5.QtWidgets.html#QMainWindow">QMainWindow</a>.DockOptions,&nbsp;<a href="PyQt5.QtWidgets.html#QMainWindow">QMainWindow</a>.DockOption])</tt></dd></dl>
+
+<dl><dt><a name="Main-setDocumentMode"><strong>setDocumentMode</strong></a>(...)</dt><dd><tt><a href="#Main-setDocumentMode">setDocumentMode</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="Main-setIconSize"><strong>setIconSize</strong></a>(...)</dt><dd><tt><a href="#Main-setIconSize">setIconSize</a>(self,&nbsp;QSize)</tt></dd></dl>
+
+<dl><dt><a name="Main-setMenuBar"><strong>setMenuBar</strong></a>(...)</dt><dd><tt><a href="#Main-setMenuBar">setMenuBar</a>(self,&nbsp;QMenuBar)</tt></dd></dl>
+
+<dl><dt><a name="Main-setMenuWidget"><strong>setMenuWidget</strong></a>(...)</dt><dd><tt><a href="#Main-setMenuWidget">setMenuWidget</a>(self,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>)</tt></dd></dl>
+
+<dl><dt><a name="Main-setStatusBar"><strong>setStatusBar</strong></a>(...)</dt><dd><tt><a href="#Main-setStatusBar">setStatusBar</a>(self,&nbsp;QStatusBar)</tt></dd></dl>
+
+<dl><dt><a name="Main-setTabPosition"><strong>setTabPosition</strong></a>(...)</dt><dd><tt><a href="#Main-setTabPosition">setTabPosition</a>(self,&nbsp;Union[Qt.DockWidgetAreas,&nbsp;Qt.DockWidgetArea],&nbsp;QTabWidget.TabPosition)</tt></dd></dl>
+
+<dl><dt><a name="Main-setTabShape"><strong>setTabShape</strong></a>(...)</dt><dd><tt><a href="#Main-setTabShape">setTabShape</a>(self,&nbsp;QTabWidget.TabShape)</tt></dd></dl>
+
+<dl><dt><a name="Main-setToolButtonStyle"><strong>setToolButtonStyle</strong></a>(...)</dt><dd><tt><a href="#Main-setToolButtonStyle">setToolButtonStyle</a>(self,&nbsp;Qt.ToolButtonStyle)</tt></dd></dl>
+
+<dl><dt><a name="Main-setUnifiedTitleAndToolBarOnMac"><strong>setUnifiedTitleAndToolBarOnMac</strong></a>(...)</dt><dd><tt><a href="#Main-setUnifiedTitleAndToolBarOnMac">setUnifiedTitleAndToolBarOnMac</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="Main-splitDockWidget"><strong>splitDockWidget</strong></a>(...)</dt><dd><tt><a href="#Main-splitDockWidget">splitDockWidget</a>(self,&nbsp;QDockWidget,&nbsp;QDockWidget,&nbsp;Qt.Orientation)</tt></dd></dl>
+
+<dl><dt><a name="Main-statusBar"><strong>statusBar</strong></a>(...)</dt><dd><tt><a href="#Main-statusBar">statusBar</a>(self)&nbsp;-&gt;&nbsp;QStatusBar</tt></dd></dl>
+
+<dl><dt><a name="Main-tabPosition"><strong>tabPosition</strong></a>(...)</dt><dd><tt><a href="#Main-tabPosition">tabPosition</a>(self,&nbsp;Qt.DockWidgetArea)&nbsp;-&gt;&nbsp;QTabWidget.TabPosition</tt></dd></dl>
+
+<dl><dt><a name="Main-tabShape"><strong>tabShape</strong></a>(...)</dt><dd><tt><a href="#Main-tabShape">tabShape</a>(self)&nbsp;-&gt;&nbsp;QTabWidget.TabShape</tt></dd></dl>
+
+<strong>tabifiedDockWidgetActivated</strong> = &lt;unbound PYQT_SIGNAL tabifiedDockWidgetActivated(QDockWidget*)&gt;
+<dl><dt><a name="Main-tabifiedDockWidgets"><strong>tabifiedDockWidgets</strong></a>(...)</dt><dd><tt><a href="#Main-tabifiedDockWidgets">tabifiedDockWidgets</a>(self,&nbsp;QDockWidget)&nbsp;-&gt;&nbsp;List[QDockWidget]</tt></dd></dl>
+
+<dl><dt><a name="Main-tabifyDockWidget"><strong>tabifyDockWidget</strong></a>(...)</dt><dd><tt><a href="#Main-tabifyDockWidget">tabifyDockWidget</a>(self,&nbsp;QDockWidget,&nbsp;QDockWidget)</tt></dd></dl>
+
+<dl><dt><a name="Main-takeCentralWidget"><strong>takeCentralWidget</strong></a>(...)</dt><dd><tt><a href="#Main-takeCentralWidget">takeCentralWidget</a>(self)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="Main-toolBarArea"><strong>toolBarArea</strong></a>(...)</dt><dd><tt><a href="#Main-toolBarArea">toolBarArea</a>(self,&nbsp;QToolBar)&nbsp;-&gt;&nbsp;Qt.ToolBarArea</tt></dd></dl>
+
+<dl><dt><a name="Main-toolBarBreak"><strong>toolBarBreak</strong></a>(...)</dt><dd><tt><a href="#Main-toolBarBreak">toolBarBreak</a>(self,&nbsp;QToolBar)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-toolButtonStyle"><strong>toolButtonStyle</strong></a>(...)</dt><dd><tt><a href="#Main-toolButtonStyle">toolButtonStyle</a>(self)&nbsp;-&gt;&nbsp;Qt.ToolButtonStyle</tt></dd></dl>
+
+<strong>toolButtonStyleChanged</strong> = &lt;unbound PYQT_SIGNAL toolButtonStyleChanged(Qt::ToolButtonStyle)&gt;
+<dl><dt><a name="Main-unifiedTitleAndToolBarOnMac"><strong>unifiedTitleAndToolBarOnMac</strong></a>(...)</dt><dd><tt><a href="#Main-unifiedTitleAndToolBarOnMac">unifiedTitleAndToolBarOnMac</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="PyQt5.QtWidgets.html#QMainWindow">PyQt5.QtWidgets.QMainWindow</a>:<br>
+<dl><dt><strong>AllowNestedDocks</strong> = 2</dl>
+
+<dl><dt><strong>AllowTabbedDocks</strong> = 4</dl>
+
+<dl><dt><strong>AnimatedDocks</strong> = 1</dl>
+
+<dl><dt><strong>DockOption</strong> = &lt;class 'PyQt5.QtWidgets.QMainWindow.DockOption'&gt;</dl>
+
+<dl><dt><strong>DockOptions</strong> = &lt;class 'PyQt5.QtWidgets.QMainWindow.DockOptions'&gt;<dd><tt><a href="PyQt5.QtWidgets.html#QMainWindow">QMainWindow</a>.<a href="#Main-DockOptions">DockOptions</a>()<br>
+<a href="PyQt5.QtWidgets.html#QMainWindow">QMainWindow</a>.<a href="#Main-DockOptions">DockOptions</a>(Union[<a href="PyQt5.QtWidgets.html#QMainWindow">QMainWindow</a>.DockOptions,&nbsp;<a href="PyQt5.QtWidgets.html#QMainWindow">QMainWindow</a>.DockOption])<br>
+<a href="PyQt5.QtWidgets.html#QMainWindow">QMainWindow</a>.<a href="#Main-DockOptions">DockOptions</a>(<a href="PyQt5.QtWidgets.html#QMainWindow">QMainWindow</a>.DockOptions)</tt></dl>
+
+<dl><dt><strong>ForceTabbedDocks</strong> = 8</dl>
+
+<dl><dt><strong>GroupedDragging</strong> = 32</dl>
+
+<dl><dt><strong>VerticalTabs</strong> = 16</dl>
+
+<hr>
+Methods inherited from <a href="main.html#UiMain">UiMain</a>:<br>
+<dl><dt><a name="Main-setupUi"><strong>setupUi</strong></a>(self, UiMain)</dt><dd><tt>Esta&nbsp;classe&nbsp;define&nbsp;a&nbsp;interface&nbsp;gráfica&nbsp;do&nbsp;usuário&nbsp;usando&nbsp;PyQt5.<br>
+Ela&nbsp;é&nbsp;basicamente&nbsp;definida&nbsp;para&nbsp;servir&nbsp;como&nbsp;"empilhamento"(stack)&nbsp;de&nbsp;cada&nbsp;tela&nbsp;e&nbsp;sua&nbsp;respectiva&nbsp;posição.&nbsp;<br>
+Ele&nbsp;define&nbsp;uma&nbsp;janela&nbsp;principal&nbsp;(<a href="#Main">Main</a>)&nbsp;e&nbsp;um&nbsp;layout&nbsp;de&nbsp;pilha&nbsp;de&nbsp;várias&nbsp;outras&nbsp;janelas&nbsp;(stack0&nbsp;a&nbsp;stack6).&nbsp;<br>
+Elas&nbsp;podem&nbsp;ser&nbsp;alternadas&nbsp;dentro&nbsp;da&nbsp;janela&nbsp;principal.&nbsp;<br>
+Cada&nbsp;tela&nbsp;é&nbsp;definida&nbsp;em&nbsp;seu&nbsp;próprio&nbsp;arquivo&nbsp;de&nbsp;classe,&nbsp;como&nbsp;TelaCadastro,&nbsp;TelaLogin&nbsp;etc.&nbsp;<br>
+O&nbsp;método&nbsp;<a href="#Main-setupUi">setupUi</a>()&nbsp;é&nbsp;chamado&nbsp;para&nbsp;cada&nbsp;tela&nbsp;para&nbsp;configurar&nbsp;sua&nbsp;aparência&nbsp;e&nbsp;funcionamento,&nbsp;<br>
+e&nbsp;cada&nbsp;uma&nbsp;delas&nbsp;é&nbsp;adicionada&nbsp;ao&nbsp;layout&nbsp;de&nbsp;pilha&nbsp;por&nbsp;meio&nbsp;do&nbsp;método&nbsp;addWidget().<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+<a href="#Main">Main</a>:&nbsp;Object<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+None</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="PyQt5.QtWidgets.html#QWidget">PyQt5.QtWidgets.QWidget</a>:<br>
+<dl><dt><a name="Main-acceptDrops"><strong>acceptDrops</strong></a>(...)</dt><dd><tt><a href="#Main-acceptDrops">acceptDrops</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-accessibleDescription"><strong>accessibleDescription</strong></a>(...)</dt><dd><tt><a href="#Main-accessibleDescription">accessibleDescription</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="Main-accessibleName"><strong>accessibleName</strong></a>(...)</dt><dd><tt><a href="#Main-accessibleName">accessibleName</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="Main-actionEvent"><strong>actionEvent</strong></a>(...)</dt><dd><tt><a href="#Main-actionEvent">actionEvent</a>(self,&nbsp;QActionEvent)</tt></dd></dl>
+
+<dl><dt><a name="Main-actions"><strong>actions</strong></a>(...)</dt><dd><tt><a href="#Main-actions">actions</a>(self)&nbsp;-&gt;&nbsp;List[QAction]</tt></dd></dl>
+
+<dl><dt><a name="Main-activateWindow"><strong>activateWindow</strong></a>(...)</dt><dd><tt><a href="#Main-activateWindow">activateWindow</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Main-addAction"><strong>addAction</strong></a>(...)</dt><dd><tt><a href="#Main-addAction">addAction</a>(self,&nbsp;QAction)</tt></dd></dl>
+
+<dl><dt><a name="Main-addActions"><strong>addActions</strong></a>(...)</dt><dd><tt><a href="#Main-addActions">addActions</a>(self,&nbsp;Iterable[QAction])</tt></dd></dl>
+
+<dl><dt><a name="Main-adjustSize"><strong>adjustSize</strong></a>(...)</dt><dd><tt><a href="#Main-adjustSize">adjustSize</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Main-autoFillBackground"><strong>autoFillBackground</strong></a>(...)</dt><dd><tt><a href="#Main-autoFillBackground">autoFillBackground</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-backgroundRole"><strong>backgroundRole</strong></a>(...)</dt><dd><tt><a href="#Main-backgroundRole">backgroundRole</a>(self)&nbsp;-&gt;&nbsp;QPalette.ColorRole</tt></dd></dl>
+
+<dl><dt><a name="Main-baseSize"><strong>baseSize</strong></a>(...)</dt><dd><tt><a href="#Main-baseSize">baseSize</a>(self)&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="Main-changeEvent"><strong>changeEvent</strong></a>(...)</dt><dd><tt><a href="#Main-changeEvent">changeEvent</a>(self,&nbsp;QEvent)</tt></dd></dl>
+
+<dl><dt><a name="Main-childAt"><strong>childAt</strong></a>(...)</dt><dd><tt><a href="#Main-childAt">childAt</a>(self,&nbsp;QPoint)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a><br>
+<a href="#Main-childAt">childAt</a>(self,&nbsp;int,&nbsp;int)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="Main-childrenRect"><strong>childrenRect</strong></a>(...)</dt><dd><tt><a href="#Main-childrenRect">childrenRect</a>(self)&nbsp;-&gt;&nbsp;QRect</tt></dd></dl>
+
+<dl><dt><a name="Main-childrenRegion"><strong>childrenRegion</strong></a>(...)</dt><dd><tt><a href="#Main-childrenRegion">childrenRegion</a>(self)&nbsp;-&gt;&nbsp;QRegion</tt></dd></dl>
+
+<dl><dt><a name="Main-clearFocus"><strong>clearFocus</strong></a>(...)</dt><dd><tt><a href="#Main-clearFocus">clearFocus</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Main-clearMask"><strong>clearMask</strong></a>(...)</dt><dd><tt><a href="#Main-clearMask">clearMask</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Main-close"><strong>close</strong></a>(...)</dt><dd><tt><a href="#Main-close">close</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-closeEvent"><strong>closeEvent</strong></a>(...)</dt><dd><tt><a href="#Main-closeEvent">closeEvent</a>(self,&nbsp;QCloseEvent)</tt></dd></dl>
+
+<dl><dt><a name="Main-contentsMargins"><strong>contentsMargins</strong></a>(...)</dt><dd><tt><a href="#Main-contentsMargins">contentsMargins</a>(self)&nbsp;-&gt;&nbsp;QMargins</tt></dd></dl>
+
+<dl><dt><a name="Main-contentsRect"><strong>contentsRect</strong></a>(...)</dt><dd><tt><a href="#Main-contentsRect">contentsRect</a>(self)&nbsp;-&gt;&nbsp;QRect</tt></dd></dl>
+
+<dl><dt><a name="Main-contextMenuPolicy"><strong>contextMenuPolicy</strong></a>(...)</dt><dd><tt><a href="#Main-contextMenuPolicy">contextMenuPolicy</a>(self)&nbsp;-&gt;&nbsp;Qt.ContextMenuPolicy</tt></dd></dl>
+
+<dl><dt><a name="Main-create"><strong>create</strong></a>(...)</dt><dd><tt><a href="#Main-create">create</a>(self,&nbsp;window:&nbsp;PyQt5.sip.voidptr&nbsp;=&nbsp;0,&nbsp;initializeWindow:&nbsp;bool&nbsp;=&nbsp;True,&nbsp;destroyOldWindow:&nbsp;bool&nbsp;=&nbsp;True)</tt></dd></dl>
+
+<dl><dt><a name="Main-createWindowContainer"><strong>createWindowContainer</strong></a>(...)</dt><dd><tt><a href="#Main-createWindowContainer">createWindowContainer</a>(QWindow,&nbsp;parent:&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>&nbsp;=&nbsp;None,&nbsp;flags:&nbsp;Union[Qt.WindowFlags,&nbsp;Qt.WindowType]&nbsp;=&nbsp;0)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="Main-cursor"><strong>cursor</strong></a>(...)</dt><dd><tt><a href="#Main-cursor">cursor</a>(self)&nbsp;-&gt;&nbsp;QCursor</tt></dd></dl>
+
+<strong>customContextMenuRequested</strong> = &lt;unbound PYQT_SIGNAL customContextMenuRequested(QPoint)&gt;
+<dl><dt><a name="Main-destroy"><strong>destroy</strong></a>(...)</dt><dd><tt><a href="#Main-destroy">destroy</a>(self,&nbsp;destroyWindow:&nbsp;bool&nbsp;=&nbsp;True,&nbsp;destroySubWindows:&nbsp;bool&nbsp;=&nbsp;True)</tt></dd></dl>
+
+<dl><dt><a name="Main-devType"><strong>devType</strong></a>(...)</dt><dd><tt><a href="#Main-devType">devType</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Main-dragEnterEvent"><strong>dragEnterEvent</strong></a>(...)</dt><dd><tt><a href="#Main-dragEnterEvent">dragEnterEvent</a>(self,&nbsp;QDragEnterEvent)</tt></dd></dl>
+
+<dl><dt><a name="Main-dragLeaveEvent"><strong>dragLeaveEvent</strong></a>(...)</dt><dd><tt><a href="#Main-dragLeaveEvent">dragLeaveEvent</a>(self,&nbsp;QDragLeaveEvent)</tt></dd></dl>
+
+<dl><dt><a name="Main-dragMoveEvent"><strong>dragMoveEvent</strong></a>(...)</dt><dd><tt><a href="#Main-dragMoveEvent">dragMoveEvent</a>(self,&nbsp;QDragMoveEvent)</tt></dd></dl>
+
+<dl><dt><a name="Main-dropEvent"><strong>dropEvent</strong></a>(...)</dt><dd><tt><a href="#Main-dropEvent">dropEvent</a>(self,&nbsp;QDropEvent)</tt></dd></dl>
+
+<dl><dt><a name="Main-effectiveWinId"><strong>effectiveWinId</strong></a>(...)</dt><dd><tt><a href="#Main-effectiveWinId">effectiveWinId</a>(self)&nbsp;-&gt;&nbsp;PyQt5.sip.voidptr</tt></dd></dl>
+
+<dl><dt><a name="Main-ensurePolished"><strong>ensurePolished</strong></a>(...)</dt><dd><tt><a href="#Main-ensurePolished">ensurePolished</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Main-enterEvent"><strong>enterEvent</strong></a>(...)</dt><dd><tt><a href="#Main-enterEvent">enterEvent</a>(self,&nbsp;QEvent)</tt></dd></dl>
+
+<dl><dt><a name="Main-find"><strong>find</strong></a>(...)</dt><dd><tt><a href="#Main-find">find</a>(PyQt5.sip.voidptr)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="Main-focusInEvent"><strong>focusInEvent</strong></a>(...)</dt><dd><tt><a href="#Main-focusInEvent">focusInEvent</a>(self,&nbsp;QFocusEvent)</tt></dd></dl>
+
+<dl><dt><a name="Main-focusNextChild"><strong>focusNextChild</strong></a>(...)</dt><dd><tt><a href="#Main-focusNextChild">focusNextChild</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-focusNextPrevChild"><strong>focusNextPrevChild</strong></a>(...)</dt><dd><tt><a href="#Main-focusNextPrevChild">focusNextPrevChild</a>(self,&nbsp;bool)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-focusOutEvent"><strong>focusOutEvent</strong></a>(...)</dt><dd><tt><a href="#Main-focusOutEvent">focusOutEvent</a>(self,&nbsp;QFocusEvent)</tt></dd></dl>
+
+<dl><dt><a name="Main-focusPolicy"><strong>focusPolicy</strong></a>(...)</dt><dd><tt><a href="#Main-focusPolicy">focusPolicy</a>(self)&nbsp;-&gt;&nbsp;Qt.FocusPolicy</tt></dd></dl>
+
+<dl><dt><a name="Main-focusPreviousChild"><strong>focusPreviousChild</strong></a>(...)</dt><dd><tt><a href="#Main-focusPreviousChild">focusPreviousChild</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-focusProxy"><strong>focusProxy</strong></a>(...)</dt><dd><tt><a href="#Main-focusProxy">focusProxy</a>(self)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="Main-focusWidget"><strong>focusWidget</strong></a>(...)</dt><dd><tt><a href="#Main-focusWidget">focusWidget</a>(self)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="Main-font"><strong>font</strong></a>(...)</dt><dd><tt><a href="#Main-font">font</a>(self)&nbsp;-&gt;&nbsp;QFont</tt></dd></dl>
+
+<dl><dt><a name="Main-fontInfo"><strong>fontInfo</strong></a>(...)</dt><dd><tt><a href="#Main-fontInfo">fontInfo</a>(self)&nbsp;-&gt;&nbsp;QFontInfo</tt></dd></dl>
+
+<dl><dt><a name="Main-fontMetrics"><strong>fontMetrics</strong></a>(...)</dt><dd><tt><a href="#Main-fontMetrics">fontMetrics</a>(self)&nbsp;-&gt;&nbsp;QFontMetrics</tt></dd></dl>
+
+<dl><dt><a name="Main-foregroundRole"><strong>foregroundRole</strong></a>(...)</dt><dd><tt><a href="#Main-foregroundRole">foregroundRole</a>(self)&nbsp;-&gt;&nbsp;QPalette.ColorRole</tt></dd></dl>
+
+<dl><dt><a name="Main-frameGeometry"><strong>frameGeometry</strong></a>(...)</dt><dd><tt><a href="#Main-frameGeometry">frameGeometry</a>(self)&nbsp;-&gt;&nbsp;QRect</tt></dd></dl>
+
+<dl><dt><a name="Main-frameSize"><strong>frameSize</strong></a>(...)</dt><dd><tt><a href="#Main-frameSize">frameSize</a>(self)&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="Main-geometry"><strong>geometry</strong></a>(...)</dt><dd><tt><a href="#Main-geometry">geometry</a>(self)&nbsp;-&gt;&nbsp;QRect</tt></dd></dl>
+
+<dl><dt><a name="Main-getContentsMargins"><strong>getContentsMargins</strong></a>(...)</dt><dd><tt><a href="#Main-getContentsMargins">getContentsMargins</a>(self)&nbsp;-&gt;&nbsp;Tuple[int,&nbsp;int,&nbsp;int,&nbsp;int]</tt></dd></dl>
+
+<dl><dt><a name="Main-grab"><strong>grab</strong></a>(...)</dt><dd><tt><a href="#Main-grab">grab</a>(self,&nbsp;rectangle:&nbsp;QRect&nbsp;=&nbsp;QRect(QPoint(0,0),QSize(-1,-1)))&nbsp;-&gt;&nbsp;QPixmap</tt></dd></dl>
+
+<dl><dt><a name="Main-grabGesture"><strong>grabGesture</strong></a>(...)</dt><dd><tt><a href="#Main-grabGesture">grabGesture</a>(self,&nbsp;Qt.GestureType,&nbsp;flags:&nbsp;Union[Qt.GestureFlags,&nbsp;Qt.GestureFlag]&nbsp;=&nbsp;Qt.GestureFlags())</tt></dd></dl>
+
+<dl><dt><a name="Main-grabKeyboard"><strong>grabKeyboard</strong></a>(...)</dt><dd><tt><a href="#Main-grabKeyboard">grabKeyboard</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Main-grabMouse"><strong>grabMouse</strong></a>(...)</dt><dd><tt><a href="#Main-grabMouse">grabMouse</a>(self)<br>
+<a href="#Main-grabMouse">grabMouse</a>(self,&nbsp;Union[QCursor,&nbsp;Qt.CursorShape])</tt></dd></dl>
+
+<dl><dt><a name="Main-grabShortcut"><strong>grabShortcut</strong></a>(...)</dt><dd><tt><a href="#Main-grabShortcut">grabShortcut</a>(self,&nbsp;Union[QKeySequence,&nbsp;QKeySequence.StandardKey,&nbsp;str,&nbsp;int],&nbsp;context:&nbsp;Qt.ShortcutContext&nbsp;=&nbsp;Qt.WindowShortcut)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Main-graphicsEffect"><strong>graphicsEffect</strong></a>(...)</dt><dd><tt><a href="#Main-graphicsEffect">graphicsEffect</a>(self)&nbsp;-&gt;&nbsp;QGraphicsEffect</tt></dd></dl>
+
+<dl><dt><a name="Main-graphicsProxyWidget"><strong>graphicsProxyWidget</strong></a>(...)</dt><dd><tt><a href="#Main-graphicsProxyWidget">graphicsProxyWidget</a>(self)&nbsp;-&gt;&nbsp;QGraphicsProxyWidget</tt></dd></dl>
+
+<dl><dt><a name="Main-hasFocus"><strong>hasFocus</strong></a>(...)</dt><dd><tt><a href="#Main-hasFocus">hasFocus</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-hasHeightForWidth"><strong>hasHeightForWidth</strong></a>(...)</dt><dd><tt><a href="#Main-hasHeightForWidth">hasHeightForWidth</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-hasMouseTracking"><strong>hasMouseTracking</strong></a>(...)</dt><dd><tt><a href="#Main-hasMouseTracking">hasMouseTracking</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-hasTabletTracking"><strong>hasTabletTracking</strong></a>(...)</dt><dd><tt><a href="#Main-hasTabletTracking">hasTabletTracking</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-height"><strong>height</strong></a>(...)</dt><dd><tt><a href="#Main-height">height</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Main-heightForWidth"><strong>heightForWidth</strong></a>(...)</dt><dd><tt><a href="#Main-heightForWidth">heightForWidth</a>(self,&nbsp;int)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Main-hide"><strong>hide</strong></a>(...)</dt><dd><tt><a href="#Main-hide">hide</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Main-hideEvent"><strong>hideEvent</strong></a>(...)</dt><dd><tt><a href="#Main-hideEvent">hideEvent</a>(self,&nbsp;QHideEvent)</tt></dd></dl>
+
+<dl><dt><a name="Main-initPainter"><strong>initPainter</strong></a>(...)</dt><dd><tt><a href="#Main-initPainter">initPainter</a>(self,&nbsp;QPainter)</tt></dd></dl>
+
+<dl><dt><a name="Main-inputMethodEvent"><strong>inputMethodEvent</strong></a>(...)</dt><dd><tt><a href="#Main-inputMethodEvent">inputMethodEvent</a>(self,&nbsp;QInputMethodEvent)</tt></dd></dl>
+
+<dl><dt><a name="Main-inputMethodHints"><strong>inputMethodHints</strong></a>(...)</dt><dd><tt><a href="#Main-inputMethodHints">inputMethodHints</a>(self)&nbsp;-&gt;&nbsp;Qt.InputMethodHints</tt></dd></dl>
+
+<dl><dt><a name="Main-inputMethodQuery"><strong>inputMethodQuery</strong></a>(...)</dt><dd><tt><a href="#Main-inputMethodQuery">inputMethodQuery</a>(self,&nbsp;Qt.InputMethodQuery)&nbsp;-&gt;&nbsp;Any</tt></dd></dl>
+
+<dl><dt><a name="Main-insertAction"><strong>insertAction</strong></a>(...)</dt><dd><tt><a href="#Main-insertAction">insertAction</a>(self,&nbsp;QAction,&nbsp;QAction)</tt></dd></dl>
+
+<dl><dt><a name="Main-insertActions"><strong>insertActions</strong></a>(...)</dt><dd><tt><a href="#Main-insertActions">insertActions</a>(self,&nbsp;QAction,&nbsp;Iterable[QAction])</tt></dd></dl>
+
+<dl><dt><a name="Main-isActiveWindow"><strong>isActiveWindow</strong></a>(...)</dt><dd><tt><a href="#Main-isActiveWindow">isActiveWindow</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-isAncestorOf"><strong>isAncestorOf</strong></a>(...)</dt><dd><tt><a href="#Main-isAncestorOf">isAncestorOf</a>(self,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-isEnabled"><strong>isEnabled</strong></a>(...)</dt><dd><tt><a href="#Main-isEnabled">isEnabled</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-isEnabledTo"><strong>isEnabledTo</strong></a>(...)</dt><dd><tt><a href="#Main-isEnabledTo">isEnabledTo</a>(self,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-isFullScreen"><strong>isFullScreen</strong></a>(...)</dt><dd><tt><a href="#Main-isFullScreen">isFullScreen</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-isHidden"><strong>isHidden</strong></a>(...)</dt><dd><tt><a href="#Main-isHidden">isHidden</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-isLeftToRight"><strong>isLeftToRight</strong></a>(...)</dt><dd><tt><a href="#Main-isLeftToRight">isLeftToRight</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-isMaximized"><strong>isMaximized</strong></a>(...)</dt><dd><tt><a href="#Main-isMaximized">isMaximized</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-isMinimized"><strong>isMinimized</strong></a>(...)</dt><dd><tt><a href="#Main-isMinimized">isMinimized</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-isModal"><strong>isModal</strong></a>(...)</dt><dd><tt><a href="#Main-isModal">isModal</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-isRightToLeft"><strong>isRightToLeft</strong></a>(...)</dt><dd><tt><a href="#Main-isRightToLeft">isRightToLeft</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-isVisible"><strong>isVisible</strong></a>(...)</dt><dd><tt><a href="#Main-isVisible">isVisible</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-isVisibleTo"><strong>isVisibleTo</strong></a>(...)</dt><dd><tt><a href="#Main-isVisibleTo">isVisibleTo</a>(self,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-isWindow"><strong>isWindow</strong></a>(...)</dt><dd><tt><a href="#Main-isWindow">isWindow</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-isWindowModified"><strong>isWindowModified</strong></a>(...)</dt><dd><tt><a href="#Main-isWindowModified">isWindowModified</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-keyPressEvent"><strong>keyPressEvent</strong></a>(...)</dt><dd><tt><a href="#Main-keyPressEvent">keyPressEvent</a>(self,&nbsp;QKeyEvent)</tt></dd></dl>
+
+<dl><dt><a name="Main-keyReleaseEvent"><strong>keyReleaseEvent</strong></a>(...)</dt><dd><tt><a href="#Main-keyReleaseEvent">keyReleaseEvent</a>(self,&nbsp;QKeyEvent)</tt></dd></dl>
+
+<dl><dt><a name="Main-keyboardGrabber"><strong>keyboardGrabber</strong></a>(...)</dt><dd><tt><a href="#Main-keyboardGrabber">keyboardGrabber</a>()&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="Main-layout"><strong>layout</strong></a>(...)</dt><dd><tt><a href="#Main-layout">layout</a>(self)&nbsp;-&gt;&nbsp;QLayout</tt></dd></dl>
+
+<dl><dt><a name="Main-layoutDirection"><strong>layoutDirection</strong></a>(...)</dt><dd><tt><a href="#Main-layoutDirection">layoutDirection</a>(self)&nbsp;-&gt;&nbsp;Qt.LayoutDirection</tt></dd></dl>
+
+<dl><dt><a name="Main-leaveEvent"><strong>leaveEvent</strong></a>(...)</dt><dd><tt><a href="#Main-leaveEvent">leaveEvent</a>(self,&nbsp;QEvent)</tt></dd></dl>
+
+<dl><dt><a name="Main-locale"><strong>locale</strong></a>(...)</dt><dd><tt><a href="#Main-locale">locale</a>(self)&nbsp;-&gt;&nbsp;QLocale</tt></dd></dl>
+
+<dl><dt><a name="Main-lower"><strong>lower</strong></a>(...)</dt><dd><tt><a href="#Main-lower">lower</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Main-mapFrom"><strong>mapFrom</strong></a>(...)</dt><dd><tt><a href="#Main-mapFrom">mapFrom</a>(self,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>,&nbsp;QPoint)&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="Main-mapFromGlobal"><strong>mapFromGlobal</strong></a>(...)</dt><dd><tt><a href="#Main-mapFromGlobal">mapFromGlobal</a>(self,&nbsp;QPoint)&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="Main-mapFromParent"><strong>mapFromParent</strong></a>(...)</dt><dd><tt><a href="#Main-mapFromParent">mapFromParent</a>(self,&nbsp;QPoint)&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="Main-mapTo"><strong>mapTo</strong></a>(...)</dt><dd><tt><a href="#Main-mapTo">mapTo</a>(self,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>,&nbsp;QPoint)&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="Main-mapToGlobal"><strong>mapToGlobal</strong></a>(...)</dt><dd><tt><a href="#Main-mapToGlobal">mapToGlobal</a>(self,&nbsp;QPoint)&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="Main-mapToParent"><strong>mapToParent</strong></a>(...)</dt><dd><tt><a href="#Main-mapToParent">mapToParent</a>(self,&nbsp;QPoint)&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="Main-mask"><strong>mask</strong></a>(...)</dt><dd><tt><a href="#Main-mask">mask</a>(self)&nbsp;-&gt;&nbsp;QRegion</tt></dd></dl>
+
+<dl><dt><a name="Main-maximumHeight"><strong>maximumHeight</strong></a>(...)</dt><dd><tt><a href="#Main-maximumHeight">maximumHeight</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Main-maximumSize"><strong>maximumSize</strong></a>(...)</dt><dd><tt><a href="#Main-maximumSize">maximumSize</a>(self)&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="Main-maximumWidth"><strong>maximumWidth</strong></a>(...)</dt><dd><tt><a href="#Main-maximumWidth">maximumWidth</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Main-metric"><strong>metric</strong></a>(...)</dt><dd><tt><a href="#Main-metric">metric</a>(self,&nbsp;QPaintDevice.PaintDeviceMetric)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Main-minimumHeight"><strong>minimumHeight</strong></a>(...)</dt><dd><tt><a href="#Main-minimumHeight">minimumHeight</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Main-minimumSize"><strong>minimumSize</strong></a>(...)</dt><dd><tt><a href="#Main-minimumSize">minimumSize</a>(self)&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="Main-minimumSizeHint"><strong>minimumSizeHint</strong></a>(...)</dt><dd><tt><a href="#Main-minimumSizeHint">minimumSizeHint</a>(self)&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="Main-minimumWidth"><strong>minimumWidth</strong></a>(...)</dt><dd><tt><a href="#Main-minimumWidth">minimumWidth</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Main-mouseDoubleClickEvent"><strong>mouseDoubleClickEvent</strong></a>(...)</dt><dd><tt><a href="#Main-mouseDoubleClickEvent">mouseDoubleClickEvent</a>(self,&nbsp;QMouseEvent)</tt></dd></dl>
+
+<dl><dt><a name="Main-mouseGrabber"><strong>mouseGrabber</strong></a>(...)</dt><dd><tt><a href="#Main-mouseGrabber">mouseGrabber</a>()&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="Main-mouseMoveEvent"><strong>mouseMoveEvent</strong></a>(...)</dt><dd><tt><a href="#Main-mouseMoveEvent">mouseMoveEvent</a>(self,&nbsp;QMouseEvent)</tt></dd></dl>
+
+<dl><dt><a name="Main-mousePressEvent"><strong>mousePressEvent</strong></a>(...)</dt><dd><tt><a href="#Main-mousePressEvent">mousePressEvent</a>(self,&nbsp;QMouseEvent)</tt></dd></dl>
+
+<dl><dt><a name="Main-mouseReleaseEvent"><strong>mouseReleaseEvent</strong></a>(...)</dt><dd><tt><a href="#Main-mouseReleaseEvent">mouseReleaseEvent</a>(self,&nbsp;QMouseEvent)</tt></dd></dl>
+
+<dl><dt><a name="Main-move"><strong>move</strong></a>(...)</dt><dd><tt><a href="#Main-move">move</a>(self,&nbsp;QPoint)<br>
+<a href="#Main-move">move</a>(self,&nbsp;int,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="Main-moveEvent"><strong>moveEvent</strong></a>(...)</dt><dd><tt><a href="#Main-moveEvent">moveEvent</a>(self,&nbsp;QMoveEvent)</tt></dd></dl>
+
+<dl><dt><a name="Main-nativeEvent"><strong>nativeEvent</strong></a>(...)</dt><dd><tt><a href="#Main-nativeEvent">nativeEvent</a>(self,&nbsp;Union[QByteArray,&nbsp;bytes,&nbsp;bytearray],&nbsp;PyQt5.sip.voidptr)&nbsp;-&gt;&nbsp;Tuple[bool,&nbsp;int]</tt></dd></dl>
+
+<dl><dt><a name="Main-nativeParentWidget"><strong>nativeParentWidget</strong></a>(...)</dt><dd><tt><a href="#Main-nativeParentWidget">nativeParentWidget</a>(self)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="Main-nextInFocusChain"><strong>nextInFocusChain</strong></a>(...)</dt><dd><tt><a href="#Main-nextInFocusChain">nextInFocusChain</a>(self)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="Main-normalGeometry"><strong>normalGeometry</strong></a>(...)</dt><dd><tt><a href="#Main-normalGeometry">normalGeometry</a>(self)&nbsp;-&gt;&nbsp;QRect</tt></dd></dl>
+
+<dl><dt><a name="Main-overrideWindowFlags"><strong>overrideWindowFlags</strong></a>(...)</dt><dd><tt><a href="#Main-overrideWindowFlags">overrideWindowFlags</a>(self,&nbsp;Union[Qt.WindowFlags,&nbsp;Qt.WindowType])</tt></dd></dl>
+
+<dl><dt><a name="Main-overrideWindowState"><strong>overrideWindowState</strong></a>(...)</dt><dd><tt><a href="#Main-overrideWindowState">overrideWindowState</a>(self,&nbsp;Union[Qt.WindowStates,&nbsp;Qt.WindowState])</tt></dd></dl>
+
+<dl><dt><a name="Main-paintEngine"><strong>paintEngine</strong></a>(...)</dt><dd><tt><a href="#Main-paintEngine">paintEngine</a>(self)&nbsp;-&gt;&nbsp;QPaintEngine</tt></dd></dl>
+
+<dl><dt><a name="Main-paintEvent"><strong>paintEvent</strong></a>(...)</dt><dd><tt><a href="#Main-paintEvent">paintEvent</a>(self,&nbsp;QPaintEvent)</tt></dd></dl>
+
+<dl><dt><a name="Main-palette"><strong>palette</strong></a>(...)</dt><dd><tt><a href="#Main-palette">palette</a>(self)&nbsp;-&gt;&nbsp;QPalette</tt></dd></dl>
+
+<dl><dt><a name="Main-parentWidget"><strong>parentWidget</strong></a>(...)</dt><dd><tt><a href="#Main-parentWidget">parentWidget</a>(self)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="Main-pos"><strong>pos</strong></a>(...)</dt><dd><tt><a href="#Main-pos">pos</a>(self)&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="Main-previousInFocusChain"><strong>previousInFocusChain</strong></a>(...)</dt><dd><tt><a href="#Main-previousInFocusChain">previousInFocusChain</a>(self)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="Main-raise_"><strong>raise_</strong></a>(...)</dt><dd><tt><a href="#Main-raise_">raise_</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Main-rect"><strong>rect</strong></a>(...)</dt><dd><tt><a href="#Main-rect">rect</a>(self)&nbsp;-&gt;&nbsp;QRect</tt></dd></dl>
+
+<dl><dt><a name="Main-releaseKeyboard"><strong>releaseKeyboard</strong></a>(...)</dt><dd><tt><a href="#Main-releaseKeyboard">releaseKeyboard</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Main-releaseMouse"><strong>releaseMouse</strong></a>(...)</dt><dd><tt><a href="#Main-releaseMouse">releaseMouse</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Main-releaseShortcut"><strong>releaseShortcut</strong></a>(...)</dt><dd><tt><a href="#Main-releaseShortcut">releaseShortcut</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="Main-removeAction"><strong>removeAction</strong></a>(...)</dt><dd><tt><a href="#Main-removeAction">removeAction</a>(self,&nbsp;QAction)</tt></dd></dl>
+
+<dl><dt><a name="Main-render"><strong>render</strong></a>(...)</dt><dd><tt><a href="#Main-render">render</a>(self,&nbsp;QPaintDevice,&nbsp;targetOffset:&nbsp;QPoint&nbsp;=&nbsp;QPoint(),&nbsp;sourceRegion:&nbsp;QRegion&nbsp;=&nbsp;QRegion(),&nbsp;flags:&nbsp;Union[<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.RenderFlags,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.RenderFlag]&nbsp;=&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.<a href="#Main-RenderFlags">RenderFlags</a>(<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.RenderFlag.DrawWindowBackground|<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.RenderFlag.DrawChildren))<br>
+<a href="#Main-render">render</a>(self,&nbsp;QPainter,&nbsp;targetOffset:&nbsp;QPoint&nbsp;=&nbsp;QPoint(),&nbsp;sourceRegion:&nbsp;QRegion&nbsp;=&nbsp;QRegion(),&nbsp;flags:&nbsp;Union[<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.RenderFlags,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.RenderFlag]&nbsp;=&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.<a href="#Main-RenderFlags">RenderFlags</a>(<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.RenderFlag.DrawWindowBackground|<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.RenderFlag.DrawChildren))</tt></dd></dl>
+
+<dl><dt><a name="Main-repaint"><strong>repaint</strong></a>(...)</dt><dd><tt><a href="#Main-repaint">repaint</a>(self)<br>
+<a href="#Main-repaint">repaint</a>(self,&nbsp;int,&nbsp;int,&nbsp;int,&nbsp;int)<br>
+<a href="#Main-repaint">repaint</a>(self,&nbsp;QRect)<br>
+<a href="#Main-repaint">repaint</a>(self,&nbsp;QRegion)</tt></dd></dl>
+
+<dl><dt><a name="Main-resize"><strong>resize</strong></a>(...)</dt><dd><tt><a href="#Main-resize">resize</a>(self,&nbsp;QSize)<br>
+<a href="#Main-resize">resize</a>(self,&nbsp;int,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="Main-resizeEvent"><strong>resizeEvent</strong></a>(...)</dt><dd><tt><a href="#Main-resizeEvent">resizeEvent</a>(self,&nbsp;QResizeEvent)</tt></dd></dl>
+
+<dl><dt><a name="Main-restoreGeometry"><strong>restoreGeometry</strong></a>(...)</dt><dd><tt><a href="#Main-restoreGeometry">restoreGeometry</a>(self,&nbsp;Union[QByteArray,&nbsp;bytes,&nbsp;bytearray])&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-saveGeometry"><strong>saveGeometry</strong></a>(...)</dt><dd><tt><a href="#Main-saveGeometry">saveGeometry</a>(self)&nbsp;-&gt;&nbsp;QByteArray</tt></dd></dl>
+
+<dl><dt><a name="Main-screen"><strong>screen</strong></a>(...)</dt><dd><tt><a href="#Main-screen">screen</a>(self)&nbsp;-&gt;&nbsp;QScreen</tt></dd></dl>
+
+<dl><dt><a name="Main-scroll"><strong>scroll</strong></a>(...)</dt><dd><tt><a href="#Main-scroll">scroll</a>(self,&nbsp;int,&nbsp;int)<br>
+<a href="#Main-scroll">scroll</a>(self,&nbsp;int,&nbsp;int,&nbsp;QRect)</tt></dd></dl>
+
+<dl><dt><a name="Main-setAcceptDrops"><strong>setAcceptDrops</strong></a>(...)</dt><dd><tt><a href="#Main-setAcceptDrops">setAcceptDrops</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="Main-setAccessibleDescription"><strong>setAccessibleDescription</strong></a>(...)</dt><dd><tt><a href="#Main-setAccessibleDescription">setAccessibleDescription</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="Main-setAccessibleName"><strong>setAccessibleName</strong></a>(...)</dt><dd><tt><a href="#Main-setAccessibleName">setAccessibleName</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="Main-setAttribute"><strong>setAttribute</strong></a>(...)</dt><dd><tt><a href="#Main-setAttribute">setAttribute</a>(self,&nbsp;Qt.WidgetAttribute,&nbsp;on:&nbsp;bool&nbsp;=&nbsp;True)</tt></dd></dl>
+
+<dl><dt><a name="Main-setAutoFillBackground"><strong>setAutoFillBackground</strong></a>(...)</dt><dd><tt><a href="#Main-setAutoFillBackground">setAutoFillBackground</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="Main-setBackgroundRole"><strong>setBackgroundRole</strong></a>(...)</dt><dd><tt><a href="#Main-setBackgroundRole">setBackgroundRole</a>(self,&nbsp;QPalette.ColorRole)</tt></dd></dl>
+
+<dl><dt><a name="Main-setBaseSize"><strong>setBaseSize</strong></a>(...)</dt><dd><tt><a href="#Main-setBaseSize">setBaseSize</a>(self,&nbsp;int,&nbsp;int)<br>
+<a href="#Main-setBaseSize">setBaseSize</a>(self,&nbsp;QSize)</tt></dd></dl>
+
+<dl><dt><a name="Main-setContentsMargins"><strong>setContentsMargins</strong></a>(...)</dt><dd><tt><a href="#Main-setContentsMargins">setContentsMargins</a>(self,&nbsp;int,&nbsp;int,&nbsp;int,&nbsp;int)<br>
+<a href="#Main-setContentsMargins">setContentsMargins</a>(self,&nbsp;QMargins)</tt></dd></dl>
+
+<dl><dt><a name="Main-setContextMenuPolicy"><strong>setContextMenuPolicy</strong></a>(...)</dt><dd><tt><a href="#Main-setContextMenuPolicy">setContextMenuPolicy</a>(self,&nbsp;Qt.ContextMenuPolicy)</tt></dd></dl>
+
+<dl><dt><a name="Main-setCursor"><strong>setCursor</strong></a>(...)</dt><dd><tt><a href="#Main-setCursor">setCursor</a>(self,&nbsp;Union[QCursor,&nbsp;Qt.CursorShape])</tt></dd></dl>
+
+<dl><dt><a name="Main-setDisabled"><strong>setDisabled</strong></a>(...)</dt><dd><tt><a href="#Main-setDisabled">setDisabled</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="Main-setEnabled"><strong>setEnabled</strong></a>(...)</dt><dd><tt><a href="#Main-setEnabled">setEnabled</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="Main-setFixedHeight"><strong>setFixedHeight</strong></a>(...)</dt><dd><tt><a href="#Main-setFixedHeight">setFixedHeight</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="Main-setFixedSize"><strong>setFixedSize</strong></a>(...)</dt><dd><tt><a href="#Main-setFixedSize">setFixedSize</a>(self,&nbsp;QSize)<br>
+<a href="#Main-setFixedSize">setFixedSize</a>(self,&nbsp;int,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="Main-setFixedWidth"><strong>setFixedWidth</strong></a>(...)</dt><dd><tt><a href="#Main-setFixedWidth">setFixedWidth</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="Main-setFocus"><strong>setFocus</strong></a>(...)</dt><dd><tt><a href="#Main-setFocus">setFocus</a>(self)<br>
+<a href="#Main-setFocus">setFocus</a>(self,&nbsp;Qt.FocusReason)</tt></dd></dl>
+
+<dl><dt><a name="Main-setFocusPolicy"><strong>setFocusPolicy</strong></a>(...)</dt><dd><tt><a href="#Main-setFocusPolicy">setFocusPolicy</a>(self,&nbsp;Qt.FocusPolicy)</tt></dd></dl>
+
+<dl><dt><a name="Main-setFocusProxy"><strong>setFocusProxy</strong></a>(...)</dt><dd><tt><a href="#Main-setFocusProxy">setFocusProxy</a>(self,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>)</tt></dd></dl>
+
+<dl><dt><a name="Main-setFont"><strong>setFont</strong></a>(...)</dt><dd><tt><a href="#Main-setFont">setFont</a>(self,&nbsp;QFont)</tt></dd></dl>
+
+<dl><dt><a name="Main-setForegroundRole"><strong>setForegroundRole</strong></a>(...)</dt><dd><tt><a href="#Main-setForegroundRole">setForegroundRole</a>(self,&nbsp;QPalette.ColorRole)</tt></dd></dl>
+
+<dl><dt><a name="Main-setGeometry"><strong>setGeometry</strong></a>(...)</dt><dd><tt><a href="#Main-setGeometry">setGeometry</a>(self,&nbsp;QRect)<br>
+<a href="#Main-setGeometry">setGeometry</a>(self,&nbsp;int,&nbsp;int,&nbsp;int,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="Main-setGraphicsEffect"><strong>setGraphicsEffect</strong></a>(...)</dt><dd><tt><a href="#Main-setGraphicsEffect">setGraphicsEffect</a>(self,&nbsp;QGraphicsEffect)</tt></dd></dl>
+
+<dl><dt><a name="Main-setHidden"><strong>setHidden</strong></a>(...)</dt><dd><tt><a href="#Main-setHidden">setHidden</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="Main-setInputMethodHints"><strong>setInputMethodHints</strong></a>(...)</dt><dd><tt><a href="#Main-setInputMethodHints">setInputMethodHints</a>(self,&nbsp;Union[Qt.InputMethodHints,&nbsp;Qt.InputMethodHint])</tt></dd></dl>
+
+<dl><dt><a name="Main-setLayout"><strong>setLayout</strong></a>(...)</dt><dd><tt><a href="#Main-setLayout">setLayout</a>(self,&nbsp;QLayout)</tt></dd></dl>
+
+<dl><dt><a name="Main-setLayoutDirection"><strong>setLayoutDirection</strong></a>(...)</dt><dd><tt><a href="#Main-setLayoutDirection">setLayoutDirection</a>(self,&nbsp;Qt.LayoutDirection)</tt></dd></dl>
+
+<dl><dt><a name="Main-setLocale"><strong>setLocale</strong></a>(...)</dt><dd><tt><a href="#Main-setLocale">setLocale</a>(self,&nbsp;QLocale)</tt></dd></dl>
+
+<dl><dt><a name="Main-setMask"><strong>setMask</strong></a>(...)</dt><dd><tt><a href="#Main-setMask">setMask</a>(self,&nbsp;QBitmap)<br>
+<a href="#Main-setMask">setMask</a>(self,&nbsp;QRegion)</tt></dd></dl>
+
+<dl><dt><a name="Main-setMaximumHeight"><strong>setMaximumHeight</strong></a>(...)</dt><dd><tt><a href="#Main-setMaximumHeight">setMaximumHeight</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="Main-setMaximumSize"><strong>setMaximumSize</strong></a>(...)</dt><dd><tt><a href="#Main-setMaximumSize">setMaximumSize</a>(self,&nbsp;int,&nbsp;int)<br>
+<a href="#Main-setMaximumSize">setMaximumSize</a>(self,&nbsp;QSize)</tt></dd></dl>
+
+<dl><dt><a name="Main-setMaximumWidth"><strong>setMaximumWidth</strong></a>(...)</dt><dd><tt><a href="#Main-setMaximumWidth">setMaximumWidth</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="Main-setMinimumHeight"><strong>setMinimumHeight</strong></a>(...)</dt><dd><tt><a href="#Main-setMinimumHeight">setMinimumHeight</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="Main-setMinimumSize"><strong>setMinimumSize</strong></a>(...)</dt><dd><tt><a href="#Main-setMinimumSize">setMinimumSize</a>(self,&nbsp;int,&nbsp;int)<br>
+<a href="#Main-setMinimumSize">setMinimumSize</a>(self,&nbsp;QSize)</tt></dd></dl>
+
+<dl><dt><a name="Main-setMinimumWidth"><strong>setMinimumWidth</strong></a>(...)</dt><dd><tt><a href="#Main-setMinimumWidth">setMinimumWidth</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="Main-setMouseTracking"><strong>setMouseTracking</strong></a>(...)</dt><dd><tt><a href="#Main-setMouseTracking">setMouseTracking</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="Main-setPalette"><strong>setPalette</strong></a>(...)</dt><dd><tt><a href="#Main-setPalette">setPalette</a>(self,&nbsp;QPalette)</tt></dd></dl>
+
+<dl><dt><a name="Main-setParent"><strong>setParent</strong></a>(...)</dt><dd><tt><a href="#Main-setParent">setParent</a>(self,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>)<br>
+<a href="#Main-setParent">setParent</a>(self,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>,&nbsp;Union[Qt.WindowFlags,&nbsp;Qt.WindowType])</tt></dd></dl>
+
+<dl><dt><a name="Main-setShortcutAutoRepeat"><strong>setShortcutAutoRepeat</strong></a>(...)</dt><dd><tt><a href="#Main-setShortcutAutoRepeat">setShortcutAutoRepeat</a>(self,&nbsp;int,&nbsp;enabled:&nbsp;bool&nbsp;=&nbsp;True)</tt></dd></dl>
+
+<dl><dt><a name="Main-setShortcutEnabled"><strong>setShortcutEnabled</strong></a>(...)</dt><dd><tt><a href="#Main-setShortcutEnabled">setShortcutEnabled</a>(self,&nbsp;int,&nbsp;enabled:&nbsp;bool&nbsp;=&nbsp;True)</tt></dd></dl>
+
+<dl><dt><a name="Main-setSizeIncrement"><strong>setSizeIncrement</strong></a>(...)</dt><dd><tt><a href="#Main-setSizeIncrement">setSizeIncrement</a>(self,&nbsp;int,&nbsp;int)<br>
+<a href="#Main-setSizeIncrement">setSizeIncrement</a>(self,&nbsp;QSize)</tt></dd></dl>
+
+<dl><dt><a name="Main-setSizePolicy"><strong>setSizePolicy</strong></a>(...)</dt><dd><tt><a href="#Main-setSizePolicy">setSizePolicy</a>(self,&nbsp;QSizePolicy)<br>
+<a href="#Main-setSizePolicy">setSizePolicy</a>(self,&nbsp;QSizePolicy.Policy,&nbsp;QSizePolicy.Policy)</tt></dd></dl>
+
+<dl><dt><a name="Main-setStatusTip"><strong>setStatusTip</strong></a>(...)</dt><dd><tt><a href="#Main-setStatusTip">setStatusTip</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="Main-setStyle"><strong>setStyle</strong></a>(...)</dt><dd><tt><a href="#Main-setStyle">setStyle</a>(self,&nbsp;QStyle)</tt></dd></dl>
+
+<dl><dt><a name="Main-setStyleSheet"><strong>setStyleSheet</strong></a>(...)</dt><dd><tt><a href="#Main-setStyleSheet">setStyleSheet</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="Main-setTabOrder"><strong>setTabOrder</strong></a>(...)</dt><dd><tt><a href="#Main-setTabOrder">setTabOrder</a>(<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>)</tt></dd></dl>
+
+<dl><dt><a name="Main-setTabletTracking"><strong>setTabletTracking</strong></a>(...)</dt><dd><tt><a href="#Main-setTabletTracking">setTabletTracking</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="Main-setToolTip"><strong>setToolTip</strong></a>(...)</dt><dd><tt><a href="#Main-setToolTip">setToolTip</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="Main-setToolTipDuration"><strong>setToolTipDuration</strong></a>(...)</dt><dd><tt><a href="#Main-setToolTipDuration">setToolTipDuration</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="Main-setUpdatesEnabled"><strong>setUpdatesEnabled</strong></a>(...)</dt><dd><tt><a href="#Main-setUpdatesEnabled">setUpdatesEnabled</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="Main-setVisible"><strong>setVisible</strong></a>(...)</dt><dd><tt><a href="#Main-setVisible">setVisible</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="Main-setWhatsThis"><strong>setWhatsThis</strong></a>(...)</dt><dd><tt><a href="#Main-setWhatsThis">setWhatsThis</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="Main-setWindowFilePath"><strong>setWindowFilePath</strong></a>(...)</dt><dd><tt><a href="#Main-setWindowFilePath">setWindowFilePath</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="Main-setWindowFlag"><strong>setWindowFlag</strong></a>(...)</dt><dd><tt><a href="#Main-setWindowFlag">setWindowFlag</a>(self,&nbsp;Qt.WindowType,&nbsp;on:&nbsp;bool&nbsp;=&nbsp;True)</tt></dd></dl>
+
+<dl><dt><a name="Main-setWindowFlags"><strong>setWindowFlags</strong></a>(...)</dt><dd><tt><a href="#Main-setWindowFlags">setWindowFlags</a>(self,&nbsp;Union[Qt.WindowFlags,&nbsp;Qt.WindowType])</tt></dd></dl>
+
+<dl><dt><a name="Main-setWindowIcon"><strong>setWindowIcon</strong></a>(...)</dt><dd><tt><a href="#Main-setWindowIcon">setWindowIcon</a>(self,&nbsp;QIcon)</tt></dd></dl>
+
+<dl><dt><a name="Main-setWindowIconText"><strong>setWindowIconText</strong></a>(...)</dt><dd><tt><a href="#Main-setWindowIconText">setWindowIconText</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="Main-setWindowModality"><strong>setWindowModality</strong></a>(...)</dt><dd><tt><a href="#Main-setWindowModality">setWindowModality</a>(self,&nbsp;Qt.WindowModality)</tt></dd></dl>
+
+<dl><dt><a name="Main-setWindowModified"><strong>setWindowModified</strong></a>(...)</dt><dd><tt><a href="#Main-setWindowModified">setWindowModified</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="Main-setWindowOpacity"><strong>setWindowOpacity</strong></a>(...)</dt><dd><tt><a href="#Main-setWindowOpacity">setWindowOpacity</a>(self,&nbsp;float)</tt></dd></dl>
+
+<dl><dt><a name="Main-setWindowRole"><strong>setWindowRole</strong></a>(...)</dt><dd><tt><a href="#Main-setWindowRole">setWindowRole</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="Main-setWindowState"><strong>setWindowState</strong></a>(...)</dt><dd><tt><a href="#Main-setWindowState">setWindowState</a>(self,&nbsp;Union[Qt.WindowStates,&nbsp;Qt.WindowState])</tt></dd></dl>
+
+<dl><dt><a name="Main-setWindowTitle"><strong>setWindowTitle</strong></a>(...)</dt><dd><tt><a href="#Main-setWindowTitle">setWindowTitle</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="Main-sharedPainter"><strong>sharedPainter</strong></a>(...)</dt><dd><tt><a href="#Main-sharedPainter">sharedPainter</a>(self)&nbsp;-&gt;&nbsp;QPainter</tt></dd></dl>
+
+<dl><dt><a name="Main-show"><strong>show</strong></a>(...)</dt><dd><tt><a href="#Main-show">show</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Main-showEvent"><strong>showEvent</strong></a>(...)</dt><dd><tt><a href="#Main-showEvent">showEvent</a>(self,&nbsp;QShowEvent)</tt></dd></dl>
+
+<dl><dt><a name="Main-showFullScreen"><strong>showFullScreen</strong></a>(...)</dt><dd><tt><a href="#Main-showFullScreen">showFullScreen</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Main-showMaximized"><strong>showMaximized</strong></a>(...)</dt><dd><tt><a href="#Main-showMaximized">showMaximized</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Main-showMinimized"><strong>showMinimized</strong></a>(...)</dt><dd><tt><a href="#Main-showMinimized">showMinimized</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Main-showNormal"><strong>showNormal</strong></a>(...)</dt><dd><tt><a href="#Main-showNormal">showNormal</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Main-size"><strong>size</strong></a>(...)</dt><dd><tt><a href="#Main-size">size</a>(self)&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="Main-sizeHint"><strong>sizeHint</strong></a>(...)</dt><dd><tt><a href="#Main-sizeHint">sizeHint</a>(self)&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="Main-sizeIncrement"><strong>sizeIncrement</strong></a>(...)</dt><dd><tt><a href="#Main-sizeIncrement">sizeIncrement</a>(self)&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="Main-sizePolicy"><strong>sizePolicy</strong></a>(...)</dt><dd><tt><a href="#Main-sizePolicy">sizePolicy</a>(self)&nbsp;-&gt;&nbsp;QSizePolicy</tt></dd></dl>
+
+<dl><dt><a name="Main-stackUnder"><strong>stackUnder</strong></a>(...)</dt><dd><tt><a href="#Main-stackUnder">stackUnder</a>(self,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>)</tt></dd></dl>
+
+<dl><dt><a name="Main-statusTip"><strong>statusTip</strong></a>(...)</dt><dd><tt><a href="#Main-statusTip">statusTip</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="Main-style"><strong>style</strong></a>(...)</dt><dd><tt><a href="#Main-style">style</a>(self)&nbsp;-&gt;&nbsp;QStyle</tt></dd></dl>
+
+<dl><dt><a name="Main-styleSheet"><strong>styleSheet</strong></a>(...)</dt><dd><tt><a href="#Main-styleSheet">styleSheet</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="Main-tabletEvent"><strong>tabletEvent</strong></a>(...)</dt><dd><tt><a href="#Main-tabletEvent">tabletEvent</a>(self,&nbsp;QTabletEvent)</tt></dd></dl>
+
+<dl><dt><a name="Main-testAttribute"><strong>testAttribute</strong></a>(...)</dt><dd><tt><a href="#Main-testAttribute">testAttribute</a>(self,&nbsp;Qt.WidgetAttribute)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-toolTip"><strong>toolTip</strong></a>(...)</dt><dd><tt><a href="#Main-toolTip">toolTip</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="Main-toolTipDuration"><strong>toolTipDuration</strong></a>(...)</dt><dd><tt><a href="#Main-toolTipDuration">toolTipDuration</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Main-underMouse"><strong>underMouse</strong></a>(...)</dt><dd><tt><a href="#Main-underMouse">underMouse</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-ungrabGesture"><strong>ungrabGesture</strong></a>(...)</dt><dd><tt><a href="#Main-ungrabGesture">ungrabGesture</a>(self,&nbsp;Qt.GestureType)</tt></dd></dl>
+
+<dl><dt><a name="Main-unsetCursor"><strong>unsetCursor</strong></a>(...)</dt><dd><tt><a href="#Main-unsetCursor">unsetCursor</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Main-unsetLayoutDirection"><strong>unsetLayoutDirection</strong></a>(...)</dt><dd><tt><a href="#Main-unsetLayoutDirection">unsetLayoutDirection</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Main-unsetLocale"><strong>unsetLocale</strong></a>(...)</dt><dd><tt><a href="#Main-unsetLocale">unsetLocale</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Main-update"><strong>update</strong></a>(...)</dt><dd><tt><a href="#Main-update">update</a>(self)<br>
+<a href="#Main-update">update</a>(self,&nbsp;QRect)<br>
+<a href="#Main-update">update</a>(self,&nbsp;QRegion)<br>
+<a href="#Main-update">update</a>(self,&nbsp;int,&nbsp;int,&nbsp;int,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="Main-updateGeometry"><strong>updateGeometry</strong></a>(...)</dt><dd><tt><a href="#Main-updateGeometry">updateGeometry</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Main-updateMicroFocus"><strong>updateMicroFocus</strong></a>(...)</dt><dd><tt><a href="#Main-updateMicroFocus">updateMicroFocus</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Main-updatesEnabled"><strong>updatesEnabled</strong></a>(...)</dt><dd><tt><a href="#Main-updatesEnabled">updatesEnabled</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-visibleRegion"><strong>visibleRegion</strong></a>(...)</dt><dd><tt><a href="#Main-visibleRegion">visibleRegion</a>(self)&nbsp;-&gt;&nbsp;QRegion</tt></dd></dl>
+
+<dl><dt><a name="Main-whatsThis"><strong>whatsThis</strong></a>(...)</dt><dd><tt><a href="#Main-whatsThis">whatsThis</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="Main-wheelEvent"><strong>wheelEvent</strong></a>(...)</dt><dd><tt><a href="#Main-wheelEvent">wheelEvent</a>(self,&nbsp;QWheelEvent)</tt></dd></dl>
+
+<dl><dt><a name="Main-width"><strong>width</strong></a>(...)</dt><dd><tt><a href="#Main-width">width</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Main-winId"><strong>winId</strong></a>(...)</dt><dd><tt><a href="#Main-winId">winId</a>(self)&nbsp;-&gt;&nbsp;PyQt5.sip.voidptr</tt></dd></dl>
+
+<dl><dt><a name="Main-window"><strong>window</strong></a>(...)</dt><dd><tt><a href="#Main-window">window</a>(self)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="Main-windowFilePath"><strong>windowFilePath</strong></a>(...)</dt><dd><tt><a href="#Main-windowFilePath">windowFilePath</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="Main-windowFlags"><strong>windowFlags</strong></a>(...)</dt><dd><tt><a href="#Main-windowFlags">windowFlags</a>(self)&nbsp;-&gt;&nbsp;Qt.WindowFlags</tt></dd></dl>
+
+<dl><dt><a name="Main-windowHandle"><strong>windowHandle</strong></a>(...)</dt><dd><tt><a href="#Main-windowHandle">windowHandle</a>(self)&nbsp;-&gt;&nbsp;QWindow</tt></dd></dl>
+
+<dl><dt><a name="Main-windowIcon"><strong>windowIcon</strong></a>(...)</dt><dd><tt><a href="#Main-windowIcon">windowIcon</a>(self)&nbsp;-&gt;&nbsp;QIcon</tt></dd></dl>
+
+<strong>windowIconChanged</strong> = &lt;unbound PYQT_SIGNAL windowIconChanged(QIcon)&gt;
+<dl><dt><a name="Main-windowIconText"><strong>windowIconText</strong></a>(...)</dt><dd><tt><a href="#Main-windowIconText">windowIconText</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<strong>windowIconTextChanged</strong> = &lt;unbound PYQT_SIGNAL windowIconTextChanged(QString)&gt;
+<dl><dt><a name="Main-windowModality"><strong>windowModality</strong></a>(...)</dt><dd><tt><a href="#Main-windowModality">windowModality</a>(self)&nbsp;-&gt;&nbsp;Qt.WindowModality</tt></dd></dl>
+
+<dl><dt><a name="Main-windowOpacity"><strong>windowOpacity</strong></a>(...)</dt><dd><tt><a href="#Main-windowOpacity">windowOpacity</a>(self)&nbsp;-&gt;&nbsp;float</tt></dd></dl>
+
+<dl><dt><a name="Main-windowRole"><strong>windowRole</strong></a>(...)</dt><dd><tt><a href="#Main-windowRole">windowRole</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="Main-windowState"><strong>windowState</strong></a>(...)</dt><dd><tt><a href="#Main-windowState">windowState</a>(self)&nbsp;-&gt;&nbsp;Qt.WindowStates</tt></dd></dl>
+
+<dl><dt><a name="Main-windowTitle"><strong>windowTitle</strong></a>(...)</dt><dd><tt><a href="#Main-windowTitle">windowTitle</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<strong>windowTitleChanged</strong> = &lt;unbound PYQT_SIGNAL windowTitleChanged(QString)&gt;
+<dl><dt><a name="Main-windowType"><strong>windowType</strong></a>(...)</dt><dd><tt><a href="#Main-windowType">windowType</a>(self)&nbsp;-&gt;&nbsp;Qt.WindowType</tt></dd></dl>
+
+<dl><dt><a name="Main-x"><strong>x</strong></a>(...)</dt><dd><tt><a href="#Main-x">x</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Main-y"><strong>y</strong></a>(...)</dt><dd><tt><a href="#Main-y">y</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="PyQt5.QtWidgets.html#QWidget">PyQt5.QtWidgets.QWidget</a>:<br>
+<dl><dt><strong>DrawChildren</strong> = 2</dl>
+
+<dl><dt><strong>DrawWindowBackground</strong> = 1</dl>
+
+<dl><dt><strong>IgnoreMask</strong> = 4</dl>
+
+<dl><dt><strong>RenderFlag</strong> = &lt;class 'PyQt5.QtWidgets.QWidget.RenderFlag'&gt;</dl>
+
+<dl><dt><strong>RenderFlags</strong> = &lt;class 'PyQt5.QtWidgets.QWidget.RenderFlags'&gt;<dd><tt><a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.<a href="#Main-RenderFlags">RenderFlags</a>()<br>
+<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.<a href="#Main-RenderFlags">RenderFlags</a>(Union[<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.RenderFlags,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.RenderFlag])<br>
+<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.<a href="#Main-RenderFlags">RenderFlags</a>(<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.RenderFlags)</tt></dl>
+
+<hr>
+Methods inherited from <a href="PyQt5.QtCore.html#QObject">PyQt5.QtCore.QObject</a>:<br>
+<dl><dt><a name="Main-__getattr__"><strong>__getattr__</strong></a>(...)</dt><dd><tt><a href="#Main-__getattr__">__getattr__</a>(self,&nbsp;str)&nbsp;-&gt;&nbsp;object</tt></dd></dl>
+
+<dl><dt><a name="Main-blockSignals"><strong>blockSignals</strong></a>(...)</dt><dd><tt><a href="#Main-blockSignals">blockSignals</a>(self,&nbsp;bool)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-childEvent"><strong>childEvent</strong></a>(...)</dt><dd><tt><a href="#Main-childEvent">childEvent</a>(self,&nbsp;QChildEvent)</tt></dd></dl>
+
+<dl><dt><a name="Main-children"><strong>children</strong></a>(...)</dt><dd><tt><a href="#Main-children">children</a>(self)&nbsp;-&gt;&nbsp;List[QObject]</tt></dd></dl>
+
+<dl><dt><a name="Main-connectNotify"><strong>connectNotify</strong></a>(...)</dt><dd><tt><a href="#Main-connectNotify">connectNotify</a>(self,&nbsp;QMetaMethod)</tt></dd></dl>
+
+<dl><dt><a name="Main-customEvent"><strong>customEvent</strong></a>(...)</dt><dd><tt><a href="#Main-customEvent">customEvent</a>(self,&nbsp;QEvent)</tt></dd></dl>
+
+<dl><dt><a name="Main-deleteLater"><strong>deleteLater</strong></a>(...)</dt><dd><tt><a href="#Main-deleteLater">deleteLater</a>(self)</tt></dd></dl>
+
+<strong>destroyed</strong> = &lt;unbound PYQT_SIGNAL destroyed(QObject*)&gt;
+<dl><dt><a name="Main-disconnect"><strong>disconnect</strong></a>(...)</dt><dd><tt><a href="#Main-disconnect">disconnect</a>(QMetaObject.Connection)&nbsp;-&gt;&nbsp;bool<br>
+<a href="#Main-disconnect">disconnect</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Main-disconnectNotify"><strong>disconnectNotify</strong></a>(...)</dt><dd><tt><a href="#Main-disconnectNotify">disconnectNotify</a>(self,&nbsp;QMetaMethod)</tt></dd></dl>
+
+<dl><dt><a name="Main-dumpObjectInfo"><strong>dumpObjectInfo</strong></a>(...)</dt><dd><tt><a href="#Main-dumpObjectInfo">dumpObjectInfo</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Main-dumpObjectTree"><strong>dumpObjectTree</strong></a>(...)</dt><dd><tt><a href="#Main-dumpObjectTree">dumpObjectTree</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Main-dynamicPropertyNames"><strong>dynamicPropertyNames</strong></a>(...)</dt><dd><tt><a href="#Main-dynamicPropertyNames">dynamicPropertyNames</a>(self)&nbsp;-&gt;&nbsp;List[QByteArray]</tt></dd></dl>
+
+<dl><dt><a name="Main-eventFilter"><strong>eventFilter</strong></a>(...)</dt><dd><tt><a href="#Main-eventFilter">eventFilter</a>(self,&nbsp;QObject,&nbsp;QEvent)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-findChild"><strong>findChild</strong></a>(...)</dt><dd><tt><a href="#Main-findChild">findChild</a>(self,&nbsp;type,&nbsp;name:&nbsp;str&nbsp;=&nbsp;'',&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;QObject<br>
+<a href="#Main-findChild">findChild</a>(self,&nbsp;Tuple,&nbsp;name:&nbsp;str&nbsp;=&nbsp;'',&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;QObject</tt></dd></dl>
+
+<dl><dt><a name="Main-findChildren"><strong>findChildren</strong></a>(...)</dt><dd><tt><a href="#Main-findChildren">findChildren</a>(self,&nbsp;type,&nbsp;name:&nbsp;str&nbsp;=&nbsp;'',&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;List[QObject]<br>
+<a href="#Main-findChildren">findChildren</a>(self,&nbsp;Tuple,&nbsp;name:&nbsp;str&nbsp;=&nbsp;'',&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;List[QObject]<br>
+<a href="#Main-findChildren">findChildren</a>(self,&nbsp;type,&nbsp;QRegExp,&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;List[QObject]<br>
+<a href="#Main-findChildren">findChildren</a>(self,&nbsp;Tuple,&nbsp;QRegExp,&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;List[QObject]<br>
+<a href="#Main-findChildren">findChildren</a>(self,&nbsp;type,&nbsp;QRegularExpression,&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;List[QObject]<br>
+<a href="#Main-findChildren">findChildren</a>(self,&nbsp;Tuple,&nbsp;QRegularExpression,&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;List[QObject]</tt></dd></dl>
+
+<dl><dt><a name="Main-inherits"><strong>inherits</strong></a>(...)</dt><dd><tt><a href="#Main-inherits">inherits</a>(self,&nbsp;str)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-installEventFilter"><strong>installEventFilter</strong></a>(...)</dt><dd><tt><a href="#Main-installEventFilter">installEventFilter</a>(self,&nbsp;QObject)</tt></dd></dl>
+
+<dl><dt><a name="Main-isSignalConnected"><strong>isSignalConnected</strong></a>(...)</dt><dd><tt><a href="#Main-isSignalConnected">isSignalConnected</a>(self,&nbsp;QMetaMethod)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-isWidgetType"><strong>isWidgetType</strong></a>(...)</dt><dd><tt><a href="#Main-isWidgetType">isWidgetType</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-isWindowType"><strong>isWindowType</strong></a>(...)</dt><dd><tt><a href="#Main-isWindowType">isWindowType</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-killTimer"><strong>killTimer</strong></a>(...)</dt><dd><tt><a href="#Main-killTimer">killTimer</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="Main-metaObject"><strong>metaObject</strong></a>(...)</dt><dd><tt><a href="#Main-metaObject">metaObject</a>(self)&nbsp;-&gt;&nbsp;QMetaObject</tt></dd></dl>
+
+<dl><dt><a name="Main-moveToThread"><strong>moveToThread</strong></a>(...)</dt><dd><tt><a href="#Main-moveToThread">moveToThread</a>(self,&nbsp;QThread)</tt></dd></dl>
+
+<dl><dt><a name="Main-objectName"><strong>objectName</strong></a>(...)</dt><dd><tt><a href="#Main-objectName">objectName</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<strong>objectNameChanged</strong> = &lt;unbound PYQT_SIGNAL objectNameChanged(QString)&gt;
+<dl><dt><a name="Main-parent"><strong>parent</strong></a>(...)</dt><dd><tt><a href="#Main-parent">parent</a>(self)&nbsp;-&gt;&nbsp;QObject</tt></dd></dl>
+
+<dl><dt><a name="Main-property"><strong>property</strong></a>(...)</dt><dd><tt><a href="#Main-property">property</a>(self,&nbsp;str)&nbsp;-&gt;&nbsp;Any</tt></dd></dl>
+
+<dl><dt><a name="Main-pyqtConfigure"><strong>pyqtConfigure</strong></a>(...)</dt><dd><tt>QObject.<a href="#Main-pyqtConfigure">pyqtConfigure</a>(...)<br>
+&nbsp;<br>
+Each&nbsp;keyword&nbsp;argument&nbsp;is&nbsp;either&nbsp;the&nbsp;name&nbsp;of&nbsp;a&nbsp;Qt&nbsp;property&nbsp;or&nbsp;a&nbsp;Qt&nbsp;signal.<br>
+For&nbsp;properties&nbsp;the&nbsp;property&nbsp;is&nbsp;set&nbsp;to&nbsp;the&nbsp;given&nbsp;value&nbsp;which&nbsp;should&nbsp;be&nbsp;of&nbsp;an<br>
+appropriate&nbsp;type.<br>
+For&nbsp;signals&nbsp;the&nbsp;signal&nbsp;is&nbsp;connected&nbsp;to&nbsp;the&nbsp;given&nbsp;value&nbsp;which&nbsp;should&nbsp;be&nbsp;a<br>
+callable.</tt></dd></dl>
+
+<dl><dt><a name="Main-receivers"><strong>receivers</strong></a>(...)</dt><dd><tt><a href="#Main-receivers">receivers</a>(self,&nbsp;PYQT_SIGNAL)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Main-removeEventFilter"><strong>removeEventFilter</strong></a>(...)</dt><dd><tt><a href="#Main-removeEventFilter">removeEventFilter</a>(self,&nbsp;QObject)</tt></dd></dl>
+
+<dl><dt><a name="Main-sender"><strong>sender</strong></a>(...)</dt><dd><tt><a href="#Main-sender">sender</a>(self)&nbsp;-&gt;&nbsp;QObject</tt></dd></dl>
+
+<dl><dt><a name="Main-senderSignalIndex"><strong>senderSignalIndex</strong></a>(...)</dt><dd><tt><a href="#Main-senderSignalIndex">senderSignalIndex</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Main-setObjectName"><strong>setObjectName</strong></a>(...)</dt><dd><tt><a href="#Main-setObjectName">setObjectName</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="Main-setProperty"><strong>setProperty</strong></a>(...)</dt><dd><tt><a href="#Main-setProperty">setProperty</a>(self,&nbsp;str,&nbsp;Any)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-signalsBlocked"><strong>signalsBlocked</strong></a>(...)</dt><dd><tt><a href="#Main-signalsBlocked">signalsBlocked</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-startTimer"><strong>startTimer</strong></a>(...)</dt><dd><tt><a href="#Main-startTimer">startTimer</a>(self,&nbsp;int,&nbsp;timerType:&nbsp;Qt.TimerType&nbsp;=&nbsp;Qt.CoarseTimer)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Main-thread"><strong>thread</strong></a>(...)</dt><dd><tt><a href="#Main-thread">thread</a>(self)&nbsp;-&gt;&nbsp;QThread</tt></dd></dl>
+
+<dl><dt><a name="Main-timerEvent"><strong>timerEvent</strong></a>(...)</dt><dd><tt><a href="#Main-timerEvent">timerEvent</a>(self,&nbsp;QTimerEvent)</tt></dd></dl>
+
+<dl><dt><a name="Main-tr"><strong>tr</strong></a>(...)</dt><dd><tt><a href="#Main-tr">tr</a>(self,&nbsp;str,&nbsp;disambiguation:&nbsp;str&nbsp;=&nbsp;None,&nbsp;n:&nbsp;int&nbsp;=&nbsp;-1)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="PyQt5.QtCore.html#QObject">PyQt5.QtCore.QObject</a>:<br>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="PyQt5.QtCore.html#QObject">PyQt5.QtCore.QObject</a>:<br>
+<dl><dt><strong>staticMetaObject</strong> = &lt;PyQt5.QtCore.QMetaObject object&gt;</dl>
+
+<hr>
+Methods inherited from <a href="PyQt5.QtGui.html#QPaintDevice">PyQt5.QtGui.QPaintDevice</a>:<br>
+<dl><dt><a name="Main-colorCount"><strong>colorCount</strong></a>(...)</dt><dd><tt><a href="#Main-colorCount">colorCount</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Main-depth"><strong>depth</strong></a>(...)</dt><dd><tt><a href="#Main-depth">depth</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Main-devicePixelRatio"><strong>devicePixelRatio</strong></a>(...)</dt><dd><tt><a href="#Main-devicePixelRatio">devicePixelRatio</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Main-devicePixelRatioF"><strong>devicePixelRatioF</strong></a>(...)</dt><dd><tt><a href="#Main-devicePixelRatioF">devicePixelRatioF</a>(self)&nbsp;-&gt;&nbsp;float</tt></dd></dl>
+
+<dl><dt><a name="Main-devicePixelRatioFScale"><strong>devicePixelRatioFScale</strong></a>(...)</dt><dd><tt><a href="#Main-devicePixelRatioFScale">devicePixelRatioFScale</a>()&nbsp;-&gt;&nbsp;float</tt></dd></dl>
+
+<dl><dt><a name="Main-heightMM"><strong>heightMM</strong></a>(...)</dt><dd><tt><a href="#Main-heightMM">heightMM</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Main-logicalDpiX"><strong>logicalDpiX</strong></a>(...)</dt><dd><tt><a href="#Main-logicalDpiX">logicalDpiX</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Main-logicalDpiY"><strong>logicalDpiY</strong></a>(...)</dt><dd><tt><a href="#Main-logicalDpiY">logicalDpiY</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Main-paintingActive"><strong>paintingActive</strong></a>(...)</dt><dd><tt><a href="#Main-paintingActive">paintingActive</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Main-physicalDpiX"><strong>physicalDpiX</strong></a>(...)</dt><dd><tt><a href="#Main-physicalDpiX">physicalDpiX</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Main-physicalDpiY"><strong>physicalDpiY</strong></a>(...)</dt><dd><tt><a href="#Main-physicalDpiY">physicalDpiY</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Main-widthMM"><strong>widthMM</strong></a>(...)</dt><dd><tt><a href="#Main-widthMM">widthMM</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="PyQt5.QtGui.html#QPaintDevice">PyQt5.QtGui.QPaintDevice</a>:<br>
+<dl><dt><strong>PaintDeviceMetric</strong> = &lt;class 'PyQt5.QtGui.QPaintDevice.PaintDeviceMetric'&gt;</dl>
+
+<dl><dt><strong>PdmDepth</strong> = 6</dl>
+
+<dl><dt><strong>PdmDevicePixelRatio</strong> = 11</dl>
+
+<dl><dt><strong>PdmDevicePixelRatioScaled</strong> = 12</dl>
+
+<dl><dt><strong>PdmDpiX</strong> = 7</dl>
+
+<dl><dt><strong>PdmDpiY</strong> = 8</dl>
+
+<dl><dt><strong>PdmHeight</strong> = 2</dl>
+
+<dl><dt><strong>PdmHeightMM</strong> = 4</dl>
+
+<dl><dt><strong>PdmNumColors</strong> = 5</dl>
+
+<dl><dt><strong>PdmPhysicalDpiX</strong> = 9</dl>
+
+<dl><dt><strong>PdmPhysicalDpiY</strong> = 10</dl>
+
+<dl><dt><strong>PdmWidth</strong> = 1</dl>
+
+<dl><dt><strong>PdmWidthMM</strong> = 3</dl>
+
+<hr>
+Static methods inherited from <a href="PyQt5.sip.html#simplewrapper">sip.simplewrapper</a>:<br>
+<dl><dt><a name="Main-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="PyQt5.sip.html#wrappertype">sip.wrappertype</a></font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="PyQt5.sip.html#simplewrapper">sip.simplewrapper</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="UiMain">class <strong>UiMain</strong></a>(<a href="PyQt5.QtWidgets.html#QWidget">PyQt5.QtWidgets.QWidget</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="main.html#UiMain">UiMain</a></dd>
+<dd><a href="PyQt5.QtWidgets.html#QWidget">PyQt5.QtWidgets.QWidget</a></dd>
+<dd><a href="PyQt5.QtCore.html#QObject">PyQt5.QtCore.QObject</a></dd>
+<dd><a href="PyQt5.sip.html#wrapper">sip.wrapper</a></dd>
+<dd><a href="PyQt5.QtGui.html#QPaintDevice">PyQt5.QtGui.QPaintDevice</a></dd>
+<dd><a href="PyQt5.sip.html#simplewrapper">sip.simplewrapper</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="UiMain-setupUi"><strong>setupUi</strong></a>(self, UiMain)</dt><dd><tt>Esta&nbsp;classe&nbsp;define&nbsp;a&nbsp;interface&nbsp;gráfica&nbsp;do&nbsp;usuário&nbsp;usando&nbsp;PyQt5.<br>
+Ela&nbsp;é&nbsp;basicamente&nbsp;definida&nbsp;para&nbsp;servir&nbsp;como&nbsp;"empilhamento"(stack)&nbsp;de&nbsp;cada&nbsp;tela&nbsp;e&nbsp;sua&nbsp;respectiva&nbsp;posição.&nbsp;<br>
+Ele&nbsp;define&nbsp;uma&nbsp;janela&nbsp;principal&nbsp;(<a href="#Main">Main</a>)&nbsp;e&nbsp;um&nbsp;layout&nbsp;de&nbsp;pilha&nbsp;de&nbsp;várias&nbsp;outras&nbsp;janelas&nbsp;(stack0&nbsp;a&nbsp;stack6).&nbsp;<br>
+Elas&nbsp;podem&nbsp;ser&nbsp;alternadas&nbsp;dentro&nbsp;da&nbsp;janela&nbsp;principal.&nbsp;<br>
+Cada&nbsp;tela&nbsp;é&nbsp;definida&nbsp;em&nbsp;seu&nbsp;próprio&nbsp;arquivo&nbsp;de&nbsp;classe,&nbsp;como&nbsp;TelaCadastro,&nbsp;TelaLogin&nbsp;etc.&nbsp;<br>
+O&nbsp;método&nbsp;<a href="#UiMain-setupUi">setupUi</a>()&nbsp;é&nbsp;chamado&nbsp;para&nbsp;cada&nbsp;tela&nbsp;para&nbsp;configurar&nbsp;sua&nbsp;aparência&nbsp;e&nbsp;funcionamento,&nbsp;<br>
+e&nbsp;cada&nbsp;uma&nbsp;delas&nbsp;é&nbsp;adicionada&nbsp;ao&nbsp;layout&nbsp;de&nbsp;pilha&nbsp;por&nbsp;meio&nbsp;do&nbsp;método&nbsp;addWidget().<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+<a href="#Main">Main</a>:&nbsp;Object<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+None</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="PyQt5.QtWidgets.html#QWidget">PyQt5.QtWidgets.QWidget</a>:<br>
+<dl><dt><a name="UiMain-acceptDrops"><strong>acceptDrops</strong></a>(...)</dt><dd><tt><a href="#UiMain-acceptDrops">acceptDrops</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-accessibleDescription"><strong>accessibleDescription</strong></a>(...)</dt><dd><tt><a href="#UiMain-accessibleDescription">accessibleDescription</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="UiMain-accessibleName"><strong>accessibleName</strong></a>(...)</dt><dd><tt><a href="#UiMain-accessibleName">accessibleName</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="UiMain-actionEvent"><strong>actionEvent</strong></a>(...)</dt><dd><tt><a href="#UiMain-actionEvent">actionEvent</a>(self,&nbsp;QActionEvent)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-actions"><strong>actions</strong></a>(...)</dt><dd><tt><a href="#UiMain-actions">actions</a>(self)&nbsp;-&gt;&nbsp;List[QAction]</tt></dd></dl>
+
+<dl><dt><a name="UiMain-activateWindow"><strong>activateWindow</strong></a>(...)</dt><dd><tt><a href="#UiMain-activateWindow">activateWindow</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-addAction"><strong>addAction</strong></a>(...)</dt><dd><tt><a href="#UiMain-addAction">addAction</a>(self,&nbsp;QAction)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-addActions"><strong>addActions</strong></a>(...)</dt><dd><tt><a href="#UiMain-addActions">addActions</a>(self,&nbsp;Iterable[QAction])</tt></dd></dl>
+
+<dl><dt><a name="UiMain-adjustSize"><strong>adjustSize</strong></a>(...)</dt><dd><tt><a href="#UiMain-adjustSize">adjustSize</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-autoFillBackground"><strong>autoFillBackground</strong></a>(...)</dt><dd><tt><a href="#UiMain-autoFillBackground">autoFillBackground</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-backgroundRole"><strong>backgroundRole</strong></a>(...)</dt><dd><tt><a href="#UiMain-backgroundRole">backgroundRole</a>(self)&nbsp;-&gt;&nbsp;QPalette.ColorRole</tt></dd></dl>
+
+<dl><dt><a name="UiMain-baseSize"><strong>baseSize</strong></a>(...)</dt><dd><tt><a href="#UiMain-baseSize">baseSize</a>(self)&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="UiMain-changeEvent"><strong>changeEvent</strong></a>(...)</dt><dd><tt><a href="#UiMain-changeEvent">changeEvent</a>(self,&nbsp;QEvent)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-childAt"><strong>childAt</strong></a>(...)</dt><dd><tt><a href="#UiMain-childAt">childAt</a>(self,&nbsp;QPoint)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a><br>
+<a href="#UiMain-childAt">childAt</a>(self,&nbsp;int,&nbsp;int)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="UiMain-childrenRect"><strong>childrenRect</strong></a>(...)</dt><dd><tt><a href="#UiMain-childrenRect">childrenRect</a>(self)&nbsp;-&gt;&nbsp;QRect</tt></dd></dl>
+
+<dl><dt><a name="UiMain-childrenRegion"><strong>childrenRegion</strong></a>(...)</dt><dd><tt><a href="#UiMain-childrenRegion">childrenRegion</a>(self)&nbsp;-&gt;&nbsp;QRegion</tt></dd></dl>
+
+<dl><dt><a name="UiMain-clearFocus"><strong>clearFocus</strong></a>(...)</dt><dd><tt><a href="#UiMain-clearFocus">clearFocus</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-clearMask"><strong>clearMask</strong></a>(...)</dt><dd><tt><a href="#UiMain-clearMask">clearMask</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-close"><strong>close</strong></a>(...)</dt><dd><tt><a href="#UiMain-close">close</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-closeEvent"><strong>closeEvent</strong></a>(...)</dt><dd><tt><a href="#UiMain-closeEvent">closeEvent</a>(self,&nbsp;QCloseEvent)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-contentsMargins"><strong>contentsMargins</strong></a>(...)</dt><dd><tt><a href="#UiMain-contentsMargins">contentsMargins</a>(self)&nbsp;-&gt;&nbsp;QMargins</tt></dd></dl>
+
+<dl><dt><a name="UiMain-contentsRect"><strong>contentsRect</strong></a>(...)</dt><dd><tt><a href="#UiMain-contentsRect">contentsRect</a>(self)&nbsp;-&gt;&nbsp;QRect</tt></dd></dl>
+
+<dl><dt><a name="UiMain-contextMenuEvent"><strong>contextMenuEvent</strong></a>(...)</dt><dd><tt><a href="#UiMain-contextMenuEvent">contextMenuEvent</a>(self,&nbsp;QContextMenuEvent)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-contextMenuPolicy"><strong>contextMenuPolicy</strong></a>(...)</dt><dd><tt><a href="#UiMain-contextMenuPolicy">contextMenuPolicy</a>(self)&nbsp;-&gt;&nbsp;Qt.ContextMenuPolicy</tt></dd></dl>
+
+<dl><dt><a name="UiMain-create"><strong>create</strong></a>(...)</dt><dd><tt><a href="#UiMain-create">create</a>(self,&nbsp;window:&nbsp;PyQt5.sip.voidptr&nbsp;=&nbsp;0,&nbsp;initializeWindow:&nbsp;bool&nbsp;=&nbsp;True,&nbsp;destroyOldWindow:&nbsp;bool&nbsp;=&nbsp;True)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-createWindowContainer"><strong>createWindowContainer</strong></a>(...)</dt><dd><tt><a href="#UiMain-createWindowContainer">createWindowContainer</a>(QWindow,&nbsp;parent:&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>&nbsp;=&nbsp;None,&nbsp;flags:&nbsp;Union[Qt.WindowFlags,&nbsp;Qt.WindowType]&nbsp;=&nbsp;0)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="UiMain-cursor"><strong>cursor</strong></a>(...)</dt><dd><tt><a href="#UiMain-cursor">cursor</a>(self)&nbsp;-&gt;&nbsp;QCursor</tt></dd></dl>
+
+<strong>customContextMenuRequested</strong> = &lt;unbound PYQT_SIGNAL customContextMenuRequested(QPoint)&gt;
+<dl><dt><a name="UiMain-destroy"><strong>destroy</strong></a>(...)</dt><dd><tt><a href="#UiMain-destroy">destroy</a>(self,&nbsp;destroyWindow:&nbsp;bool&nbsp;=&nbsp;True,&nbsp;destroySubWindows:&nbsp;bool&nbsp;=&nbsp;True)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-devType"><strong>devType</strong></a>(...)</dt><dd><tt><a href="#UiMain-devType">devType</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="UiMain-dragEnterEvent"><strong>dragEnterEvent</strong></a>(...)</dt><dd><tt><a href="#UiMain-dragEnterEvent">dragEnterEvent</a>(self,&nbsp;QDragEnterEvent)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-dragLeaveEvent"><strong>dragLeaveEvent</strong></a>(...)</dt><dd><tt><a href="#UiMain-dragLeaveEvent">dragLeaveEvent</a>(self,&nbsp;QDragLeaveEvent)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-dragMoveEvent"><strong>dragMoveEvent</strong></a>(...)</dt><dd><tt><a href="#UiMain-dragMoveEvent">dragMoveEvent</a>(self,&nbsp;QDragMoveEvent)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-dropEvent"><strong>dropEvent</strong></a>(...)</dt><dd><tt><a href="#UiMain-dropEvent">dropEvent</a>(self,&nbsp;QDropEvent)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-effectiveWinId"><strong>effectiveWinId</strong></a>(...)</dt><dd><tt><a href="#UiMain-effectiveWinId">effectiveWinId</a>(self)&nbsp;-&gt;&nbsp;PyQt5.sip.voidptr</tt></dd></dl>
+
+<dl><dt><a name="UiMain-ensurePolished"><strong>ensurePolished</strong></a>(...)</dt><dd><tt><a href="#UiMain-ensurePolished">ensurePolished</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-enterEvent"><strong>enterEvent</strong></a>(...)</dt><dd><tt><a href="#UiMain-enterEvent">enterEvent</a>(self,&nbsp;QEvent)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-event"><strong>event</strong></a>(...)</dt><dd><tt><a href="#UiMain-event">event</a>(self,&nbsp;QEvent)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-find"><strong>find</strong></a>(...)</dt><dd><tt><a href="#UiMain-find">find</a>(PyQt5.sip.voidptr)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="UiMain-focusInEvent"><strong>focusInEvent</strong></a>(...)</dt><dd><tt><a href="#UiMain-focusInEvent">focusInEvent</a>(self,&nbsp;QFocusEvent)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-focusNextChild"><strong>focusNextChild</strong></a>(...)</dt><dd><tt><a href="#UiMain-focusNextChild">focusNextChild</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-focusNextPrevChild"><strong>focusNextPrevChild</strong></a>(...)</dt><dd><tt><a href="#UiMain-focusNextPrevChild">focusNextPrevChild</a>(self,&nbsp;bool)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-focusOutEvent"><strong>focusOutEvent</strong></a>(...)</dt><dd><tt><a href="#UiMain-focusOutEvent">focusOutEvent</a>(self,&nbsp;QFocusEvent)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-focusPolicy"><strong>focusPolicy</strong></a>(...)</dt><dd><tt><a href="#UiMain-focusPolicy">focusPolicy</a>(self)&nbsp;-&gt;&nbsp;Qt.FocusPolicy</tt></dd></dl>
+
+<dl><dt><a name="UiMain-focusPreviousChild"><strong>focusPreviousChild</strong></a>(...)</dt><dd><tt><a href="#UiMain-focusPreviousChild">focusPreviousChild</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-focusProxy"><strong>focusProxy</strong></a>(...)</dt><dd><tt><a href="#UiMain-focusProxy">focusProxy</a>(self)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="UiMain-focusWidget"><strong>focusWidget</strong></a>(...)</dt><dd><tt><a href="#UiMain-focusWidget">focusWidget</a>(self)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="UiMain-font"><strong>font</strong></a>(...)</dt><dd><tt><a href="#UiMain-font">font</a>(self)&nbsp;-&gt;&nbsp;QFont</tt></dd></dl>
+
+<dl><dt><a name="UiMain-fontInfo"><strong>fontInfo</strong></a>(...)</dt><dd><tt><a href="#UiMain-fontInfo">fontInfo</a>(self)&nbsp;-&gt;&nbsp;QFontInfo</tt></dd></dl>
+
+<dl><dt><a name="UiMain-fontMetrics"><strong>fontMetrics</strong></a>(...)</dt><dd><tt><a href="#UiMain-fontMetrics">fontMetrics</a>(self)&nbsp;-&gt;&nbsp;QFontMetrics</tt></dd></dl>
+
+<dl><dt><a name="UiMain-foregroundRole"><strong>foregroundRole</strong></a>(...)</dt><dd><tt><a href="#UiMain-foregroundRole">foregroundRole</a>(self)&nbsp;-&gt;&nbsp;QPalette.ColorRole</tt></dd></dl>
+
+<dl><dt><a name="UiMain-frameGeometry"><strong>frameGeometry</strong></a>(...)</dt><dd><tt><a href="#UiMain-frameGeometry">frameGeometry</a>(self)&nbsp;-&gt;&nbsp;QRect</tt></dd></dl>
+
+<dl><dt><a name="UiMain-frameSize"><strong>frameSize</strong></a>(...)</dt><dd><tt><a href="#UiMain-frameSize">frameSize</a>(self)&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="UiMain-geometry"><strong>geometry</strong></a>(...)</dt><dd><tt><a href="#UiMain-geometry">geometry</a>(self)&nbsp;-&gt;&nbsp;QRect</tt></dd></dl>
+
+<dl><dt><a name="UiMain-getContentsMargins"><strong>getContentsMargins</strong></a>(...)</dt><dd><tt><a href="#UiMain-getContentsMargins">getContentsMargins</a>(self)&nbsp;-&gt;&nbsp;Tuple[int,&nbsp;int,&nbsp;int,&nbsp;int]</tt></dd></dl>
+
+<dl><dt><a name="UiMain-grab"><strong>grab</strong></a>(...)</dt><dd><tt><a href="#UiMain-grab">grab</a>(self,&nbsp;rectangle:&nbsp;QRect&nbsp;=&nbsp;QRect(QPoint(0,0),QSize(-1,-1)))&nbsp;-&gt;&nbsp;QPixmap</tt></dd></dl>
+
+<dl><dt><a name="UiMain-grabGesture"><strong>grabGesture</strong></a>(...)</dt><dd><tt><a href="#UiMain-grabGesture">grabGesture</a>(self,&nbsp;Qt.GestureType,&nbsp;flags:&nbsp;Union[Qt.GestureFlags,&nbsp;Qt.GestureFlag]&nbsp;=&nbsp;Qt.GestureFlags())</tt></dd></dl>
+
+<dl><dt><a name="UiMain-grabKeyboard"><strong>grabKeyboard</strong></a>(...)</dt><dd><tt><a href="#UiMain-grabKeyboard">grabKeyboard</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-grabMouse"><strong>grabMouse</strong></a>(...)</dt><dd><tt><a href="#UiMain-grabMouse">grabMouse</a>(self)<br>
+<a href="#UiMain-grabMouse">grabMouse</a>(self,&nbsp;Union[QCursor,&nbsp;Qt.CursorShape])</tt></dd></dl>
+
+<dl><dt><a name="UiMain-grabShortcut"><strong>grabShortcut</strong></a>(...)</dt><dd><tt><a href="#UiMain-grabShortcut">grabShortcut</a>(self,&nbsp;Union[QKeySequence,&nbsp;QKeySequence.StandardKey,&nbsp;str,&nbsp;int],&nbsp;context:&nbsp;Qt.ShortcutContext&nbsp;=&nbsp;Qt.WindowShortcut)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="UiMain-graphicsEffect"><strong>graphicsEffect</strong></a>(...)</dt><dd><tt><a href="#UiMain-graphicsEffect">graphicsEffect</a>(self)&nbsp;-&gt;&nbsp;QGraphicsEffect</tt></dd></dl>
+
+<dl><dt><a name="UiMain-graphicsProxyWidget"><strong>graphicsProxyWidget</strong></a>(...)</dt><dd><tt><a href="#UiMain-graphicsProxyWidget">graphicsProxyWidget</a>(self)&nbsp;-&gt;&nbsp;QGraphicsProxyWidget</tt></dd></dl>
+
+<dl><dt><a name="UiMain-hasFocus"><strong>hasFocus</strong></a>(...)</dt><dd><tt><a href="#UiMain-hasFocus">hasFocus</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-hasHeightForWidth"><strong>hasHeightForWidth</strong></a>(...)</dt><dd><tt><a href="#UiMain-hasHeightForWidth">hasHeightForWidth</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-hasMouseTracking"><strong>hasMouseTracking</strong></a>(...)</dt><dd><tt><a href="#UiMain-hasMouseTracking">hasMouseTracking</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-hasTabletTracking"><strong>hasTabletTracking</strong></a>(...)</dt><dd><tt><a href="#UiMain-hasTabletTracking">hasTabletTracking</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-height"><strong>height</strong></a>(...)</dt><dd><tt><a href="#UiMain-height">height</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="UiMain-heightForWidth"><strong>heightForWidth</strong></a>(...)</dt><dd><tt><a href="#UiMain-heightForWidth">heightForWidth</a>(self,&nbsp;int)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="UiMain-hide"><strong>hide</strong></a>(...)</dt><dd><tt><a href="#UiMain-hide">hide</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-hideEvent"><strong>hideEvent</strong></a>(...)</dt><dd><tt><a href="#UiMain-hideEvent">hideEvent</a>(self,&nbsp;QHideEvent)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-initPainter"><strong>initPainter</strong></a>(...)</dt><dd><tt><a href="#UiMain-initPainter">initPainter</a>(self,&nbsp;QPainter)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-inputMethodEvent"><strong>inputMethodEvent</strong></a>(...)</dt><dd><tt><a href="#UiMain-inputMethodEvent">inputMethodEvent</a>(self,&nbsp;QInputMethodEvent)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-inputMethodHints"><strong>inputMethodHints</strong></a>(...)</dt><dd><tt><a href="#UiMain-inputMethodHints">inputMethodHints</a>(self)&nbsp;-&gt;&nbsp;Qt.InputMethodHints</tt></dd></dl>
+
+<dl><dt><a name="UiMain-inputMethodQuery"><strong>inputMethodQuery</strong></a>(...)</dt><dd><tt><a href="#UiMain-inputMethodQuery">inputMethodQuery</a>(self,&nbsp;Qt.InputMethodQuery)&nbsp;-&gt;&nbsp;Any</tt></dd></dl>
+
+<dl><dt><a name="UiMain-insertAction"><strong>insertAction</strong></a>(...)</dt><dd><tt><a href="#UiMain-insertAction">insertAction</a>(self,&nbsp;QAction,&nbsp;QAction)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-insertActions"><strong>insertActions</strong></a>(...)</dt><dd><tt><a href="#UiMain-insertActions">insertActions</a>(self,&nbsp;QAction,&nbsp;Iterable[QAction])</tt></dd></dl>
+
+<dl><dt><a name="UiMain-isActiveWindow"><strong>isActiveWindow</strong></a>(...)</dt><dd><tt><a href="#UiMain-isActiveWindow">isActiveWindow</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-isAncestorOf"><strong>isAncestorOf</strong></a>(...)</dt><dd><tt><a href="#UiMain-isAncestorOf">isAncestorOf</a>(self,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-isEnabled"><strong>isEnabled</strong></a>(...)</dt><dd><tt><a href="#UiMain-isEnabled">isEnabled</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-isEnabledTo"><strong>isEnabledTo</strong></a>(...)</dt><dd><tt><a href="#UiMain-isEnabledTo">isEnabledTo</a>(self,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-isFullScreen"><strong>isFullScreen</strong></a>(...)</dt><dd><tt><a href="#UiMain-isFullScreen">isFullScreen</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-isHidden"><strong>isHidden</strong></a>(...)</dt><dd><tt><a href="#UiMain-isHidden">isHidden</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-isLeftToRight"><strong>isLeftToRight</strong></a>(...)</dt><dd><tt><a href="#UiMain-isLeftToRight">isLeftToRight</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-isMaximized"><strong>isMaximized</strong></a>(...)</dt><dd><tt><a href="#UiMain-isMaximized">isMaximized</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-isMinimized"><strong>isMinimized</strong></a>(...)</dt><dd><tt><a href="#UiMain-isMinimized">isMinimized</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-isModal"><strong>isModal</strong></a>(...)</dt><dd><tt><a href="#UiMain-isModal">isModal</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-isRightToLeft"><strong>isRightToLeft</strong></a>(...)</dt><dd><tt><a href="#UiMain-isRightToLeft">isRightToLeft</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-isVisible"><strong>isVisible</strong></a>(...)</dt><dd><tt><a href="#UiMain-isVisible">isVisible</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-isVisibleTo"><strong>isVisibleTo</strong></a>(...)</dt><dd><tt><a href="#UiMain-isVisibleTo">isVisibleTo</a>(self,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-isWindow"><strong>isWindow</strong></a>(...)</dt><dd><tt><a href="#UiMain-isWindow">isWindow</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-isWindowModified"><strong>isWindowModified</strong></a>(...)</dt><dd><tt><a href="#UiMain-isWindowModified">isWindowModified</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-keyPressEvent"><strong>keyPressEvent</strong></a>(...)</dt><dd><tt><a href="#UiMain-keyPressEvent">keyPressEvent</a>(self,&nbsp;QKeyEvent)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-keyReleaseEvent"><strong>keyReleaseEvent</strong></a>(...)</dt><dd><tt><a href="#UiMain-keyReleaseEvent">keyReleaseEvent</a>(self,&nbsp;QKeyEvent)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-keyboardGrabber"><strong>keyboardGrabber</strong></a>(...)</dt><dd><tt><a href="#UiMain-keyboardGrabber">keyboardGrabber</a>()&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="UiMain-layout"><strong>layout</strong></a>(...)</dt><dd><tt><a href="#UiMain-layout">layout</a>(self)&nbsp;-&gt;&nbsp;QLayout</tt></dd></dl>
+
+<dl><dt><a name="UiMain-layoutDirection"><strong>layoutDirection</strong></a>(...)</dt><dd><tt><a href="#UiMain-layoutDirection">layoutDirection</a>(self)&nbsp;-&gt;&nbsp;Qt.LayoutDirection</tt></dd></dl>
+
+<dl><dt><a name="UiMain-leaveEvent"><strong>leaveEvent</strong></a>(...)</dt><dd><tt><a href="#UiMain-leaveEvent">leaveEvent</a>(self,&nbsp;QEvent)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-locale"><strong>locale</strong></a>(...)</dt><dd><tt><a href="#UiMain-locale">locale</a>(self)&nbsp;-&gt;&nbsp;QLocale</tt></dd></dl>
+
+<dl><dt><a name="UiMain-lower"><strong>lower</strong></a>(...)</dt><dd><tt><a href="#UiMain-lower">lower</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-mapFrom"><strong>mapFrom</strong></a>(...)</dt><dd><tt><a href="#UiMain-mapFrom">mapFrom</a>(self,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>,&nbsp;QPoint)&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="UiMain-mapFromGlobal"><strong>mapFromGlobal</strong></a>(...)</dt><dd><tt><a href="#UiMain-mapFromGlobal">mapFromGlobal</a>(self,&nbsp;QPoint)&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="UiMain-mapFromParent"><strong>mapFromParent</strong></a>(...)</dt><dd><tt><a href="#UiMain-mapFromParent">mapFromParent</a>(self,&nbsp;QPoint)&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="UiMain-mapTo"><strong>mapTo</strong></a>(...)</dt><dd><tt><a href="#UiMain-mapTo">mapTo</a>(self,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>,&nbsp;QPoint)&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="UiMain-mapToGlobal"><strong>mapToGlobal</strong></a>(...)</dt><dd><tt><a href="#UiMain-mapToGlobal">mapToGlobal</a>(self,&nbsp;QPoint)&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="UiMain-mapToParent"><strong>mapToParent</strong></a>(...)</dt><dd><tt><a href="#UiMain-mapToParent">mapToParent</a>(self,&nbsp;QPoint)&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="UiMain-mask"><strong>mask</strong></a>(...)</dt><dd><tt><a href="#UiMain-mask">mask</a>(self)&nbsp;-&gt;&nbsp;QRegion</tt></dd></dl>
+
+<dl><dt><a name="UiMain-maximumHeight"><strong>maximumHeight</strong></a>(...)</dt><dd><tt><a href="#UiMain-maximumHeight">maximumHeight</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="UiMain-maximumSize"><strong>maximumSize</strong></a>(...)</dt><dd><tt><a href="#UiMain-maximumSize">maximumSize</a>(self)&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="UiMain-maximumWidth"><strong>maximumWidth</strong></a>(...)</dt><dd><tt><a href="#UiMain-maximumWidth">maximumWidth</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="UiMain-metric"><strong>metric</strong></a>(...)</dt><dd><tt><a href="#UiMain-metric">metric</a>(self,&nbsp;QPaintDevice.PaintDeviceMetric)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="UiMain-minimumHeight"><strong>minimumHeight</strong></a>(...)</dt><dd><tt><a href="#UiMain-minimumHeight">minimumHeight</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="UiMain-minimumSize"><strong>minimumSize</strong></a>(...)</dt><dd><tt><a href="#UiMain-minimumSize">minimumSize</a>(self)&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="UiMain-minimumSizeHint"><strong>minimumSizeHint</strong></a>(...)</dt><dd><tt><a href="#UiMain-minimumSizeHint">minimumSizeHint</a>(self)&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="UiMain-minimumWidth"><strong>minimumWidth</strong></a>(...)</dt><dd><tt><a href="#UiMain-minimumWidth">minimumWidth</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="UiMain-mouseDoubleClickEvent"><strong>mouseDoubleClickEvent</strong></a>(...)</dt><dd><tt><a href="#UiMain-mouseDoubleClickEvent">mouseDoubleClickEvent</a>(self,&nbsp;QMouseEvent)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-mouseGrabber"><strong>mouseGrabber</strong></a>(...)</dt><dd><tt><a href="#UiMain-mouseGrabber">mouseGrabber</a>()&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="UiMain-mouseMoveEvent"><strong>mouseMoveEvent</strong></a>(...)</dt><dd><tt><a href="#UiMain-mouseMoveEvent">mouseMoveEvent</a>(self,&nbsp;QMouseEvent)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-mousePressEvent"><strong>mousePressEvent</strong></a>(...)</dt><dd><tt><a href="#UiMain-mousePressEvent">mousePressEvent</a>(self,&nbsp;QMouseEvent)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-mouseReleaseEvent"><strong>mouseReleaseEvent</strong></a>(...)</dt><dd><tt><a href="#UiMain-mouseReleaseEvent">mouseReleaseEvent</a>(self,&nbsp;QMouseEvent)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-move"><strong>move</strong></a>(...)</dt><dd><tt><a href="#UiMain-move">move</a>(self,&nbsp;QPoint)<br>
+<a href="#UiMain-move">move</a>(self,&nbsp;int,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-moveEvent"><strong>moveEvent</strong></a>(...)</dt><dd><tt><a href="#UiMain-moveEvent">moveEvent</a>(self,&nbsp;QMoveEvent)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-nativeEvent"><strong>nativeEvent</strong></a>(...)</dt><dd><tt><a href="#UiMain-nativeEvent">nativeEvent</a>(self,&nbsp;Union[QByteArray,&nbsp;bytes,&nbsp;bytearray],&nbsp;PyQt5.sip.voidptr)&nbsp;-&gt;&nbsp;Tuple[bool,&nbsp;int]</tt></dd></dl>
+
+<dl><dt><a name="UiMain-nativeParentWidget"><strong>nativeParentWidget</strong></a>(...)</dt><dd><tt><a href="#UiMain-nativeParentWidget">nativeParentWidget</a>(self)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="UiMain-nextInFocusChain"><strong>nextInFocusChain</strong></a>(...)</dt><dd><tt><a href="#UiMain-nextInFocusChain">nextInFocusChain</a>(self)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="UiMain-normalGeometry"><strong>normalGeometry</strong></a>(...)</dt><dd><tt><a href="#UiMain-normalGeometry">normalGeometry</a>(self)&nbsp;-&gt;&nbsp;QRect</tt></dd></dl>
+
+<dl><dt><a name="UiMain-overrideWindowFlags"><strong>overrideWindowFlags</strong></a>(...)</dt><dd><tt><a href="#UiMain-overrideWindowFlags">overrideWindowFlags</a>(self,&nbsp;Union[Qt.WindowFlags,&nbsp;Qt.WindowType])</tt></dd></dl>
+
+<dl><dt><a name="UiMain-overrideWindowState"><strong>overrideWindowState</strong></a>(...)</dt><dd><tt><a href="#UiMain-overrideWindowState">overrideWindowState</a>(self,&nbsp;Union[Qt.WindowStates,&nbsp;Qt.WindowState])</tt></dd></dl>
+
+<dl><dt><a name="UiMain-paintEngine"><strong>paintEngine</strong></a>(...)</dt><dd><tt><a href="#UiMain-paintEngine">paintEngine</a>(self)&nbsp;-&gt;&nbsp;QPaintEngine</tt></dd></dl>
+
+<dl><dt><a name="UiMain-paintEvent"><strong>paintEvent</strong></a>(...)</dt><dd><tt><a href="#UiMain-paintEvent">paintEvent</a>(self,&nbsp;QPaintEvent)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-palette"><strong>palette</strong></a>(...)</dt><dd><tt><a href="#UiMain-palette">palette</a>(self)&nbsp;-&gt;&nbsp;QPalette</tt></dd></dl>
+
+<dl><dt><a name="UiMain-parentWidget"><strong>parentWidget</strong></a>(...)</dt><dd><tt><a href="#UiMain-parentWidget">parentWidget</a>(self)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="UiMain-pos"><strong>pos</strong></a>(...)</dt><dd><tt><a href="#UiMain-pos">pos</a>(self)&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="UiMain-previousInFocusChain"><strong>previousInFocusChain</strong></a>(...)</dt><dd><tt><a href="#UiMain-previousInFocusChain">previousInFocusChain</a>(self)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="UiMain-raise_"><strong>raise_</strong></a>(...)</dt><dd><tt><a href="#UiMain-raise_">raise_</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-rect"><strong>rect</strong></a>(...)</dt><dd><tt><a href="#UiMain-rect">rect</a>(self)&nbsp;-&gt;&nbsp;QRect</tt></dd></dl>
+
+<dl><dt><a name="UiMain-releaseKeyboard"><strong>releaseKeyboard</strong></a>(...)</dt><dd><tt><a href="#UiMain-releaseKeyboard">releaseKeyboard</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-releaseMouse"><strong>releaseMouse</strong></a>(...)</dt><dd><tt><a href="#UiMain-releaseMouse">releaseMouse</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-releaseShortcut"><strong>releaseShortcut</strong></a>(...)</dt><dd><tt><a href="#UiMain-releaseShortcut">releaseShortcut</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-removeAction"><strong>removeAction</strong></a>(...)</dt><dd><tt><a href="#UiMain-removeAction">removeAction</a>(self,&nbsp;QAction)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-render"><strong>render</strong></a>(...)</dt><dd><tt><a href="#UiMain-render">render</a>(self,&nbsp;QPaintDevice,&nbsp;targetOffset:&nbsp;QPoint&nbsp;=&nbsp;QPoint(),&nbsp;sourceRegion:&nbsp;QRegion&nbsp;=&nbsp;QRegion(),&nbsp;flags:&nbsp;Union[<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.RenderFlags,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.RenderFlag]&nbsp;=&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.<a href="#UiMain-RenderFlags">RenderFlags</a>(<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.RenderFlag.DrawWindowBackground|<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.RenderFlag.DrawChildren))<br>
+<a href="#UiMain-render">render</a>(self,&nbsp;QPainter,&nbsp;targetOffset:&nbsp;QPoint&nbsp;=&nbsp;QPoint(),&nbsp;sourceRegion:&nbsp;QRegion&nbsp;=&nbsp;QRegion(),&nbsp;flags:&nbsp;Union[<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.RenderFlags,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.RenderFlag]&nbsp;=&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.<a href="#UiMain-RenderFlags">RenderFlags</a>(<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.RenderFlag.DrawWindowBackground|<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.RenderFlag.DrawChildren))</tt></dd></dl>
+
+<dl><dt><a name="UiMain-repaint"><strong>repaint</strong></a>(...)</dt><dd><tt><a href="#UiMain-repaint">repaint</a>(self)<br>
+<a href="#UiMain-repaint">repaint</a>(self,&nbsp;int,&nbsp;int,&nbsp;int,&nbsp;int)<br>
+<a href="#UiMain-repaint">repaint</a>(self,&nbsp;QRect)<br>
+<a href="#UiMain-repaint">repaint</a>(self,&nbsp;QRegion)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-resize"><strong>resize</strong></a>(...)</dt><dd><tt><a href="#UiMain-resize">resize</a>(self,&nbsp;QSize)<br>
+<a href="#UiMain-resize">resize</a>(self,&nbsp;int,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-resizeEvent"><strong>resizeEvent</strong></a>(...)</dt><dd><tt><a href="#UiMain-resizeEvent">resizeEvent</a>(self,&nbsp;QResizeEvent)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-restoreGeometry"><strong>restoreGeometry</strong></a>(...)</dt><dd><tt><a href="#UiMain-restoreGeometry">restoreGeometry</a>(self,&nbsp;Union[QByteArray,&nbsp;bytes,&nbsp;bytearray])&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-saveGeometry"><strong>saveGeometry</strong></a>(...)</dt><dd><tt><a href="#UiMain-saveGeometry">saveGeometry</a>(self)&nbsp;-&gt;&nbsp;QByteArray</tt></dd></dl>
+
+<dl><dt><a name="UiMain-screen"><strong>screen</strong></a>(...)</dt><dd><tt><a href="#UiMain-screen">screen</a>(self)&nbsp;-&gt;&nbsp;QScreen</tt></dd></dl>
+
+<dl><dt><a name="UiMain-scroll"><strong>scroll</strong></a>(...)</dt><dd><tt><a href="#UiMain-scroll">scroll</a>(self,&nbsp;int,&nbsp;int)<br>
+<a href="#UiMain-scroll">scroll</a>(self,&nbsp;int,&nbsp;int,&nbsp;QRect)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setAcceptDrops"><strong>setAcceptDrops</strong></a>(...)</dt><dd><tt><a href="#UiMain-setAcceptDrops">setAcceptDrops</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setAccessibleDescription"><strong>setAccessibleDescription</strong></a>(...)</dt><dd><tt><a href="#UiMain-setAccessibleDescription">setAccessibleDescription</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setAccessibleName"><strong>setAccessibleName</strong></a>(...)</dt><dd><tt><a href="#UiMain-setAccessibleName">setAccessibleName</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setAttribute"><strong>setAttribute</strong></a>(...)</dt><dd><tt><a href="#UiMain-setAttribute">setAttribute</a>(self,&nbsp;Qt.WidgetAttribute,&nbsp;on:&nbsp;bool&nbsp;=&nbsp;True)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setAutoFillBackground"><strong>setAutoFillBackground</strong></a>(...)</dt><dd><tt><a href="#UiMain-setAutoFillBackground">setAutoFillBackground</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setBackgroundRole"><strong>setBackgroundRole</strong></a>(...)</dt><dd><tt><a href="#UiMain-setBackgroundRole">setBackgroundRole</a>(self,&nbsp;QPalette.ColorRole)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setBaseSize"><strong>setBaseSize</strong></a>(...)</dt><dd><tt><a href="#UiMain-setBaseSize">setBaseSize</a>(self,&nbsp;int,&nbsp;int)<br>
+<a href="#UiMain-setBaseSize">setBaseSize</a>(self,&nbsp;QSize)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setContentsMargins"><strong>setContentsMargins</strong></a>(...)</dt><dd><tt><a href="#UiMain-setContentsMargins">setContentsMargins</a>(self,&nbsp;int,&nbsp;int,&nbsp;int,&nbsp;int)<br>
+<a href="#UiMain-setContentsMargins">setContentsMargins</a>(self,&nbsp;QMargins)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setContextMenuPolicy"><strong>setContextMenuPolicy</strong></a>(...)</dt><dd><tt><a href="#UiMain-setContextMenuPolicy">setContextMenuPolicy</a>(self,&nbsp;Qt.ContextMenuPolicy)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setCursor"><strong>setCursor</strong></a>(...)</dt><dd><tt><a href="#UiMain-setCursor">setCursor</a>(self,&nbsp;Union[QCursor,&nbsp;Qt.CursorShape])</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setDisabled"><strong>setDisabled</strong></a>(...)</dt><dd><tt><a href="#UiMain-setDisabled">setDisabled</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setEnabled"><strong>setEnabled</strong></a>(...)</dt><dd><tt><a href="#UiMain-setEnabled">setEnabled</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setFixedHeight"><strong>setFixedHeight</strong></a>(...)</dt><dd><tt><a href="#UiMain-setFixedHeight">setFixedHeight</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setFixedSize"><strong>setFixedSize</strong></a>(...)</dt><dd><tt><a href="#UiMain-setFixedSize">setFixedSize</a>(self,&nbsp;QSize)<br>
+<a href="#UiMain-setFixedSize">setFixedSize</a>(self,&nbsp;int,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setFixedWidth"><strong>setFixedWidth</strong></a>(...)</dt><dd><tt><a href="#UiMain-setFixedWidth">setFixedWidth</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setFocus"><strong>setFocus</strong></a>(...)</dt><dd><tt><a href="#UiMain-setFocus">setFocus</a>(self)<br>
+<a href="#UiMain-setFocus">setFocus</a>(self,&nbsp;Qt.FocusReason)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setFocusPolicy"><strong>setFocusPolicy</strong></a>(...)</dt><dd><tt><a href="#UiMain-setFocusPolicy">setFocusPolicy</a>(self,&nbsp;Qt.FocusPolicy)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setFocusProxy"><strong>setFocusProxy</strong></a>(...)</dt><dd><tt><a href="#UiMain-setFocusProxy">setFocusProxy</a>(self,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setFont"><strong>setFont</strong></a>(...)</dt><dd><tt><a href="#UiMain-setFont">setFont</a>(self,&nbsp;QFont)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setForegroundRole"><strong>setForegroundRole</strong></a>(...)</dt><dd><tt><a href="#UiMain-setForegroundRole">setForegroundRole</a>(self,&nbsp;QPalette.ColorRole)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setGeometry"><strong>setGeometry</strong></a>(...)</dt><dd><tt><a href="#UiMain-setGeometry">setGeometry</a>(self,&nbsp;QRect)<br>
+<a href="#UiMain-setGeometry">setGeometry</a>(self,&nbsp;int,&nbsp;int,&nbsp;int,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setGraphicsEffect"><strong>setGraphicsEffect</strong></a>(...)</dt><dd><tt><a href="#UiMain-setGraphicsEffect">setGraphicsEffect</a>(self,&nbsp;QGraphicsEffect)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setHidden"><strong>setHidden</strong></a>(...)</dt><dd><tt><a href="#UiMain-setHidden">setHidden</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setInputMethodHints"><strong>setInputMethodHints</strong></a>(...)</dt><dd><tt><a href="#UiMain-setInputMethodHints">setInputMethodHints</a>(self,&nbsp;Union[Qt.InputMethodHints,&nbsp;Qt.InputMethodHint])</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setLayout"><strong>setLayout</strong></a>(...)</dt><dd><tt><a href="#UiMain-setLayout">setLayout</a>(self,&nbsp;QLayout)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setLayoutDirection"><strong>setLayoutDirection</strong></a>(...)</dt><dd><tt><a href="#UiMain-setLayoutDirection">setLayoutDirection</a>(self,&nbsp;Qt.LayoutDirection)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setLocale"><strong>setLocale</strong></a>(...)</dt><dd><tt><a href="#UiMain-setLocale">setLocale</a>(self,&nbsp;QLocale)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setMask"><strong>setMask</strong></a>(...)</dt><dd><tt><a href="#UiMain-setMask">setMask</a>(self,&nbsp;QBitmap)<br>
+<a href="#UiMain-setMask">setMask</a>(self,&nbsp;QRegion)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setMaximumHeight"><strong>setMaximumHeight</strong></a>(...)</dt><dd><tt><a href="#UiMain-setMaximumHeight">setMaximumHeight</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setMaximumSize"><strong>setMaximumSize</strong></a>(...)</dt><dd><tt><a href="#UiMain-setMaximumSize">setMaximumSize</a>(self,&nbsp;int,&nbsp;int)<br>
+<a href="#UiMain-setMaximumSize">setMaximumSize</a>(self,&nbsp;QSize)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setMaximumWidth"><strong>setMaximumWidth</strong></a>(...)</dt><dd><tt><a href="#UiMain-setMaximumWidth">setMaximumWidth</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setMinimumHeight"><strong>setMinimumHeight</strong></a>(...)</dt><dd><tt><a href="#UiMain-setMinimumHeight">setMinimumHeight</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setMinimumSize"><strong>setMinimumSize</strong></a>(...)</dt><dd><tt><a href="#UiMain-setMinimumSize">setMinimumSize</a>(self,&nbsp;int,&nbsp;int)<br>
+<a href="#UiMain-setMinimumSize">setMinimumSize</a>(self,&nbsp;QSize)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setMinimumWidth"><strong>setMinimumWidth</strong></a>(...)</dt><dd><tt><a href="#UiMain-setMinimumWidth">setMinimumWidth</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setMouseTracking"><strong>setMouseTracking</strong></a>(...)</dt><dd><tt><a href="#UiMain-setMouseTracking">setMouseTracking</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setPalette"><strong>setPalette</strong></a>(...)</dt><dd><tt><a href="#UiMain-setPalette">setPalette</a>(self,&nbsp;QPalette)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setParent"><strong>setParent</strong></a>(...)</dt><dd><tt><a href="#UiMain-setParent">setParent</a>(self,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>)<br>
+<a href="#UiMain-setParent">setParent</a>(self,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>,&nbsp;Union[Qt.WindowFlags,&nbsp;Qt.WindowType])</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setShortcutAutoRepeat"><strong>setShortcutAutoRepeat</strong></a>(...)</dt><dd><tt><a href="#UiMain-setShortcutAutoRepeat">setShortcutAutoRepeat</a>(self,&nbsp;int,&nbsp;enabled:&nbsp;bool&nbsp;=&nbsp;True)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setShortcutEnabled"><strong>setShortcutEnabled</strong></a>(...)</dt><dd><tt><a href="#UiMain-setShortcutEnabled">setShortcutEnabled</a>(self,&nbsp;int,&nbsp;enabled:&nbsp;bool&nbsp;=&nbsp;True)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setSizeIncrement"><strong>setSizeIncrement</strong></a>(...)</dt><dd><tt><a href="#UiMain-setSizeIncrement">setSizeIncrement</a>(self,&nbsp;int,&nbsp;int)<br>
+<a href="#UiMain-setSizeIncrement">setSizeIncrement</a>(self,&nbsp;QSize)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setSizePolicy"><strong>setSizePolicy</strong></a>(...)</dt><dd><tt><a href="#UiMain-setSizePolicy">setSizePolicy</a>(self,&nbsp;QSizePolicy)<br>
+<a href="#UiMain-setSizePolicy">setSizePolicy</a>(self,&nbsp;QSizePolicy.Policy,&nbsp;QSizePolicy.Policy)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setStatusTip"><strong>setStatusTip</strong></a>(...)</dt><dd><tt><a href="#UiMain-setStatusTip">setStatusTip</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setStyle"><strong>setStyle</strong></a>(...)</dt><dd><tt><a href="#UiMain-setStyle">setStyle</a>(self,&nbsp;QStyle)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setStyleSheet"><strong>setStyleSheet</strong></a>(...)</dt><dd><tt><a href="#UiMain-setStyleSheet">setStyleSheet</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setTabOrder"><strong>setTabOrder</strong></a>(...)</dt><dd><tt><a href="#UiMain-setTabOrder">setTabOrder</a>(<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setTabletTracking"><strong>setTabletTracking</strong></a>(...)</dt><dd><tt><a href="#UiMain-setTabletTracking">setTabletTracking</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setToolTip"><strong>setToolTip</strong></a>(...)</dt><dd><tt><a href="#UiMain-setToolTip">setToolTip</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setToolTipDuration"><strong>setToolTipDuration</strong></a>(...)</dt><dd><tt><a href="#UiMain-setToolTipDuration">setToolTipDuration</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setUpdatesEnabled"><strong>setUpdatesEnabled</strong></a>(...)</dt><dd><tt><a href="#UiMain-setUpdatesEnabled">setUpdatesEnabled</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setVisible"><strong>setVisible</strong></a>(...)</dt><dd><tt><a href="#UiMain-setVisible">setVisible</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setWhatsThis"><strong>setWhatsThis</strong></a>(...)</dt><dd><tt><a href="#UiMain-setWhatsThis">setWhatsThis</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setWindowFilePath"><strong>setWindowFilePath</strong></a>(...)</dt><dd><tt><a href="#UiMain-setWindowFilePath">setWindowFilePath</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setWindowFlag"><strong>setWindowFlag</strong></a>(...)</dt><dd><tt><a href="#UiMain-setWindowFlag">setWindowFlag</a>(self,&nbsp;Qt.WindowType,&nbsp;on:&nbsp;bool&nbsp;=&nbsp;True)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setWindowFlags"><strong>setWindowFlags</strong></a>(...)</dt><dd><tt><a href="#UiMain-setWindowFlags">setWindowFlags</a>(self,&nbsp;Union[Qt.WindowFlags,&nbsp;Qt.WindowType])</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setWindowIcon"><strong>setWindowIcon</strong></a>(...)</dt><dd><tt><a href="#UiMain-setWindowIcon">setWindowIcon</a>(self,&nbsp;QIcon)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setWindowIconText"><strong>setWindowIconText</strong></a>(...)</dt><dd><tt><a href="#UiMain-setWindowIconText">setWindowIconText</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setWindowModality"><strong>setWindowModality</strong></a>(...)</dt><dd><tt><a href="#UiMain-setWindowModality">setWindowModality</a>(self,&nbsp;Qt.WindowModality)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setWindowModified"><strong>setWindowModified</strong></a>(...)</dt><dd><tt><a href="#UiMain-setWindowModified">setWindowModified</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setWindowOpacity"><strong>setWindowOpacity</strong></a>(...)</dt><dd><tt><a href="#UiMain-setWindowOpacity">setWindowOpacity</a>(self,&nbsp;float)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setWindowRole"><strong>setWindowRole</strong></a>(...)</dt><dd><tt><a href="#UiMain-setWindowRole">setWindowRole</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setWindowState"><strong>setWindowState</strong></a>(...)</dt><dd><tt><a href="#UiMain-setWindowState">setWindowState</a>(self,&nbsp;Union[Qt.WindowStates,&nbsp;Qt.WindowState])</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setWindowTitle"><strong>setWindowTitle</strong></a>(...)</dt><dd><tt><a href="#UiMain-setWindowTitle">setWindowTitle</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-sharedPainter"><strong>sharedPainter</strong></a>(...)</dt><dd><tt><a href="#UiMain-sharedPainter">sharedPainter</a>(self)&nbsp;-&gt;&nbsp;QPainter</tt></dd></dl>
+
+<dl><dt><a name="UiMain-show"><strong>show</strong></a>(...)</dt><dd><tt><a href="#UiMain-show">show</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-showEvent"><strong>showEvent</strong></a>(...)</dt><dd><tt><a href="#UiMain-showEvent">showEvent</a>(self,&nbsp;QShowEvent)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-showFullScreen"><strong>showFullScreen</strong></a>(...)</dt><dd><tt><a href="#UiMain-showFullScreen">showFullScreen</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-showMaximized"><strong>showMaximized</strong></a>(...)</dt><dd><tt><a href="#UiMain-showMaximized">showMaximized</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-showMinimized"><strong>showMinimized</strong></a>(...)</dt><dd><tt><a href="#UiMain-showMinimized">showMinimized</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-showNormal"><strong>showNormal</strong></a>(...)</dt><dd><tt><a href="#UiMain-showNormal">showNormal</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-size"><strong>size</strong></a>(...)</dt><dd><tt><a href="#UiMain-size">size</a>(self)&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="UiMain-sizeHint"><strong>sizeHint</strong></a>(...)</dt><dd><tt><a href="#UiMain-sizeHint">sizeHint</a>(self)&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="UiMain-sizeIncrement"><strong>sizeIncrement</strong></a>(...)</dt><dd><tt><a href="#UiMain-sizeIncrement">sizeIncrement</a>(self)&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="UiMain-sizePolicy"><strong>sizePolicy</strong></a>(...)</dt><dd><tt><a href="#UiMain-sizePolicy">sizePolicy</a>(self)&nbsp;-&gt;&nbsp;QSizePolicy</tt></dd></dl>
+
+<dl><dt><a name="UiMain-stackUnder"><strong>stackUnder</strong></a>(...)</dt><dd><tt><a href="#UiMain-stackUnder">stackUnder</a>(self,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-statusTip"><strong>statusTip</strong></a>(...)</dt><dd><tt><a href="#UiMain-statusTip">statusTip</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="UiMain-style"><strong>style</strong></a>(...)</dt><dd><tt><a href="#UiMain-style">style</a>(self)&nbsp;-&gt;&nbsp;QStyle</tt></dd></dl>
+
+<dl><dt><a name="UiMain-styleSheet"><strong>styleSheet</strong></a>(...)</dt><dd><tt><a href="#UiMain-styleSheet">styleSheet</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="UiMain-tabletEvent"><strong>tabletEvent</strong></a>(...)</dt><dd><tt><a href="#UiMain-tabletEvent">tabletEvent</a>(self,&nbsp;QTabletEvent)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-testAttribute"><strong>testAttribute</strong></a>(...)</dt><dd><tt><a href="#UiMain-testAttribute">testAttribute</a>(self,&nbsp;Qt.WidgetAttribute)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-toolTip"><strong>toolTip</strong></a>(...)</dt><dd><tt><a href="#UiMain-toolTip">toolTip</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="UiMain-toolTipDuration"><strong>toolTipDuration</strong></a>(...)</dt><dd><tt><a href="#UiMain-toolTipDuration">toolTipDuration</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="UiMain-underMouse"><strong>underMouse</strong></a>(...)</dt><dd><tt><a href="#UiMain-underMouse">underMouse</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-ungrabGesture"><strong>ungrabGesture</strong></a>(...)</dt><dd><tt><a href="#UiMain-ungrabGesture">ungrabGesture</a>(self,&nbsp;Qt.GestureType)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-unsetCursor"><strong>unsetCursor</strong></a>(...)</dt><dd><tt><a href="#UiMain-unsetCursor">unsetCursor</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-unsetLayoutDirection"><strong>unsetLayoutDirection</strong></a>(...)</dt><dd><tt><a href="#UiMain-unsetLayoutDirection">unsetLayoutDirection</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-unsetLocale"><strong>unsetLocale</strong></a>(...)</dt><dd><tt><a href="#UiMain-unsetLocale">unsetLocale</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-update"><strong>update</strong></a>(...)</dt><dd><tt><a href="#UiMain-update">update</a>(self)<br>
+<a href="#UiMain-update">update</a>(self,&nbsp;QRect)<br>
+<a href="#UiMain-update">update</a>(self,&nbsp;QRegion)<br>
+<a href="#UiMain-update">update</a>(self,&nbsp;int,&nbsp;int,&nbsp;int,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-updateGeometry"><strong>updateGeometry</strong></a>(...)</dt><dd><tt><a href="#UiMain-updateGeometry">updateGeometry</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-updateMicroFocus"><strong>updateMicroFocus</strong></a>(...)</dt><dd><tt><a href="#UiMain-updateMicroFocus">updateMicroFocus</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-updatesEnabled"><strong>updatesEnabled</strong></a>(...)</dt><dd><tt><a href="#UiMain-updatesEnabled">updatesEnabled</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-visibleRegion"><strong>visibleRegion</strong></a>(...)</dt><dd><tt><a href="#UiMain-visibleRegion">visibleRegion</a>(self)&nbsp;-&gt;&nbsp;QRegion</tt></dd></dl>
+
+<dl><dt><a name="UiMain-whatsThis"><strong>whatsThis</strong></a>(...)</dt><dd><tt><a href="#UiMain-whatsThis">whatsThis</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="UiMain-wheelEvent"><strong>wheelEvent</strong></a>(...)</dt><dd><tt><a href="#UiMain-wheelEvent">wheelEvent</a>(self,&nbsp;QWheelEvent)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-width"><strong>width</strong></a>(...)</dt><dd><tt><a href="#UiMain-width">width</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="UiMain-winId"><strong>winId</strong></a>(...)</dt><dd><tt><a href="#UiMain-winId">winId</a>(self)&nbsp;-&gt;&nbsp;PyQt5.sip.voidptr</tt></dd></dl>
+
+<dl><dt><a name="UiMain-window"><strong>window</strong></a>(...)</dt><dd><tt><a href="#UiMain-window">window</a>(self)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="UiMain-windowFilePath"><strong>windowFilePath</strong></a>(...)</dt><dd><tt><a href="#UiMain-windowFilePath">windowFilePath</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="UiMain-windowFlags"><strong>windowFlags</strong></a>(...)</dt><dd><tt><a href="#UiMain-windowFlags">windowFlags</a>(self)&nbsp;-&gt;&nbsp;Qt.WindowFlags</tt></dd></dl>
+
+<dl><dt><a name="UiMain-windowHandle"><strong>windowHandle</strong></a>(...)</dt><dd><tt><a href="#UiMain-windowHandle">windowHandle</a>(self)&nbsp;-&gt;&nbsp;QWindow</tt></dd></dl>
+
+<dl><dt><a name="UiMain-windowIcon"><strong>windowIcon</strong></a>(...)</dt><dd><tt><a href="#UiMain-windowIcon">windowIcon</a>(self)&nbsp;-&gt;&nbsp;QIcon</tt></dd></dl>
+
+<strong>windowIconChanged</strong> = &lt;unbound PYQT_SIGNAL windowIconChanged(QIcon)&gt;
+<dl><dt><a name="UiMain-windowIconText"><strong>windowIconText</strong></a>(...)</dt><dd><tt><a href="#UiMain-windowIconText">windowIconText</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<strong>windowIconTextChanged</strong> = &lt;unbound PYQT_SIGNAL windowIconTextChanged(QString)&gt;
+<dl><dt><a name="UiMain-windowModality"><strong>windowModality</strong></a>(...)</dt><dd><tt><a href="#UiMain-windowModality">windowModality</a>(self)&nbsp;-&gt;&nbsp;Qt.WindowModality</tt></dd></dl>
+
+<dl><dt><a name="UiMain-windowOpacity"><strong>windowOpacity</strong></a>(...)</dt><dd><tt><a href="#UiMain-windowOpacity">windowOpacity</a>(self)&nbsp;-&gt;&nbsp;float</tt></dd></dl>
+
+<dl><dt><a name="UiMain-windowRole"><strong>windowRole</strong></a>(...)</dt><dd><tt><a href="#UiMain-windowRole">windowRole</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="UiMain-windowState"><strong>windowState</strong></a>(...)</dt><dd><tt><a href="#UiMain-windowState">windowState</a>(self)&nbsp;-&gt;&nbsp;Qt.WindowStates</tt></dd></dl>
+
+<dl><dt><a name="UiMain-windowTitle"><strong>windowTitle</strong></a>(...)</dt><dd><tt><a href="#UiMain-windowTitle">windowTitle</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<strong>windowTitleChanged</strong> = &lt;unbound PYQT_SIGNAL windowTitleChanged(QString)&gt;
+<dl><dt><a name="UiMain-windowType"><strong>windowType</strong></a>(...)</dt><dd><tt><a href="#UiMain-windowType">windowType</a>(self)&nbsp;-&gt;&nbsp;Qt.WindowType</tt></dd></dl>
+
+<dl><dt><a name="UiMain-x"><strong>x</strong></a>(...)</dt><dd><tt><a href="#UiMain-x">x</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="UiMain-y"><strong>y</strong></a>(...)</dt><dd><tt><a href="#UiMain-y">y</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="PyQt5.QtWidgets.html#QWidget">PyQt5.QtWidgets.QWidget</a>:<br>
+<dl><dt><strong>DrawChildren</strong> = 2</dl>
+
+<dl><dt><strong>DrawWindowBackground</strong> = 1</dl>
+
+<dl><dt><strong>IgnoreMask</strong> = 4</dl>
+
+<dl><dt><strong>RenderFlag</strong> = &lt;class 'PyQt5.QtWidgets.QWidget.RenderFlag'&gt;</dl>
+
+<dl><dt><strong>RenderFlags</strong> = &lt;class 'PyQt5.QtWidgets.QWidget.RenderFlags'&gt;<dd><tt><a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.<a href="#UiMain-RenderFlags">RenderFlags</a>()<br>
+<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.<a href="#UiMain-RenderFlags">RenderFlags</a>(Union[<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.RenderFlags,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.RenderFlag])<br>
+<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.<a href="#UiMain-RenderFlags">RenderFlags</a>(<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.RenderFlags)</tt></dl>
+
+<hr>
+Methods inherited from <a href="PyQt5.QtCore.html#QObject">PyQt5.QtCore.QObject</a>:<br>
+<dl><dt><a name="UiMain-__getattr__"><strong>__getattr__</strong></a>(...)</dt><dd><tt><a href="#UiMain-__getattr__">__getattr__</a>(self,&nbsp;str)&nbsp;-&gt;&nbsp;object</tt></dd></dl>
+
+<dl><dt><a name="UiMain-blockSignals"><strong>blockSignals</strong></a>(...)</dt><dd><tt><a href="#UiMain-blockSignals">blockSignals</a>(self,&nbsp;bool)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-childEvent"><strong>childEvent</strong></a>(...)</dt><dd><tt><a href="#UiMain-childEvent">childEvent</a>(self,&nbsp;QChildEvent)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-children"><strong>children</strong></a>(...)</dt><dd><tt><a href="#UiMain-children">children</a>(self)&nbsp;-&gt;&nbsp;List[QObject]</tt></dd></dl>
+
+<dl><dt><a name="UiMain-connectNotify"><strong>connectNotify</strong></a>(...)</dt><dd><tt><a href="#UiMain-connectNotify">connectNotify</a>(self,&nbsp;QMetaMethod)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-customEvent"><strong>customEvent</strong></a>(...)</dt><dd><tt><a href="#UiMain-customEvent">customEvent</a>(self,&nbsp;QEvent)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-deleteLater"><strong>deleteLater</strong></a>(...)</dt><dd><tt><a href="#UiMain-deleteLater">deleteLater</a>(self)</tt></dd></dl>
+
+<strong>destroyed</strong> = &lt;unbound PYQT_SIGNAL destroyed(QObject*)&gt;
+<dl><dt><a name="UiMain-disconnect"><strong>disconnect</strong></a>(...)</dt><dd><tt><a href="#UiMain-disconnect">disconnect</a>(QMetaObject.Connection)&nbsp;-&gt;&nbsp;bool<br>
+<a href="#UiMain-disconnect">disconnect</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-disconnectNotify"><strong>disconnectNotify</strong></a>(...)</dt><dd><tt><a href="#UiMain-disconnectNotify">disconnectNotify</a>(self,&nbsp;QMetaMethod)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-dumpObjectInfo"><strong>dumpObjectInfo</strong></a>(...)</dt><dd><tt><a href="#UiMain-dumpObjectInfo">dumpObjectInfo</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-dumpObjectTree"><strong>dumpObjectTree</strong></a>(...)</dt><dd><tt><a href="#UiMain-dumpObjectTree">dumpObjectTree</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-dynamicPropertyNames"><strong>dynamicPropertyNames</strong></a>(...)</dt><dd><tt><a href="#UiMain-dynamicPropertyNames">dynamicPropertyNames</a>(self)&nbsp;-&gt;&nbsp;List[QByteArray]</tt></dd></dl>
+
+<dl><dt><a name="UiMain-eventFilter"><strong>eventFilter</strong></a>(...)</dt><dd><tt><a href="#UiMain-eventFilter">eventFilter</a>(self,&nbsp;QObject,&nbsp;QEvent)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-findChild"><strong>findChild</strong></a>(...)</dt><dd><tt><a href="#UiMain-findChild">findChild</a>(self,&nbsp;type,&nbsp;name:&nbsp;str&nbsp;=&nbsp;'',&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;QObject<br>
+<a href="#UiMain-findChild">findChild</a>(self,&nbsp;Tuple,&nbsp;name:&nbsp;str&nbsp;=&nbsp;'',&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;QObject</tt></dd></dl>
+
+<dl><dt><a name="UiMain-findChildren"><strong>findChildren</strong></a>(...)</dt><dd><tt><a href="#UiMain-findChildren">findChildren</a>(self,&nbsp;type,&nbsp;name:&nbsp;str&nbsp;=&nbsp;'',&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;List[QObject]<br>
+<a href="#UiMain-findChildren">findChildren</a>(self,&nbsp;Tuple,&nbsp;name:&nbsp;str&nbsp;=&nbsp;'',&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;List[QObject]<br>
+<a href="#UiMain-findChildren">findChildren</a>(self,&nbsp;type,&nbsp;QRegExp,&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;List[QObject]<br>
+<a href="#UiMain-findChildren">findChildren</a>(self,&nbsp;Tuple,&nbsp;QRegExp,&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;List[QObject]<br>
+<a href="#UiMain-findChildren">findChildren</a>(self,&nbsp;type,&nbsp;QRegularExpression,&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;List[QObject]<br>
+<a href="#UiMain-findChildren">findChildren</a>(self,&nbsp;Tuple,&nbsp;QRegularExpression,&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;List[QObject]</tt></dd></dl>
+
+<dl><dt><a name="UiMain-inherits"><strong>inherits</strong></a>(...)</dt><dd><tt><a href="#UiMain-inherits">inherits</a>(self,&nbsp;str)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-installEventFilter"><strong>installEventFilter</strong></a>(...)</dt><dd><tt><a href="#UiMain-installEventFilter">installEventFilter</a>(self,&nbsp;QObject)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-isSignalConnected"><strong>isSignalConnected</strong></a>(...)</dt><dd><tt><a href="#UiMain-isSignalConnected">isSignalConnected</a>(self,&nbsp;QMetaMethod)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-isWidgetType"><strong>isWidgetType</strong></a>(...)</dt><dd><tt><a href="#UiMain-isWidgetType">isWidgetType</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-isWindowType"><strong>isWindowType</strong></a>(...)</dt><dd><tt><a href="#UiMain-isWindowType">isWindowType</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-killTimer"><strong>killTimer</strong></a>(...)</dt><dd><tt><a href="#UiMain-killTimer">killTimer</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-metaObject"><strong>metaObject</strong></a>(...)</dt><dd><tt><a href="#UiMain-metaObject">metaObject</a>(self)&nbsp;-&gt;&nbsp;QMetaObject</tt></dd></dl>
+
+<dl><dt><a name="UiMain-moveToThread"><strong>moveToThread</strong></a>(...)</dt><dd><tt><a href="#UiMain-moveToThread">moveToThread</a>(self,&nbsp;QThread)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-objectName"><strong>objectName</strong></a>(...)</dt><dd><tt><a href="#UiMain-objectName">objectName</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<strong>objectNameChanged</strong> = &lt;unbound PYQT_SIGNAL objectNameChanged(QString)&gt;
+<dl><dt><a name="UiMain-parent"><strong>parent</strong></a>(...)</dt><dd><tt><a href="#UiMain-parent">parent</a>(self)&nbsp;-&gt;&nbsp;QObject</tt></dd></dl>
+
+<dl><dt><a name="UiMain-property"><strong>property</strong></a>(...)</dt><dd><tt><a href="#UiMain-property">property</a>(self,&nbsp;str)&nbsp;-&gt;&nbsp;Any</tt></dd></dl>
+
+<dl><dt><a name="UiMain-pyqtConfigure"><strong>pyqtConfigure</strong></a>(...)</dt><dd><tt>QObject.<a href="#UiMain-pyqtConfigure">pyqtConfigure</a>(...)<br>
+&nbsp;<br>
+Each&nbsp;keyword&nbsp;argument&nbsp;is&nbsp;either&nbsp;the&nbsp;name&nbsp;of&nbsp;a&nbsp;Qt&nbsp;property&nbsp;or&nbsp;a&nbsp;Qt&nbsp;signal.<br>
+For&nbsp;properties&nbsp;the&nbsp;property&nbsp;is&nbsp;set&nbsp;to&nbsp;the&nbsp;given&nbsp;value&nbsp;which&nbsp;should&nbsp;be&nbsp;of&nbsp;an<br>
+appropriate&nbsp;type.<br>
+For&nbsp;signals&nbsp;the&nbsp;signal&nbsp;is&nbsp;connected&nbsp;to&nbsp;the&nbsp;given&nbsp;value&nbsp;which&nbsp;should&nbsp;be&nbsp;a<br>
+callable.</tt></dd></dl>
+
+<dl><dt><a name="UiMain-receivers"><strong>receivers</strong></a>(...)</dt><dd><tt><a href="#UiMain-receivers">receivers</a>(self,&nbsp;PYQT_SIGNAL)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="UiMain-removeEventFilter"><strong>removeEventFilter</strong></a>(...)</dt><dd><tt><a href="#UiMain-removeEventFilter">removeEventFilter</a>(self,&nbsp;QObject)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-sender"><strong>sender</strong></a>(...)</dt><dd><tt><a href="#UiMain-sender">sender</a>(self)&nbsp;-&gt;&nbsp;QObject</tt></dd></dl>
+
+<dl><dt><a name="UiMain-senderSignalIndex"><strong>senderSignalIndex</strong></a>(...)</dt><dd><tt><a href="#UiMain-senderSignalIndex">senderSignalIndex</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setObjectName"><strong>setObjectName</strong></a>(...)</dt><dd><tt><a href="#UiMain-setObjectName">setObjectName</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-setProperty"><strong>setProperty</strong></a>(...)</dt><dd><tt><a href="#UiMain-setProperty">setProperty</a>(self,&nbsp;str,&nbsp;Any)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-signalsBlocked"><strong>signalsBlocked</strong></a>(...)</dt><dd><tt><a href="#UiMain-signalsBlocked">signalsBlocked</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-startTimer"><strong>startTimer</strong></a>(...)</dt><dd><tt><a href="#UiMain-startTimer">startTimer</a>(self,&nbsp;int,&nbsp;timerType:&nbsp;Qt.TimerType&nbsp;=&nbsp;Qt.CoarseTimer)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="UiMain-thread"><strong>thread</strong></a>(...)</dt><dd><tt><a href="#UiMain-thread">thread</a>(self)&nbsp;-&gt;&nbsp;QThread</tt></dd></dl>
+
+<dl><dt><a name="UiMain-timerEvent"><strong>timerEvent</strong></a>(...)</dt><dd><tt><a href="#UiMain-timerEvent">timerEvent</a>(self,&nbsp;QTimerEvent)</tt></dd></dl>
+
+<dl><dt><a name="UiMain-tr"><strong>tr</strong></a>(...)</dt><dd><tt><a href="#UiMain-tr">tr</a>(self,&nbsp;str,&nbsp;disambiguation:&nbsp;str&nbsp;=&nbsp;None,&nbsp;n:&nbsp;int&nbsp;=&nbsp;-1)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="PyQt5.QtCore.html#QObject">PyQt5.QtCore.QObject</a>:<br>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="PyQt5.QtCore.html#QObject">PyQt5.QtCore.QObject</a>:<br>
+<dl><dt><strong>staticMetaObject</strong> = &lt;PyQt5.QtCore.QMetaObject object&gt;</dl>
+
+<hr>
+Methods inherited from <a href="PyQt5.QtGui.html#QPaintDevice">PyQt5.QtGui.QPaintDevice</a>:<br>
+<dl><dt><a name="UiMain-colorCount"><strong>colorCount</strong></a>(...)</dt><dd><tt><a href="#UiMain-colorCount">colorCount</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="UiMain-depth"><strong>depth</strong></a>(...)</dt><dd><tt><a href="#UiMain-depth">depth</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="UiMain-devicePixelRatio"><strong>devicePixelRatio</strong></a>(...)</dt><dd><tt><a href="#UiMain-devicePixelRatio">devicePixelRatio</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="UiMain-devicePixelRatioF"><strong>devicePixelRatioF</strong></a>(...)</dt><dd><tt><a href="#UiMain-devicePixelRatioF">devicePixelRatioF</a>(self)&nbsp;-&gt;&nbsp;float</tt></dd></dl>
+
+<dl><dt><a name="UiMain-devicePixelRatioFScale"><strong>devicePixelRatioFScale</strong></a>(...)</dt><dd><tt><a href="#UiMain-devicePixelRatioFScale">devicePixelRatioFScale</a>()&nbsp;-&gt;&nbsp;float</tt></dd></dl>
+
+<dl><dt><a name="UiMain-heightMM"><strong>heightMM</strong></a>(...)</dt><dd><tt><a href="#UiMain-heightMM">heightMM</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="UiMain-logicalDpiX"><strong>logicalDpiX</strong></a>(...)</dt><dd><tt><a href="#UiMain-logicalDpiX">logicalDpiX</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="UiMain-logicalDpiY"><strong>logicalDpiY</strong></a>(...)</dt><dd><tt><a href="#UiMain-logicalDpiY">logicalDpiY</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="UiMain-paintingActive"><strong>paintingActive</strong></a>(...)</dt><dd><tt><a href="#UiMain-paintingActive">paintingActive</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="UiMain-physicalDpiX"><strong>physicalDpiX</strong></a>(...)</dt><dd><tt><a href="#UiMain-physicalDpiX">physicalDpiX</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="UiMain-physicalDpiY"><strong>physicalDpiY</strong></a>(...)</dt><dd><tt><a href="#UiMain-physicalDpiY">physicalDpiY</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="UiMain-widthMM"><strong>widthMM</strong></a>(...)</dt><dd><tt><a href="#UiMain-widthMM">widthMM</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="PyQt5.QtGui.html#QPaintDevice">PyQt5.QtGui.QPaintDevice</a>:<br>
+<dl><dt><strong>PaintDeviceMetric</strong> = &lt;class 'PyQt5.QtGui.QPaintDevice.PaintDeviceMetric'&gt;</dl>
+
+<dl><dt><strong>PdmDepth</strong> = 6</dl>
+
+<dl><dt><strong>PdmDevicePixelRatio</strong> = 11</dl>
+
+<dl><dt><strong>PdmDevicePixelRatioScaled</strong> = 12</dl>
+
+<dl><dt><strong>PdmDpiX</strong> = 7</dl>
+
+<dl><dt><strong>PdmDpiY</strong> = 8</dl>
+
+<dl><dt><strong>PdmHeight</strong> = 2</dl>
+
+<dl><dt><strong>PdmHeightMM</strong> = 4</dl>
+
+<dl><dt><strong>PdmNumColors</strong> = 5</dl>
+
+<dl><dt><strong>PdmPhysicalDpiX</strong> = 9</dl>
+
+<dl><dt><strong>PdmPhysicalDpiY</strong> = 10</dl>
+
+<dl><dt><strong>PdmWidth</strong> = 1</dl>
+
+<dl><dt><strong>PdmWidthMM</strong> = 3</dl>
+
+<hr>
+Methods inherited from <a href="PyQt5.sip.html#simplewrapper">sip.simplewrapper</a>:<br>
+<dl><dt><a name="UiMain-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Static methods inherited from <a href="PyQt5.sip.html#simplewrapper">sip.simplewrapper</a>:<br>
+<dl><dt><a name="UiMain-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="PyQt5.sip.html#wrappertype">sip.wrappertype</a></font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="PyQt5.sip.html#simplewrapper">sip.simplewrapper</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>

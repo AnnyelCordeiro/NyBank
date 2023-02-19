@@ -1,0 +1,565 @@
+
+<!DOCTYPE html>
+
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Welcome to Bank’s documentation! &#8212; Documentação Bank 1.0.0</title>
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/scrolls.css" />
+    <link rel="stylesheet" href="_static/print.css" type="text/css" />
+    
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/translations.js"></script>
+    <script src="_static/theme_extras.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Pesquisar" href="search.html" /> 
+  </head><body>
+    <div id="content">
+      <div class="header">
+        <h1 class="heading"><a href="#"
+          title="back to the documentation overview"><span>Welcome to Bank’s documentation!</span></a></h1>
+      </div>
+      <div class="relnav" role="navigation" aria-label="related navigation">
+        <a href="#">Welcome to Bank’s documentation!</a>
+      </div>
+      <div id="contentwrapper">
+        <div id="toc" role="navigation" aria-label="table of contents navigation">
+          <h3>Table of Contents</h3>
+          <ul>
+<li><a class="reference internal" href="#">Welcome to Bank’s documentation!</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+        </div>
+        <div role="main">
+        
+  <section id="module-main">
+<span id="welcome-to-bank-s-documentation"></span><h1>Welcome to Bank’s documentation!<a class="headerlink" href="#module-main" title="Permalink to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="main.Main">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">Main</span></span><a class="headerlink" href="#main.Main" title="Link permanente para esta definição">¶</a></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="main.Main.BotaoAtualizar">
+<span class="sig-name descname"><span class="pre">BotaoAtualizar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Main.BotaoAtualizar" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Este é um método chamado BotaoAtualizar que é acionado quando o botão «Atualizar» é clicado na tela principal do sistema. 
+Ele cria uma solicitação contendo o número da conta do usuário e o tipo de solicitação, que é «verificarSaldo», e envia essa solicitação para o servidor.</p>
+<p>Em seguida, ele recebe uma resposta do servidor contendo o saldo atualizado da conta. 
+O saldo é formatado como um número de ponto flutuante com duas casas decimais e exibido na tela principal do sistema, 
+na label denominada «labelSaldo».</p>
+<p>None</p>
+<p>None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="main.Main.abrePosLogin">
+<span class="sig-name descname"><span class="pre">abrePosLogin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">l</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#main.Main.abrePosLogin" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Botão que direciona para a tela de usuário do sistema (pós login).</p>
+<p>None</p>
+<p>None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="main.Main.abreTelaCadastro">
+<span class="sig-name descname"><span class="pre">abreTelaCadastro</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Main.abreTelaCadastro" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Botão que direciona para a tela de cadastro do sistema.</p>
+<p>None</p>
+<p>None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="main.Main.abreTelaExtrato">
+<span class="sig-name descname"><span class="pre">abreTelaExtrato</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Main.abreTelaExtrato" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Função responsável por abrir a tela de extrato do usuário após ser clicado o botão extrato.
+É responsável por obter o histórico de transações bancárias do cliente e exibi-las na tela de histórico.
+Para isso, é feita uma solicitação ao servidor bancário com o número da conta do cliente e o tipo de solicitação, que é «historico». 
+Em seguida, o resultado é passado para a função concatenar que formata as informações em uma string para ser exibida na tela.
+Por fim, a string formatada é atribuída ao widget de texto TextHistorico da tela de histórico e a tela de histórico é exibida.</p>
+<p>None</p>
+<p>None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="main.Main.abreTelaInicial">
+<span class="sig-name descname"><span class="pre">abreTelaInicial</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Main.abreTelaInicial" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Botão que direciona para a tela inicial do sistema.</p>
+<p>None</p>
+<p>None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="main.Main.abreTelaSaque">
+<span class="sig-name descname"><span class="pre">abreTelaSaque</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Main.abreTelaSaque" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Botão/Função que direciona para a tela de saque do sistema.</p>
+<p>None</p>
+<p>None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="main.Main.abreTelaTransferencia">
+<span class="sig-name descname"><span class="pre">abreTelaTransferencia</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Main.abreTelaTransferencia" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Botão/Função que direciona para a tela de transferência do sistema.</p>
+<p>None</p>
+<p>None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="main.Main.abreTeladeposito">
+<span class="sig-name descname"><span class="pre">abreTeladeposito</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Main.abreTeladeposito" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Botão/Função que direciona para a tela de depósito do sistema.</p>
+<p>None</p>
+<p>None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="main.Main.botDeposito">
+<span class="sig-name descname"><span class="pre">botDeposito</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Main.botDeposito" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Este é um método chamado botDeposito que é acionado quando o botão «Depositar» é clicado na tela de depósito. 
+Ele verifica se o campo de valor não está vazio e se contém apenas dígitos. 
+Se for o caso, uma solicitação de depósito é enviada ao servidor com o número da conta e o valor do depósito. 
+O campo de notificação da tela de depósito é atualizado com a mensagem retornada pelo servidor e, em seguida, o campo de valor é limpo. 
+Se o campo de valor estiver vazio ou não contiver apenas dígitos, uma mensagem apropriada é exibida no campo de notificação.</p>
+<p>None</p>
+<p>None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="main.Main.botLogin">
+<span class="sig-name descname"><span class="pre">botLogin</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Main.botLogin" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Este é um método chamado botLogin que é acionado quando o botão «Login» é clicado na tela de login. 
+Ele recupera os valores dos campos de entrada para usuário e senha da tela de login e verifica se ambos estão preenchidos. 
+Se algum campo estiver vazio, uma notificação será exibida na tela.</p>
+<p>Se ambos os campos estiverem preenchidos, o código codifica a senha em utf-8 e a criptografa usando o algoritmo MD5. 
+Em seguida, é criada uma solicitação contendo as informações de login do usuário e enviada para o servidor. 
+A resposta do servidor é recebida e processada. 
+Se o primeiro elemento da resposta for “True”, o login é bem-sucedido e o usuário é direcionado para a tela principal do sistema.</p>
+<p>Caso contrário, uma notificação informando que o login falhou é exibida na tela de login. 
+Independentemente de ter sucesso ou falhar, os campos da tela de login são limpos para que um novo login possa ser feito.</p>
+<p>None</p>
+<p>None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="main.Main.botSaque">
+<span class="sig-name descname"><span class="pre">botSaque</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Main.botSaque" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>O método botsaque é chamado quando o usuário clica no botão «Sacar» na tela de operações. 
+Ele pega o valor e a senha inseridos pelo usuário, verifica se o valor é um número válido e codifica a senha usando o algoritmo MD5. 
+Em seguida, constrói uma mensagem com o número da conta, o valor e a senha codificada e envia uma solicitação ao servidor. 
+Se a operação for bem-sucedida, uma mensagem de notificação é exibida na tela de operações, caso contrário, 
+uma mensagem de senha inválida é exibida. Por fim, os campos de valor e senha são limpos.</p>
+<p>None</p>
+<p>None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="main.Main.botTransfere">
+<span class="sig-name descname"><span class="pre">botTransfere</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Main.botTransfere" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Este é um método chamado botTransfere que é acionado quando o botão «Transferir» é pressionado na tela. 
+Ele pega o valor que foi inserido no campo de valor (lineSaldo), 
+a senha (lineSenha) e o número da conta de destino (lineNumero) da tela de transferência e verifica se todos eles foram preenchidos. 
+Se estiverem preenchidos, ele verifica se os campos de valor e número da conta contêm apenas números. 
+Se ambos forem numéricos, a senha é codificada em UTF-8 e convertida em um hash md5. Em seguida, 
+é criada uma solicitação de transferência com o número da conta de origem (self.numero), a senha hash, 
+o número da conta de destino e o valor a ser transferido. 
+Essa solicitação é enviada para o servidor por meio do método request_server() e a resposta é armazenada na variável flag. 
+Em seguida, a notificação de transferência é exibida na tela de transferência com a mensagem da resposta do servidor. 
+Caso contrário, a notificação informa que apenas números devem ser inseridos nos campos de valor e número da conta, 
+ou que todos os campos devem ser preenchidos. 
+Em todos os casos, os campos de valor, senha e número da conta são redefinidos.</p>
+<p>None</p>
+<p>None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="main.Main.botaocad">
+<span class="sig-name descname"><span class="pre">botaocad</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Main.botaocad" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Este é um método chamado botaocad que é acionado quando o botão «Cadastrar» é clicado na tela de cadastro. 
+Ele recupera os valores dos campos de entrada para nome, cpf, 
+usuário e senha da tela de cadastro e verifica se todos os campos estão preenchidos. 
+Se algum campo estiver vazio, uma notificação será exibida na tela.</p>
+<p>Se todos os campos estiverem preenchidos, o código verifica se o CPF tem 11 dígitos e se é composto apenas por números. 
+Em seguida, a senha é codificada em utf-8 e criptografada usando o algoritmo MD5. 
+Uma solicitação é enviada ao servidor contendo as informações do novo usuário a ser adicionado. 
+A resposta do servidor é concatenada em uma string e exibida na tela de cadastro.</p>
+<p>Independentemente de ter sucesso ou falhar, todos os campos da tela de cadastro são limpos para que um novo usuário possa ser adicionado. 
+Se o CPF não atender aos parâmetros necessários, uma notificação informando isso é exibida na tela</p>
+<p>None</p>
+<p>None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="main.Main.concatenar">
+<span class="sig-name descname"><span class="pre">concatenar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#main.Main.concatenar" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Este é um método chamado concatenar que recebe uma string como entrada e concatena todos os caracteres da string, 
+exceto o primeiro caractere (índice 0), com um caractere de espaço entre cada caractere.
+A string concatenada resultante é então retornada.</p>
+<p>string: Str</p>
+<p>noti</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="main.Main.exit">
+<span class="sig-name descname"><span class="pre">exit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Main.exit" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Botão para sair do sistema.</p>
+<p>None</p>
+<p>None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="main.Main.request_server">
+<span class="sig-name descname"><span class="pre">request_server</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#main.Main.request_server" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Essa função envia uma requisição de mensagem para o servidor com a request como parâmetro. 
+Em seguida, aguarda uma resposta de até 2048 bytes do servidor e a converte em uma string. 
+Então, remove todos os caracteres desnecessários da resposta e retorna como uma lista de palavras.</p>
+<p>request :str</p>
+<p>flag</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="main.Main.sairTelaInicial">
+<span class="sig-name descname"><span class="pre">sairTelaInicial</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Main.sairTelaInicial" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Botão de saída da tela inicial e encerramento do sistema.</p>
+<p>None</p>
+<p>None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="main.Main.voltarTelaInicial">
+<span class="sig-name descname"><span class="pre">voltarTelaInicial</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Main.voltarTelaInicial" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Botão/Função que volta para a tela inicial do sistema.</p>
+<p>None</p>
+<p>None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="main.Main.voltarTelaPosLogin">
+<span class="sig-name descname"><span class="pre">voltarTelaPosLogin</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.Main.voltarTelaPosLogin" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Botão/Função que direciona a volta para a tela de usuário do sistema(pós login).</p>
+<p>None</p>
+<p>None</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="main.UiMain">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">UiMain</span></span><a class="headerlink" href="#main.UiMain" title="Link permanente para esta definição">¶</a></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="main.UiMain.setupUi">
+<span class="sig-name descname"><span class="pre">setupUi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">UiMain</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#main.UiMain.setupUi" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Esta classe define a interface gráfica do usuário usando PyQt5.
+Ela é basicamente definida para servir como «empilhamento»(stack) de cada tela e sua respectiva posição. 
+Ele define uma janela principal (Main) e um layout de pilha de várias outras janelas (stack0 a stack6). 
+Elas podem ser alternadas dentro da janela principal. 
+Cada tela é definida em seu próprio arquivo de classe, como TelaCadastro, TelaLogin etc. 
+O método setupUi() é chamado para cada tela para configurar sua aparência e funcionamento, 
+e cada uma delas é adicionada ao layout de pilha por meio do método addWidget().</p>
+<p>Main: Object</p>
+<p>None</p>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-banco"></span><dl class="py class">
+<dt class="sig sig-object py" id="banco.Banco">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">banco.</span></span><span class="sig-name descname"><span class="pre">Banco</span></span><a class="headerlink" href="#banco.Banco" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>A classe Banco instância um objeto Banco capaz de acessar um Banco de Dados para registro
+e transações financeiras como saque, depósitos e tranferências.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="banco.Banco.adiciona_conta">
+<span class="sig-name descname"><span class="pre">adiciona_conta</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">usuario</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">senha</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nome</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cpf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saldo</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#banco.Banco.adiciona_conta" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Faz a verificação do CPF, se existe ou não, então se o CPF não constar 
+cria uma conta e adiciona ao Banco de Dados.
+:param usuario : str</p>
+<blockquote>
+<div><p>Usuário que está sendo cadastrado na conta.</p>
+</div></blockquote>
+<dl class="simple">
+<dt>:param senha<span class="classifier">str</span></dt><dd><p>Senha utilizada pelo usuário.</p>
+</dd>
+<dt>:param nome<span class="classifier">str</span></dt><dd><p>Nome do usuário.</p>
+</dd>
+<dt>:param cpf<span class="classifier">str</span></dt><dd><p>CPF do usuário.</p>
+</dd>
+<dt>:param saldo<span class="classifier">float</span></dt><dd><p>saldo inicial do usuário.</p>
+</dd>
+<dt>:return<span class="classifier">list</span></dt><dd><p>True,mensagem -&gt; cadastro realizado.
+False,mensagem -&gt; cadastro não realizado.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="banco.Banco.atualiza_saldo">
+<span class="sig-name descname"><span class="pre">atualiza_saldo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numero</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saldo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#banco.Banco.atualiza_saldo" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Verifica o e atualiza saldo no Banco de Dados
+:param numero: str</p>
+<blockquote>
+<div><p>Conta a ser atualizada saldo</p>
+</div></blockquote>
+<dl class="simple">
+<dt>:param  saldo<span class="classifier">str</span></dt><dd><p>Saldo atual</p>
+</dd>
+<dt>:param flag<span class="classifier">bool</span></dt><dd><p>Verificar se é para somar ou pra subtrair</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="banco.Banco.depositar">
+<span class="sig-name descname"><span class="pre">depositar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numero</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">valor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#banco.Banco.depositar" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Faz o depósito na conta e insere a operação na tabela de Histórico no Banco de Dados.
+:param numero : str</p>
+<blockquote>
+<div><p>Número da conta a ser feito o déposito</p>
+</div></blockquote>
+<dl class="simple">
+<dt>:param valor<span class="classifier">float</span></dt><dd><p>valor a ser depositado na conta</p>
+</dd>
+<dt>:param flag<span class="classifier">bool</span></dt><dd><p>Serve para verificar se realmente é um depósito</p>
+</dd>
+<dt>:return<span class="classifier">bool</span></dt><dd><p>True -&gt; Se conseguiu realizar o depósito
+False -&gt; Caso não tenha conseguido</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="banco.Banco.get_saldo">
+<span class="sig-name descname"><span class="pre">get_saldo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numero</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#banco.Banco.get_saldo" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Verifica o saldo do usuário.
+:param numero : str</p>
+<blockquote>
+<div><p>Numero da conta em que irá ser verificado o saldo.</p>
+</div></blockquote>
+<dl class="simple">
+<dt>:return<span class="classifier">bool</span></dt><dd><p>True -&gt; retorna o saldo
+False -&gt; caso não tenha saldo a verificar.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="banco.Banco.login">
+<span class="sig-name descname"><span class="pre">login</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">login</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">senha</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#banco.Banco.login" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Verifica se o Usuário existe, se existir o usuário entra na conta.
+:param login : str</p>
+<blockquote>
+<div><p>O usuário que deseja fazer o login.</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parâmetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>senha</strong> – str
+A senha do usuário para acessar a conta.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>:return<span class="classifier">list</span></dt><dd><p>True -&gt; O login, saldo, número da conta que foi acessada.
+False -&gt; O usuário e senha que foi enviado para ser verificado.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="banco.Banco.mostra_his">
+<span class="sig-name descname"><span class="pre">mostra_his</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numero</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#banco.Banco.mostra_his" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Extrai o histórico no Banco de dados e serve para mostrar na tela
+:param numero : str</p>
+<blockquote>
+<div><p>Número da conta que deseja-se ser extraido o histórico e é trazido pois é a chave extrangeira no Banco de Dados.</p>
+</div></blockquote>
+<dl class="simple">
+<dt>:return<span class="classifier">str</span></dt><dd><p>result -&gt; retorna a pesquisa no Banco de Dados.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="banco.Banco.sacar">
+<span class="sig-name descname"><span class="pre">sacar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numero</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">valor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">senha</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#banco.Banco.sacar" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Faz o saque na conta e insere a operação na tabela de Histórico no Banco de Dados.
+:param numero : str</p>
+<blockquote>
+<div><p>Número da conta a ser feito o déposito</p>
+</div></blockquote>
+<dl class="simple">
+<dt>:param valor<span class="classifier">float</span></dt><dd><p>valor a ser depositado na conta</p>
+</dd>
+<dt>:param senha<span class="classifier">str</span></dt><dd><p>senha do usuário que está fazendo o saque.</p>
+</dd>
+<dt>:param flag<span class="classifier">bool</span></dt><dd><p>Serve para verificar se realmente é um depósito</p>
+</dd>
+<dt>:return<span class="classifier">bool</span></dt><dd><p>True -&gt; Se conseguiu realizar o depósito
+False -&gt; Caso não tenha conseguido</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="banco.Banco.set_saldo">
+<span class="sig-name descname"><span class="pre">set_saldo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numero</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">valor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#banco.Banco.set_saldo" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Primeiro verifica o saldo do usuário e após verificar ele atualiza somando 
+ou subtraindo o saldo.
+:param numero : str</p>
+<blockquote>
+<div><p>Número da conta que será atualizado saldo.</p>
+</div></blockquote>
+<dl class="simple">
+<dt>:param valor<span class="classifier">float</span></dt><dd><p>Valor a ser somado ou subtraido no saldo.</p>
+</dd>
+<dt>:param flag<span class="classifier">bool</span></dt><dd><p>Verifica se é True ou False, ele soma se for True e se for False ele subtrai do saldo.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="banco.Banco.transferir">
+<span class="sig-name descname"><span class="pre">transferir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numero</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">senha</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">destino</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">valor</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#banco.Banco.transferir" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Faz a transferência de uma conta para outra e insere a operação na tabela de Histórico no Banco de Dados.
+:param numero : str</p>
+<blockquote>
+<div><p>Número da conta a ser feita a transferência.</p>
+</div></blockquote>
+<dl class="simple">
+<dt>:param senha<span class="classifier">str</span></dt><dd><p>senha do usuário que está fazendo o saque.</p>
+</dd>
+<dt>:param destino<span class="classifier">str</span></dt><dd><p>Número de destino da transferência.</p>
+</dd>
+<dt>:param valor<span class="classifier">float</span></dt><dd><p>valor a ser depositado na conta</p>
+</dd>
+<dt>:return<span class="classifier">bool</span></dt><dd><p>True, mensagem -&gt; Se conseguiu realizar a transferência
+False, mensagem -&gt; Caso não tenha conseguido realizar a transferência</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="banco.Banco.verificaSenha">
+<span class="sig-name descname"><span class="pre">verificaSenha</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">senha</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numero</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#banco.Banco.verificaSenha" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Verifica se a senha está correta
+:param senha : str</p>
+<blockquote>
+<div><p>Senha do usuário</p>
+</div></blockquote>
+<dl class="simple">
+<dt>:param numero<span class="classifier">str</span></dt><dd><p>Número da conta a ser verificado a senha.</p>
+</dd>
+<dt>:return<span class="classifier">list</span></dt><dd><p>True, mensagem -&gt; Senha esteja correta
+False, mensagem -&gt; Senha está incorreta</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="banco.Banco.verifica_saldo">
+<span class="sig-name descname"><span class="pre">verifica_saldo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numero</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#banco.Banco.verifica_saldo" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Verifica o saldo no Banco de Dados
+:param numero : str</p>
+<blockquote>
+<div><p>Número da conta de verificação do saldo.</p>
+</div></blockquote>
+<dl class="simple">
+<dt>:returns<span class="classifier">list </span></dt><dd><p>resultado -&gt; retorna o resultado da busca no banco de dados.
+False -&gt; Se não funciona retorna false</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="banco.Banco.verificarCPF">
+<span class="sig-name descname"><span class="pre">verificarCPF</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cpf</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#banco.Banco.verificarCPF" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Verifica o CPF no banco de dados
+:param cpf : str</p>
+<blockquote>
+<div><p>CPF a ser verificado</p>
+</div></blockquote>
+<dl class="simple">
+<dt>:return<span class="classifier">bool</span></dt><dd><p>True -&gt; o CPF está correto
+False -&gt; o CPF está incorreto</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="banco.Banco.verificarNumero">
+<span class="sig-name descname"><span class="pre">verificarNumero</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numero</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#banco.Banco.verificarNumero" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Verifica o número no banco de dados
+:param numero : str</p>
+<blockquote>
+<div><p>Número a ser verificado</p>
+</div></blockquote>
+<dl class="simple">
+<dt>:return<span class="classifier">bool</span></dt><dd><p>True -&gt; o Número está correto
+False -&gt; o Número está incorreto</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="banco.Banco.verificarUsuario">
+<span class="sig-name descname"><span class="pre">verificarUsuario</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">login</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">senha</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">UserPassword</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#banco.Banco.verificarUsuario" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Faz a verificação se o usuário existe ou não
+:param login : str</p>
+<blockquote>
+<div><p>O usuário a ser verificado</p>
+</div></blockquote>
+<dl class="simple">
+<dt>:param senha<span class="classifier">str</span></dt><dd><p>A senha do usuário para ser verificado</p>
+</dd>
+<dt>:param UserPassword<span class="classifier">bool</span></dt><dd><p>True para que exista um usuário e ir fazer a pesquisa no banco de dados</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Retorno<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list
+True, mensagem -&gt; Existe um usuário 
+False, mensagem -&gt; Não existe o usuário</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-servidor"></span><dl class="py class">
+<dt class="sig sig-object py" id="servidor.ClientThread">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">servidor.</span></span><span class="sig-name descname"><span class="pre">ClientThread</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">clientesock</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clienteaddress</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#servidor.ClientThread" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Objetos para instanciar o Servidor</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="servidor.ClientThread.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#servidor.ClientThread.run" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>o servidor recebe uma mensagem do cliente e retorna uma resposta se necessario.
+se a mensagem recebida for uma string vazia, o servidor é encerrado.</p>
+</dd></dl>
+
+</dd></dl>
+
+<div class="toctree-wrapper compound">
+</div>
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this heading">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Índice</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Índice de Módulos</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Página de Pesquisa</span></a></p></li>
+</ul>
+</section>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2023, Annyel Cordeiro.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module banco</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>banco</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/annyel/%C3%81rea%20de%20Trabalho/POO%202/NyBank_final/banco.py">/home/annyel/Área de Trabalho/POO 2/NyBank_final/banco.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="datetime.html">datetime</a><br>
+</td><td width="25%" valign=top><a href="mysql.connector.html">mysql.connector</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="banco.html#Banco">Banco</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Banco">class <strong>Banco</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>A&nbsp;classe&nbsp;<a href="#Banco">Banco</a>&nbsp;instância&nbsp;um&nbsp;objeto&nbsp;<a href="#Banco">Banco</a>&nbsp;capaz&nbsp;de&nbsp;acessar&nbsp;um&nbsp;<a href="#Banco">Banco</a>&nbsp;de&nbsp;Dados&nbsp;para&nbsp;registro<br>
+e&nbsp;transações&nbsp;financeiras&nbsp;como&nbsp;saque,&nbsp;depósitos&nbsp;e&nbsp;tranferências.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Banco-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>conexao_db&nbsp;:&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Armazena&nbsp;uma&nbsp;instância&nbsp;da&nbsp;classe&nbsp;do&nbsp;<a href="#Banco">Banco</a>&nbsp;de&nbsp;Dados.<br>
+cursor&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Cursor&nbsp;para&nbsp;percorrer&nbsp;o&nbsp;<a href="#Banco">Banco</a>&nbsp;de&nbsp;Dados.</tt></dd></dl>
+
+<dl><dt><a name="Banco-adiciona_conta"><strong>adiciona_conta</strong></a>(self, usuario, senha, nome, cpf, saldo=0.0)</dt><dd><tt>Faz&nbsp;a&nbsp;verificação&nbsp;do&nbsp;CPF,&nbsp;se&nbsp;existe&nbsp;ou&nbsp;não,&nbsp;então&nbsp;se&nbsp;o&nbsp;CPF&nbsp;não&nbsp;constar&nbsp;<br>
+cria&nbsp;uma&nbsp;conta&nbsp;e&nbsp;adiciona&nbsp;ao&nbsp;<a href="#Banco">Banco</a>&nbsp;de&nbsp;Dados.<br>
+:param&nbsp;usuario&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Usuário&nbsp;que&nbsp;está&nbsp;sendo&nbsp;cadastrado&nbsp;na&nbsp;conta.<br>
+:param&nbsp;senha&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Senha&nbsp;utilizada&nbsp;pelo&nbsp;usuário.<br>
+:param&nbsp;nome&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Nome&nbsp;do&nbsp;usuário.<br>
+:param&nbsp;cpf&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;CPF&nbsp;do&nbsp;usuário.<br>
+:param&nbsp;saldo&nbsp;:&nbsp;float<br>
+&nbsp;&nbsp;&nbsp;&nbsp;saldo&nbsp;inicial&nbsp;do&nbsp;usuário.<br>
+:return&nbsp;:&nbsp;list<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True,mensagem&nbsp;-&gt;&nbsp;cadastro&nbsp;realizado.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;False,mensagem&nbsp;-&gt;&nbsp;cadastro&nbsp;não&nbsp;realizado.</tt></dd></dl>
+
+<dl><dt><a name="Banco-atualiza_saldo"><strong>atualiza_saldo</strong></a>(self, numero, saldo, flag=True)</dt><dd><tt>Verifica&nbsp;o&nbsp;e&nbsp;atualiza&nbsp;saldo&nbsp;no&nbsp;<a href="#Banco">Banco</a>&nbsp;de&nbsp;Dados<br>
+:param&nbsp;numero:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Conta&nbsp;a&nbsp;ser&nbsp;atualizada&nbsp;saldo<br>
+:param&nbsp;&nbsp;saldo&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Saldo&nbsp;atual<br>
+:param&nbsp;flag&nbsp;:&nbsp;bool<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Verificar&nbsp;se&nbsp;é&nbsp;para&nbsp;somar&nbsp;ou&nbsp;pra&nbsp;subtrair</tt></dd></dl>
+
+<dl><dt><a name="Banco-depositar"><strong>depositar</strong></a>(self, numero, valor, flag=True)</dt><dd><tt>Faz&nbsp;o&nbsp;depósito&nbsp;na&nbsp;conta&nbsp;e&nbsp;insere&nbsp;a&nbsp;operação&nbsp;na&nbsp;tabela&nbsp;de&nbsp;Histórico&nbsp;no&nbsp;<a href="#Banco">Banco</a>&nbsp;de&nbsp;Dados.<br>
+:param&nbsp;numero&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Número&nbsp;da&nbsp;conta&nbsp;a&nbsp;ser&nbsp;feito&nbsp;o&nbsp;déposito<br>
+:param&nbsp;valor&nbsp;:&nbsp;float<br>
+&nbsp;&nbsp;&nbsp;&nbsp;valor&nbsp;a&nbsp;ser&nbsp;depositado&nbsp;na&nbsp;conta<br>
+:param&nbsp;flag&nbsp;:&nbsp;bool<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Serve&nbsp;para&nbsp;verificar&nbsp;se&nbsp;realmente&nbsp;é&nbsp;um&nbsp;depósito<br>
+:return&nbsp;:&nbsp;bool<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;-&gt;&nbsp;Se&nbsp;conseguiu&nbsp;realizar&nbsp;o&nbsp;depósito<br>
+&nbsp;&nbsp;&nbsp;&nbsp;False&nbsp;-&gt;&nbsp;Caso&nbsp;não&nbsp;tenha&nbsp;conseguido</tt></dd></dl>
+
+<dl><dt><a name="Banco-get_saldo"><strong>get_saldo</strong></a>(self, numero)</dt><dd><tt>Verifica&nbsp;o&nbsp;saldo&nbsp;do&nbsp;usuário.<br>
+:param&nbsp;numero&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Numero&nbsp;da&nbsp;conta&nbsp;em&nbsp;que&nbsp;irá&nbsp;ser&nbsp;verificado&nbsp;o&nbsp;saldo.<br>
+:return&nbsp;:&nbsp;bool<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;-&gt;&nbsp;retorna&nbsp;o&nbsp;saldo<br>
+&nbsp;&nbsp;&nbsp;&nbsp;False&nbsp;-&gt;&nbsp;caso&nbsp;não&nbsp;tenha&nbsp;saldo&nbsp;a&nbsp;verificar.</tt></dd></dl>
+
+<dl><dt><a name="Banco-login"><strong>login</strong></a>(self, login, senha)</dt><dd><tt>Verifica&nbsp;se&nbsp;o&nbsp;Usuário&nbsp;existe,&nbsp;se&nbsp;existir&nbsp;o&nbsp;usuário&nbsp;entra&nbsp;na&nbsp;conta.<br>
+:param&nbsp;login&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;O&nbsp;usuário&nbsp;que&nbsp;deseja&nbsp;fazer&nbsp;o&nbsp;login.<br>
+:param&nbsp;senha:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;senha&nbsp;do&nbsp;usuário&nbsp;para&nbsp;acessar&nbsp;a&nbsp;conta.<br>
+:return&nbsp;:&nbsp;list<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;-&gt;&nbsp;O&nbsp;login,&nbsp;saldo,&nbsp;número&nbsp;da&nbsp;conta&nbsp;que&nbsp;foi&nbsp;acessada.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;False&nbsp;-&gt;&nbsp;O&nbsp;usuário&nbsp;e&nbsp;senha&nbsp;que&nbsp;foi&nbsp;enviado&nbsp;para&nbsp;ser&nbsp;verificado.</tt></dd></dl>
+
+<dl><dt><a name="Banco-mostra_his"><strong>mostra_his</strong></a>(self, numero)</dt><dd><tt>Extrai&nbsp;o&nbsp;histórico&nbsp;no&nbsp;<a href="#Banco">Banco</a>&nbsp;de&nbsp;dados&nbsp;e&nbsp;serve&nbsp;para&nbsp;mostrar&nbsp;na&nbsp;tela<br>
+:param&nbsp;numero&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Número&nbsp;da&nbsp;conta&nbsp;que&nbsp;deseja-se&nbsp;ser&nbsp;extraido&nbsp;o&nbsp;histórico&nbsp;e&nbsp;é&nbsp;trazido&nbsp;pois&nbsp;é&nbsp;a&nbsp;chave&nbsp;extrangeira&nbsp;no&nbsp;<a href="#Banco">Banco</a>&nbsp;de&nbsp;Dados.<br>
+:return&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;result&nbsp;-&gt;&nbsp;retorna&nbsp;a&nbsp;pesquisa&nbsp;no&nbsp;<a href="#Banco">Banco</a>&nbsp;de&nbsp;Dados.</tt></dd></dl>
+
+<dl><dt><a name="Banco-sacar"><strong>sacar</strong></a>(self, numero, valor, senha, flag=True)</dt><dd><tt>Faz&nbsp;o&nbsp;saque&nbsp;na&nbsp;conta&nbsp;e&nbsp;insere&nbsp;a&nbsp;operação&nbsp;na&nbsp;tabela&nbsp;de&nbsp;Histórico&nbsp;no&nbsp;<a href="#Banco">Banco</a>&nbsp;de&nbsp;Dados.<br>
+:param&nbsp;numero&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Número&nbsp;da&nbsp;conta&nbsp;a&nbsp;ser&nbsp;feito&nbsp;o&nbsp;déposito<br>
+:param&nbsp;valor&nbsp;:&nbsp;float<br>
+&nbsp;&nbsp;&nbsp;&nbsp;valor&nbsp;a&nbsp;ser&nbsp;depositado&nbsp;na&nbsp;conta<br>
+:param&nbsp;senha&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;senha&nbsp;do&nbsp;usuário&nbsp;que&nbsp;está&nbsp;fazendo&nbsp;o&nbsp;saque.<br>
+:param&nbsp;flag&nbsp;:&nbsp;bool<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Serve&nbsp;para&nbsp;verificar&nbsp;se&nbsp;realmente&nbsp;é&nbsp;um&nbsp;depósito<br>
+:return&nbsp;:&nbsp;bool<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;-&gt;&nbsp;Se&nbsp;conseguiu&nbsp;realizar&nbsp;o&nbsp;depósito<br>
+&nbsp;&nbsp;&nbsp;&nbsp;False&nbsp;-&gt;&nbsp;Caso&nbsp;não&nbsp;tenha&nbsp;conseguido</tt></dd></dl>
+
+<dl><dt><a name="Banco-set_saldo"><strong>set_saldo</strong></a>(self, numero, valor, flag=True)</dt><dd><tt>Primeiro&nbsp;verifica&nbsp;o&nbsp;saldo&nbsp;do&nbsp;usuário&nbsp;e&nbsp;após&nbsp;verificar&nbsp;ele&nbsp;atualiza&nbsp;somando&nbsp;<br>
+ou&nbsp;subtraindo&nbsp;o&nbsp;saldo.<br>
+:param&nbsp;numero&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Número&nbsp;da&nbsp;conta&nbsp;que&nbsp;será&nbsp;atualizado&nbsp;saldo.&nbsp;<br>
+:param&nbsp;valor&nbsp;:&nbsp;float<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Valor&nbsp;a&nbsp;ser&nbsp;somado&nbsp;ou&nbsp;subtraido&nbsp;no&nbsp;saldo.<br>
+:param&nbsp;flag&nbsp;:&nbsp;bool<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Verifica&nbsp;se&nbsp;é&nbsp;True&nbsp;ou&nbsp;False,&nbsp;ele&nbsp;soma&nbsp;se&nbsp;for&nbsp;True&nbsp;e&nbsp;se&nbsp;for&nbsp;False&nbsp;ele&nbsp;subtrai&nbsp;do&nbsp;saldo.</tt></dd></dl>
+
+<dl><dt><a name="Banco-transferir"><strong>transferir</strong></a>(self, numero, senha, destino, valor)</dt><dd><tt>Faz&nbsp;a&nbsp;transferência&nbsp;de&nbsp;uma&nbsp;conta&nbsp;para&nbsp;outra&nbsp;e&nbsp;insere&nbsp;a&nbsp;operação&nbsp;na&nbsp;tabela&nbsp;de&nbsp;Histórico&nbsp;no&nbsp;<a href="#Banco">Banco</a>&nbsp;de&nbsp;Dados.<br>
+:param&nbsp;numero&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Número&nbsp;da&nbsp;conta&nbsp;a&nbsp;ser&nbsp;feita&nbsp;a&nbsp;transferência.<br>
+:param&nbsp;senha&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;senha&nbsp;do&nbsp;usuário&nbsp;que&nbsp;está&nbsp;fazendo&nbsp;o&nbsp;saque.<br>
+:param&nbsp;destino&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Número&nbsp;de&nbsp;destino&nbsp;da&nbsp;transferência.<br>
+:param&nbsp;valor&nbsp;:&nbsp;float<br>
+&nbsp;&nbsp;&nbsp;&nbsp;valor&nbsp;a&nbsp;ser&nbsp;depositado&nbsp;na&nbsp;conta<br>
+:return&nbsp;:&nbsp;bool<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True,&nbsp;mensagem&nbsp;-&gt;&nbsp;Se&nbsp;conseguiu&nbsp;realizar&nbsp;a&nbsp;transferência<br>
+&nbsp;&nbsp;&nbsp;&nbsp;False,&nbsp;mensagem&nbsp;-&gt;&nbsp;Caso&nbsp;não&nbsp;tenha&nbsp;conseguido&nbsp;realizar&nbsp;a&nbsp;transferência</tt></dd></dl>
+
+<dl><dt><a name="Banco-verificaSenha"><strong>verificaSenha</strong></a>(self, senha, numero)</dt><dd><tt>Verifica&nbsp;se&nbsp;a&nbsp;senha&nbsp;está&nbsp;correta<br>
+:param&nbsp;senha&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Senha&nbsp;do&nbsp;usuário<br>
+:param&nbsp;numero&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Número&nbsp;da&nbsp;conta&nbsp;a&nbsp;ser&nbsp;verificado&nbsp;a&nbsp;senha.<br>
+:return&nbsp;:&nbsp;list<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True,&nbsp;mensagem&nbsp;-&gt;&nbsp;Senha&nbsp;esteja&nbsp;correta<br>
+&nbsp;&nbsp;&nbsp;&nbsp;False,&nbsp;mensagem&nbsp;-&gt;&nbsp;Senha&nbsp;está&nbsp;incorreta</tt></dd></dl>
+
+<dl><dt><a name="Banco-verifica_saldo"><strong>verifica_saldo</strong></a>(self, numero)</dt><dd><tt>Verifica&nbsp;o&nbsp;saldo&nbsp;no&nbsp;<a href="#Banco">Banco</a>&nbsp;de&nbsp;Dados<br>
+:param&nbsp;numero&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Número&nbsp;da&nbsp;conta&nbsp;de&nbsp;verificação&nbsp;do&nbsp;saldo.<br>
+:returns&nbsp;:&nbsp;list&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;resultado&nbsp;-&gt;&nbsp;retorna&nbsp;o&nbsp;resultado&nbsp;da&nbsp;busca&nbsp;no&nbsp;banco&nbsp;de&nbsp;dados.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;False&nbsp;-&gt;&nbsp;Se&nbsp;não&nbsp;funciona&nbsp;retorna&nbsp;false</tt></dd></dl>
+
+<dl><dt><a name="Banco-verificarCPF"><strong>verificarCPF</strong></a>(self, cpf)</dt><dd><tt>Verifica&nbsp;o&nbsp;CPF&nbsp;no&nbsp;banco&nbsp;de&nbsp;dados<br>
+:param&nbsp;cpf&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;CPF&nbsp;a&nbsp;ser&nbsp;verificado<br>
+:return&nbsp;:&nbsp;bool<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;-&gt;&nbsp;o&nbsp;CPF&nbsp;está&nbsp;correto<br>
+&nbsp;&nbsp;&nbsp;&nbsp;False&nbsp;-&gt;&nbsp;o&nbsp;CPF&nbsp;está&nbsp;incorreto</tt></dd></dl>
+
+<dl><dt><a name="Banco-verificarNumero"><strong>verificarNumero</strong></a>(self, numero)</dt><dd><tt>Verifica&nbsp;o&nbsp;número&nbsp;no&nbsp;banco&nbsp;de&nbsp;dados<br>
+:param&nbsp;numero&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Número&nbsp;a&nbsp;ser&nbsp;verificado<br>
+:return&nbsp;:&nbsp;bool<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;-&gt;&nbsp;o&nbsp;Número&nbsp;está&nbsp;correto<br>
+&nbsp;&nbsp;&nbsp;&nbsp;False&nbsp;-&gt;&nbsp;o&nbsp;Número&nbsp;está&nbsp;incorreto</tt></dd></dl>
+
+<dl><dt><a name="Banco-verificarUsuario"><strong>verificarUsuario</strong></a>(self, login, senha, UserPassword=True)</dt><dd><tt>Faz&nbsp;a&nbsp;verificação&nbsp;se&nbsp;o&nbsp;usuário&nbsp;existe&nbsp;ou&nbsp;não<br>
+:param&nbsp;login&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;O&nbsp;usuário&nbsp;a&nbsp;ser&nbsp;verificado<br>
+:param&nbsp;senha&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;senha&nbsp;do&nbsp;usuário&nbsp;para&nbsp;ser&nbsp;verificado<br>
+:param&nbsp;UserPassword&nbsp;:&nbsp;bool<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;para&nbsp;que&nbsp;exista&nbsp;um&nbsp;usuário&nbsp;e&nbsp;ir&nbsp;fazer&nbsp;a&nbsp;pesquisa&nbsp;no&nbsp;banco&nbsp;de&nbsp;dados<br>
+:return:&nbsp;list<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True,&nbsp;mensagem&nbsp;-&gt;&nbsp;Existe&nbsp;um&nbsp;usuário&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;False,&nbsp;mensagem&nbsp;-&gt;&nbsp;Não&nbsp;existe&nbsp;o&nbsp;usuário</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>conexao_db</strong></dt>
+</dl>
+<dl><dt><strong>cursor</strong></dt>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>
